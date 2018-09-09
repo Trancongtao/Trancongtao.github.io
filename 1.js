@@ -10,7 +10,7 @@ $(document).ready(function() {
 	.to($('.khoiload'),1,{scale:0.5,opacity:1,background:"pink"})
 	.to($('.khoiload'),1,{scale:1,opacity:1,background:"orange",ease:Elastic.easeOut})
 	.to($('.khoiload'),0.6,{scale:2,opacity:0,background:"brown"})
-	.to($('.loading'),2,{y:-2000})
+	.to($('.loading'),1,{y:-2000})
 
 	var vt_infopersonal=$('.info_personal').offset().top;
 	vt_infopersonal=vt_infopersonal-100;

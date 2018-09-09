@@ -1,0 +1,380 @@
+*{}
+
+.iconmenu.dichuyentheomenu {
+    transform: translateX(-248px);
+}
+
+.menubenphai h3 {
+    font-size: 30px;
+    color: yellow;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.menubenphai h3:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 80px;
+    height: 2px;
+    background: yellow;
+    margin-left: -40px;
+}
+
+.menubenphai {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background: black;
+    height: 100%;
+    width: 247px;
+    z-index: 6;
+    transition: 0.4s;
+    transform: translateX(1000px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menubenphai.vaotubenphai {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}
+
+.menubenphai ul.menu li {
+    background: black;
+    color: white;
+    cursor: pointer;
+    border: 1px dashed gray;
+    padding: 18px;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+}
+
+.menubenphai ul.menu li:first-child {
+    border-top: none;
+}
+
+.menubenphai ul.menu li:last-child {
+    border-bottom: none;
+}
+
+.menubenphai ul li:hover {
+    background: #1abc9c;
+}
+
+.iconmenu:hover {
+    background: #0d9a7e;
+    color: white;
+}
+
+.iconmenu {
+    width: 40px;
+    height: 40px;
+    background: #1abc9c;
+    border-radius: 0px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+    transition: 0.4s;
+    z-index: 6;
+}
+
+.nutlentren.hienra{
+	opacity: 1;
+	visibility: visible;
+}
+
+.nutlentren {
+	width: 40px;
+	height: 40px;
+	background: #1abc9c;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s;
+}
+
+.nutlentren:hover {
+	background: #0f9277;
+	color: white;
+}
+
+.over {
+	overflow: hidden;
+}
+
+.footer .container {
+	padding: 40px 0;
+}
+
+.footertren i {
+	color: #1abc9c;
+	padding: 10px 9px;
+}
+
+.footertren p {
+	color: whitesmoke;
+	font-size: 15px;
+	font-family: RSLight;
+}
+
+.footertren h4 {
+	font-size: 20px;
+	color: white;
+	font-family: RSBold;
+	padding-bottom: 12px;
+}
+
+.footer {
+	background: rgba(8, 7, 33, 0.66);
+}
+
+.thongtinfooter h5.text-center {
+	font-size: 16px;
+	color: yellow;
+}
+
+.thongtinfooter {
+	height: 40px;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.khoi7 {
+	background-attachment: fixed;
+}
+
+.khoi6bentrong a.btn.btn-info:hover {
+	background: rgba(11, 11, 117, 0.92);
+}
+
+.khoi6bentrong a.btn.btn-info {
+	border-radius: 0px;
+	border: none;
+	background: rgba(25, 25, 162, 0.51);
+}
+
+.khoi6bentrong a.btn.btn-default:hover {
+	background: #d0a350;
+	color: white;
+	font-family: RSLight;
+}
+
+.khoi6bentrong a.btn.btn-default {
+	border: none;
+	border-radius: 0px;
+	background: wheat;
+}
+
+.khoi6bentrong a {
+	width: 112px;
+	height: 40px;
+	font-size: 15px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 13px;
+	transition: 0.5s;
+}
+
+.khoi6bentrong h3 {
+	letter-spacing: 2px;
+	color: white;
+	font-size: 24px;
+	padding-bottom: 10px;
+}
+
+.khoi6 {
+	padding: 50px 0 70px 0;
+	background: #1abc9c;
+}
+
+.khoi5 a:hover {
+	background: #40849a;
+	color: white;
+	font-family: RSLight;
+}
+
+.khoi5 a {
+	padding: 10px;
+	margin: 20px;
+	width: 162px;
+	border: none;
+	background: lightblue;
+	border-radius: 0px;
+	transition: 0.4s;
+	font-size: 16px;
+	color: green;
+}
+
+.khoi5bentrong .col-xs-6 {
+	padding: 8px;
+}
+
+.khoi5 h3 {
+	font-size: 28px;
+	padding: 20px 0;
+}
+
+.khoi5 {
+	padding: 35px 0;
+}
+
+.khoi4 h3 {
+	font-size: 30px;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 5px;
+}
+
+.khoi4 {
+	padding: 80px 0;
+	background-image: url(images/12.jpg);
+	background-size: cover;
+	/* background-position: center; */
+	background-attachment: fixed;
+}
+
+.duoi a {
+	width: 138px;
+	height: 45px;
+	border-radius: 0px;
+	background: whitesmoke;
+	color: black;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+	border: none;
+}
+
+.duoi p {
+	font-family: RSLight;
+	line-height: 28px;
+	color: whitesmoke;
+	font-size: 16px;
+}
+
+.duoi h3 {
+	font-family: RSBold;
+	color: white;
+}
+
+.duoi i {
+	font-size: 50px;
+	background: white;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	color: #1abc9c;
+}
+
+.khoi3bentrong .duoi {
+	margin-top: 55px;
+}
+
+.khoi3bentrong h2:after {
+	content: "";
+	width: 100px;
+	height: 3px;
+	background: white;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -50px;
+}
+
+.khoi3bentrong h2 {
+	font-size: 33px;
+	color: white;
+	position: relative;
+	padding-bottom: 20px;
+}
+
+.khoi3 {
+	padding: 80px 0;
+	background: #1abc9c;
+}
+
+.khoi2 {
+	padding: 80px 0;
+}
+
+.khoi1bentrong a {
+	width: 176px;
+	height: 50px;
+	border-radius: 0px;
+	background: left;
+	font-size: 18px;
+	color: white;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+}
+
+.khoi1bentrong p {
+	font-size: 26px;
+	color: wheat;
+	padding: 20px 0;
+}
+
+.khoi1bentrong h1 {
+	font-size: 64px;
+	color: white;
+	letter-spacing: 8px;
+	text-shadow: 5px 5px 0px #b1850b;
+}
+
+.khoi1 {
+	padding: 300px 0;
+	background-image: url(images/12.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+body{
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}

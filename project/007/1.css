@@ -1,0 +1,417 @@
+*{}
+
+.nutlentren.hienra{
+	opacity: 1;
+	visibility: visible;
+}
+
+.nutlentren {
+    width: 40px;
+    height: 40px;
+    background: #1abc9c;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.nutlentren:hover {
+    background: #0e9076;
+    color: white;
+}
+
+.thongtinfooter h5 {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: yellow;
+    height: 40px;
+    line-height: 40px;
+}
+
+.thongtinfooter {
+    height: 40px;
+    background: black;
+}
+
+.khoi7 .duoi a {
+    width: 157px;
+    height: 40px;
+    border: none;
+    border-radius: 0px;
+    font-size: 15px;
+    font-family: RSLight;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    transition: 0.4s;
+    text-transform: uppercase;
+}
+
+.khoi7 .duoi textarea#input {
+    padding: 20px 10px;
+}
+
+.khoi7 .duoi input.form-control {
+    padding: 21px 10px;
+}
+
+.khoi7 .tren h1 {
+    font-family: RSBold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.khoi7 .tren p {
+    color: #ab9898;
+    font-size: 15px;
+    font-family: RSLight;
+    padding-bottom: 39px;
+    font-style: italic;
+}
+
+.khoi7 {
+    padding: 50px;
+    background: #2d3e50;
+}
+
+.khoi6 .iconto i {
+    font-size: 30px;
+    color: white;
+    margin: 0 48px;
+    width: 100px;
+    height: 100px;
+    background: #4f84bb;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.khoi6 .iconto i:hover {
+    background: #0c967b;
+    color: orange;
+}
+
+.khoi6 {
+    padding: 50px 0;
+    background-image: url(images/7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.khoi5 .cuoi {
+    padding-top: 429px;
+    width: 800px;
+    margin: auto;
+    font-family: RSLight;
+    line-height: 28px;
+}
+
+.bentrongkhoi5 .iconto i {
+    font-size: 21px;
+    padding: 0 12px;
+    width: 50px;
+    height: 50px;
+    background: #1abc9c;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bentrongkhoi5 .iconto i:hover {
+    background: #0a9277;
+}
+
+.bentrongkhoi5 h4 {
+    font-size: 20px;
+    padding-top: 16px;
+    font-family: RSBold;
+    padding-bottom: 0px;
+}
+
+.bentrongkhoi5 p {
+    font-style: italic;
+    color: gray;
+    font-family: RSLight;
+    padding-bottom: 4px;
+}
+
+.bentrongkhoi5 img {
+    width: 235px;
+    height: 235px;
+}
+
+.khoi5 .giua {
+    margin-top: 44px;
+}
+
+.khoi5 .tren p {
+    color: gray;
+    font-family: RSLight;
+    font-style: italic;
+}
+
+.khoi5 .tren h1 {
+    text-transform: uppercase;
+    font-family: RSBold;
+    letter-spacing: 3px;
+}
+
+.khoi5 {
+    padding: 80px;
+}
+
+.khoi4 {
+    padding: 80px;
+    background: gainsboro;
+}
+
+.bentrongkhoi3 .iconto {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgba(26, 188, 156, 0.29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.4s;
+    transform: translateY(-300px);
+}
+
+.bentrongkhoi3 .anh:hover .iconto {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.bentrongkhoi3 .iconto:hover {
+    /* opacity: 1; */
+}
+
+.bentrongkhoi3 .iconto i {
+    font-size: 55px;
+}
+
+.bentrongkhoi3 .anh {
+    position: relative;
+    overflow: hidden;
+}
+
+.khoi3 .duoi .bentrongkhoi3 {
+    margin-top: 48px;
+    background: rgba(169, 169, 169, 0.47);
+    padding-bottom: 20px;
+}
+
+.khoi3 .tren p {
+    color: gray;
+    font-family: RSLight;
+    font-style: italic;
+}
+
+.khoi3 .tren h1 {text-transform: uppercase;font-family: RSBold;letter-spacing: 3px;}
+
+.khoi3 {
+    padding: 70px;
+}
+
+.bentrongkhoi2 p {
+    line-height: 26px;
+}
+
+.bentrongkhoi2 h3 {
+    font-size: 20px;
+    font-family: RSBold;
+    padding-bottom: 10px;
+    transition:0.4s;
+}
+
+.bentrongkhoi2 .iconto i {
+    font-size: 42px;
+    width: 120px;
+    height: 120px;
+    background: #e8c300;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.4s;
+    transform: scale(1);
+}
+
+.bentrongkhoi2:hover h3{
+	padding-top:20px;
+}
+
+.bentrongkhoi2:hover i {
+
+    transform: scale(1.2);
+    background: #c1a205;
+    box-shadow: 0px 0px 10px brown;
+}
+
+.khoi2 .bentrongkhoi2 {
+    margin-top: 35px;
+}
+
+.khoi2 p {
+    color: #483e3e;
+    font-family: RSLight;
+    font-style: italic;
+    position: relative;
+    padding-bottom: 14px;
+}
+
+.khoi2 p:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 400px;
+    margin-left: -200px;
+    height: 2px;
+    background: #e8c300;
+}
+
+.khoi2 h1 {
+    text-transform: uppercase;
+    font-family: RSBold;
+    letter-spacing: 3px;
+}
+
+.khoi2 {
+    padding: 100px;
+    background: gainsboro;
+}
+
+.bentrongkhoi1 a {
+    width: 169px;
+    height: 43px;
+    font-size: 16px;
+    font-family: RSLight;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    background: #d0b634;
+    border: none;
+    border-radius: 0px;
+}
+
+.bentrongkhoi1 h1 {
+    font-size: 46px;
+    text-transform: uppercase;
+    color: white;
+    font-family: RSBold;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 2px #733030;
+    padding-bottom: 27px;
+}
+
+.bentrongkhoi1 h3 {
+    font-size: 31px;
+    color: white;
+    font-family: RSLight;
+    font-style: italic;
+}
+
+.bentrongkhoi1 {
+    padding-top: 50px;
+}
+
+.menu .navbar-default .navbar-nav li a {
+    font-size: 17px;
+    color: white;
+    height: 70px;
+    text-transform: uppercase;
+    display: flex;
+    letter-spacing: 1px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.menu .navbar-default .navbar-nav li {
+    transition: 0.4s;
+}
+
+.menu .navbar-default .navbar-nav li:hover {
+    background: brown;
+}
+
+.menu .navbar-default .navbar-brand {
+    color: yellow;
+    height: 70px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu nav.navbar.navbar-default.navbar-fixed-top {
+    background: transparent;
+    border-bottom: none;
+    height: 70px;
+    transition: 0.4s;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.hiennen {
+    background: #2d3e50;
+    transition: 0.4s;
+}
+
+.khoi1 {
+    padding: 200px 0;
+    height: 600px;
+    background-image: url(images/7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body{
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}

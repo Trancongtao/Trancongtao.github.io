@@ -1,0 +1,376 @@
+*{}
+
+.nutlentren.hien{
+	opacity: 1;
+	visibility: visible;
+}
+.nutlentren {
+	background: #1abc9c;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 7px;
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+	z-index: 5;
+	transition: 0.5s;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.nutlentren:hover {
+	background: #06866d;
+	color: white;
+}
+
+.thongtinfooter {
+	background: #292828;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+}
+
+.thongtinfooter h5 {
+	color: yellow;
+	font-size: 16px;
+}
+
+.khoi3.hien .col-sm-4:nth-child(4){
+	animation-delay: 0.4s;
+}
+
+.khoi3.hien .col-sm-4:nth-child(3){
+	animation-delay: 0.3s;
+}
+
+.khoi3.hien .col-sm-4:nth-child(2){
+	animation-delay: 0.2s;
+}
+
+.khoi3.hien .col-sm-4:nth-child(1){
+	animation-delay: 0.1s;
+}
+
+.khoi3.hien .col-sm-4{
+	animation: duoilen 1s forwards;
+
+}
+
+.khoi3 .col-sm-4 {
+	padding: 7px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 1.4s;
+}
+
+.khoi3 p {
+	line-height: 28px;
+	color: gray;
+}
+
+.khoi3.hien h3{
+	transition: 0.4s;
+	animation:trenxuong 0.8s forwards;
+}
+
+.khoi3 h3 {
+	padding-bottom: 18px;
+	font-size: 27px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.khoi3 {
+	background: #f7f7f7;
+	padding: 80px;
+}
+
+.khoi2 a.btn.btn-default i {
+	padding-right: 8px;
+}
+
+.khoi2.hien a.btn.btn-default{
+	transition: 0.4s;
+	animation: duoilen 1s forwards;
+	animation-delay: 0.6s;
+}
+
+.khoi2 a:hover {
+	background: #1abc9c;
+	color: white;
+}
+
+.khoi2 a.btn.btn-default {
+	width: 121px;
+	height: 41px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	border: none;
+	opacity: 0;
+	visibility: hidden;
+}
+
+@-webkit-keyframes duoilen{
+	0%{
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(500px);
+	}
+	100%{
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0px;);
+	}
+}
+
+.khoi2.hien p{
+	transition: 0.4s;
+	animation: thuve 1s forwards;
+}
+
+.khoi2 p {
+	color: whitesmoke;
+	line-height: 26px;
+	padding: 20px 0px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.khoi2.hien h1{
+	transition: 0.4s;
+	animation:trenxuong 1.5s forwards;
+}
+
+.khoi2 h1 {
+	font-size: 42px;
+	color: blueviolet;
+	letter-spacing: 4px;
+	position: relative;
+	padding-bottom: 20px;
+	opacity: 0;
+	visibility: hidden;
+}
+
+@-webkit-keyframes trenxuong{
+	0%{
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-500px);
+	}
+	100%{
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0px;);
+	}
+}
+
+.khoi2 h1:after {
+	content: "";
+	width: 200px;
+	height: 2px;
+	background: #1abc9c;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -100px;
+}
+
+.khoi2 {
+	padding: 50px;
+	background: #3e3c5f;
+	overflow: hidden;
+}
+
+.khoi1 h4 {
+	text-transform: uppercase;
+	font-size: 25px;
+	padding-top: 20px;
+	color: yellow;
+	letter-spacing: 4px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s;
+	animation: thuve 1s forwards;
+	animation-delay: 0.6s;
+}
+
+.khoi1 h3 {
+	font-size: 34px;
+	font-weight: 600;
+	padding-bottom: 25px;
+	color: yellow;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s;
+	animation: thuve 1.5s forwards;
+}
+
+@-webkit-keyframes thuve{
+	0%{
+		opacity: 0;
+		visibility: hidden;
+		transform: scale(3);
+	}
+	100%{
+		opacity: 1;
+		visibility: visible;
+		transform: scale(1);
+	}
+}
+
+.khoi1 img {
+	width: 310px;
+	height: 310px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s;
+	animation: xoayra 1.5s forwards;
+}
+
+@-webkit-keyframes xoayra{
+	0%{
+		opacity: 0;
+		visibility: hidden;
+		transform: rotate(720deg) scale(0);
+	}
+	100%{
+		opacity: 1;
+		visibility: visible;
+		transform: rotate(0deg) scale(1);
+	}
+}
+
+.khoi1 {
+	margin-top: 70px;
+	background: #1abc9c;
+	padding: 100px 0px;
+	overflow: hidden;
+}
+
+ul.nav.navbar-nav.navbar-right li:hover {
+	background: brown;
+}
+
+ul.nav.navbar-nav.navbar-right li:hover a {
+	color: white;
+}
+
+ul.nav.navbar-nav.navbar-right li a {
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul.nav.navbar-nav.navbar-right li {
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul.nav.navbar-nav.navbar-right {
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar-header {
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.chuyenmau ul.nav.navbar-nav.navbar-right{
+
+
+}
+
+.chuyenmau ul.nav.navbar-nav.navbar-right li{
+	height: 49px;
+}
+
+.chuyenmau ul.nav.navbar-nav.navbar-right li a{
+	color: white;
+	height: 50px;
+}
+
+.chuyenmau .navbar-header a{
+	color: white;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top.chuyenmau{
+	background: black;
+	color: white;
+	height: 50px;
+	transition: 0.4s;
+	border: none;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top {
+	height: 70px;
+	opacity: 0;
+	visibility: hidden;
+	animation: trenxuong 1s forwards;
+	transition: 0.4s;
+}
+
+@-webkit-keyframes trenxuong{
+	0%{
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-400px);
+	}
+	100%{
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0px);
+	}
+}
+
+.hid{
+	overflow: hidden;
+}
+
+body{
+	background: white;
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}

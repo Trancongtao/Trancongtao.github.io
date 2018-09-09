@@ -1,0 +1,237 @@
+*{}
+
+.hinhanh img {
+    box-shadow: 10px 6px 3px #1abc9c;
+}
+
+.khoi3 .col-sm-5 {font-size: 31px;}
+
+.khoi3 .col-sm-5 a {
+    margin-right: 12px;
+    border: none;
+}
+
+.khoi3 .col-sm-5 a i {
+    padding-right: 10px;
+}
+
+.khoi3 .col-sm-7 {
+    font-size: 31px;
+    color: white;
+}
+
+.khoi3 {
+    padding: 80px 0;
+    background-image: url(images/4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 30px;
+}
+
+.nutlentren.hienra{
+	opacity: 1;
+}
+
+.nutlentren:hover {
+    background: #0b6d5a;
+    color: white;
+}
+
+.nutlentren {
+    width: 40px;
+    height: 40px;
+    background: #1abc9c;
+    border-radius: 5px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.thongtinfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.thongtinfooter h5.text-center {
+    color: yellow;
+    font-size: 16px;
+}
+
+footer {
+    height: 40px;
+    background: black;
+}
+
+.khoi2 .container {
+}
+
+.container.nenxam {
+    background: #e4e4e4;
+    width: 100%;
+    padding: 48px 80px;
+}
+
+.container.nentrang {
+    background: white;
+    width: 100%;
+    padding: 48px 80px;
+}
+
+.tomtat p {
+    color: gray;
+    line-height: 28px;
+}
+
+.tomtat h2 {
+    padding: 31px 0px;
+    position: relative;
+}
+
+.tomtat h2:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 3px;
+    background: #1abc9c;
+}
+
+.khoi2 .row.text-left {
+    padding-bottom: 59px;
+}
+
+.row.text-left:nth-child(2n+1) {
+    padding: 50px 0;
+    width: 100%;
+}
+
+.row.text-left:nth-child(2n) {
+    padding: 50px 0;
+}
+
+.khoi2 .row.text-left:last-child {
+    padding-bottom: 0px;
+}
+
+.khoi2 {padding-bottom: 60px;}
+
+.navbar-default .navbar-nav li a {
+    height: 70px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-default .navbar-nav li {
+    height: 70px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+}
+
+.navbar-default .navbar-nav li:hover {
+    background: brown;
+}
+
+.navbar-default .navbar-nav li a:hover {
+    color: white;
+}
+
+ul.nav.navbar-nav.navbar-right {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.navbar-brand {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.navbar.navbar-default.navbar-fixed-top {
+    height: 70px;
+}
+
+.noidung span a {
+    width: 130px;
+    height: 45px;
+    font-size: 14px;
+    color: black;
+    font-family: RSLight;
+    margin: 0 6px;
+    background: whitesmoke;
+    transition: 0.4s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noidung span a i {
+    padding-right: 12px;
+}
+
+.noidung hr {
+    width: 80%;
+}
+
+.noidung h4 {
+    color: white;
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
+.noidung h1 {
+    font-size: 58px;
+    color: white;
+    font-family: RSBold;
+    letter-spacing: 7px;
+    padding-bottom: 29px;
+    text-shadow: 5px 5px 0px brown;
+}
+
+.khoi1 {
+    margin-top: 51px;
+    padding: 200px 0;
+    background-image: url(images/4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+body{
+	background: white;
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}

@@ -1,0 +1,294 @@
+*{}
+
+.footer .iconfooter.pull-right i {
+    color: white;
+    font-size: 20px;
+}
+
+.footer .iconfooter.pull-right i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 17px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.footer .iconfooter.pull-right i:hover {
+    color: #1abc9c;
+}
+
+.footer .iconfooter.pull-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.footer .col-sm-6.pull-left h5 {
+    color: yellow;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    margin: 0 0;
+}
+
+.footer {
+    background: #2d3e50;
+    height: 50px;
+}
+
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    background: #1abc9c;
+    border-radius: 5px;
+    color: white;
+}
+
+.pagination li a, .pagination li span {
+    border: none;
+}
+
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+    background: rgba(128, 128, 128, 0.21);
+}
+
+.khoi2 .link .thongtin {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    padding-top: 43px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.6s;
+    opacity: 0;
+    transform: translateY(-600px);
+    background: linear-gradient(30deg, rgba(228, 228, 228, 0.38) 0%, rgba(180, 241, 241, 0.51) 50%,rgba(108, 252, 254, 0.48) 100%);
+}
+
+.khoi2 .link .thongtin:hover {
+    /* opacity: 1; */
+}
+
+.khoi2 .link .thongtin h2 {
+    margin: 12px 0;
+    color: white;
+    font-size: 26px;
+    letter-spacing: 3px;
+}
+
+.khoi2 .link .thongtin h3 {
+    font-family: RSLight;
+    color: #d8c8c8;
+    margin: 10px 0;
+}
+
+.khoi2 .link .thongtin i {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 10px;
+    transition: 0.4s;
+}
+
+.khoi2 .link .thongtin i:hover {
+    background: #1abc9c;
+    border: none;
+}
+
+.khoi2 .link {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.khoi2 .link:hover .thongtin {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.khoi2 .caption {
+    height: 332px;
+    overflow: auto;
+}
+
+.khoi2 {
+    margin-top: 32px;
+}
+
+.khoi2 p {
+    margin-bottom: 0;
+}
+
+.khoi2 a.btn.btn-primary {
+    border-radius: 0px;
+    background: transparent;
+    color: black;
+    font-family: RSBold;
+    margin-top: 6px;
+}
+
+.khoi2 a.btn.btn-primary:hover {
+    background: rgba(0, 0, 0, 0.81);
+    color: white;
+}
+
+.khoi2 p {
+    line-height: 26px;
+    text-align: justify;
+    color: gray;
+    font-family: RSLight;
+    font-size: 12px;
+    text-overflow: ellipsis;
+}
+
+.khoi2 h4 {
+    font-size: 14px;
+    font-family: RSLight;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c1c1c1;
+}
+
+.khoi2 h3 {
+    font-size: 17px;
+    text-align: center;
+    font-family: RSBold;
+    padding-bottom: 10px;
+}
+
+.col-sm-6.text-right ol.breadcrumb {
+    background: transparent;
+    margin: 0;
+    height: 84px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.col-sm-6.text-right ol.breadcrumb li {
+    padding: 0 11px;
+    color: #d0d0d0;
+    font-family: RSLight;
+}
+
+.col-sm-6.text-right ol.breadcrumb li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+    font-family: RSRegular;
+}
+
+.col-sm-6.text-right ol.breadcrumb li a:hover {
+    color: #1abc9c;
+}
+
+.col-sm-6.text-right {}
+
+.khoi1 .col-sm-6.text-left {
+    color: white;
+    font-size: 18px;
+    font-family: RSLight;
+    height: 84px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.khoi1 .col-sm-6.text-left i {
+    margin-left: 16px;
+    width: 30px;
+    height: 30px;
+    background: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.khoi1 .col-sm-6.text-left i:hover {
+    background: #1abc9c;
+}
+
+.khoi1 {background-image: url(images/5.jpg);height: 84px;background-size: cover;background-position: right top;}
+
+ul.nav.navbar-nav.navbar-right {display: flex;justify-content: center;align-items: center;height: 69px;}
+
+.navbar-default .navbar-nav li a {
+    color: white;
+    height: 70px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-family: RSLight;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar-default .navbar-nav li {
+    transition: 0.4s;
+
+}
+
+.navbar-default .navbar-nav li:hover {
+    background: none;
+}
+
+.navbar-default .navbar-nav li:hover a {
+    color: white;
+    font-family: RSRegular;
+    border-color: yellow;
+}
+
+.navbar-default .navbar-brand {
+    color: yellow;
+    font-size: 24px;
+    height: 70px;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.navbar.navbar-default {
+    height: 70px;
+    background: #2d3e50;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+
+body{
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}

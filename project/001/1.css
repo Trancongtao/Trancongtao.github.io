@@ -1,0 +1,163 @@
+*{}
+
+.col-xs-6.col-sm-3.col-md-3.col-lg-3 {
+    opacity: 0;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: white;
+    font-size: 16px;
+    height: 70px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    background: brown;
+    color: white;
+    font-family: RSLight;
+}
+
+.navbar-inverse .navbar-brand {
+    color: yellow;
+    font-size: 22px;
+    height: 70px;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nutlentren.hienra {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nutlentren:hover {
+    background: #099075;
+    color: white;
+}
+
+.nutlentren {
+    width: 40px;
+    height: 40px;
+    background: #1abc9c;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.over {
+    overflow: hidden;
+}
+
+.jum{
+    opacity: 0;
+    transition: 0.4s;
+    animation: tora 1s forwards;
+}
+
+@-webkit-keyframes tora{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+nav.navbar.navbar-default.navbar-inverse.navbar-fixed-top.an{
+    transition: 1.4s;
+    opacity: 1;
+    animation: andi 2s forwards;
+}
+
+@-webkit-keyframes andi{
+    0%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-400px);
+    }
+}
+
+nav.navbar.navbar-default.navbar-inverse.navbar-fixed-top{
+    opacity: 0;
+    transition: 0.1s;
+    animation: trenxuong 0.4s forwards;
+    height: 70px;
+    border: none;
+}
+
+@-webkit-keyframes trenxuong{
+    0%{
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.thongtinfooter.bg-info {
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.thongtinfooter.bg-info h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffd600;
+}
+
+.container.thum .row {
+    padding: 0;
+}
+
+.jum{
+    margin-top: 91px;
+}
+
+body{
+    background: lightblue;
+    font-family: RSRegular;
+}
+
+@font-face{
+    src:url(fonts/RobotoSlab-Bold.ttf);
+    font-family: RSBold;
+}
+
+@font-face{
+    src:url(fonts/RobotoSlab-Light.ttf);
+    font-family: RSLight;
+}
+
+@font-face{
+    src:url(fonts/RobotoSlab-Regular.ttf);
+    font-family: RSRegular;
+}
+
+@font-face{
+    src:url(fonts/RobotoSlab-Thin.ttf);
+    font-family: RSThin;
+}

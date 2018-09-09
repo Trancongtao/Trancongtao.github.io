@@ -3,7 +3,7 @@ $(document).ready(function() {
 	// tinh vi tri //
 	/////////////////
 	var vitrithumnail=$('.col-xs-6').offset().top;
-	vitrithumnail=vitrithumnail-200;
+	vitrithumnail=vitrithumnail-250;
 
 	///////////////////////////////////
 	// su kien xay ra khi cuon chuot //

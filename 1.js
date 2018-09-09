@@ -1,17 +1,5 @@
 $(document).ready(function() {
 
-	hieuungload=new TimelineMax();
-	hieuungload.from($('.loading'),0.5,{opacity:1})
-	.from($('.khoiload'),1,{scale:1.5,opacity:0,ease:Elastic.easeOut})
-	.to($('.khoiload'),1,{scale:0.5,opacity:1,background:"red"})
-	.to($('.khoiload'),1,{scale:1,opacity:1,background:"yellow",ease:Elastic.easeOut})
-	.to($('.khoiload'),1,{scale:0.5,opacity:1,background:"blue"})
-	.to($('.khoiload'),1,{scale:1,opacity:1,background:"#09F809",ease:Elastic.easeOut})
-	.to($('.khoiload'),1,{scale:0.5,opacity:1,background:"pink"})
-	.to($('.khoiload'),1,{scale:1,opacity:1,background:"orange",ease:Elastic.easeOut})
-	.to($('.khoiload'),0.6,{scale:2,opacity:0,background:"brown"})
-	.to($('.loading'),1,{y:-2000})
-
 	var vt_infopersonal=$('.info_personal').offset().top;
 	vt_infopersonal=vt_infopersonal-100;
 	

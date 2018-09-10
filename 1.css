@@ -164,6 +164,11 @@ body,html{
     background: #da4b51;
 }
 
+.banner_in a.fancybox{
+
+width: 220px;
+}
+
 .banner_in img {
     width: 220px;
     height: 220px;

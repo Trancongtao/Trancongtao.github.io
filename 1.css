@@ -330,23 +330,42 @@ body,html{
 
 .fb_comment i:hover {color: green;}
 
-*{
-    margin: 0;
-    padding: 0;
-}
-
 /*pic_ft*/
 .ft_finally .pic_ft {
     width: 100%;
     height: 400px;
     background-image: url(images/pic_ft.jpg);
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-attachment: fixed;
 }
 
 .ft_finally img {
     background-attachment: fixed;
+}
+
+/*Author*/
+/******************************************************************************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.author {
+    width: 100%;
+    background: #2d3e50;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author h6 {
+    margin: 0px;
+    color: yellow;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: RSBold;
 }
 
 /*Mobile*/

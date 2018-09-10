@@ -67,7 +67,7 @@ body {
 
 .title h2 {
 	font-family: RSRegular;
-	font-size: 32px;
+	font-size: 29px;
 	box-sizing: border-box;
 	text-transform: uppercase;
 	color: yellow;
@@ -76,7 +76,7 @@ body {
 }
 
 .col-sm-3{
-	margin: 20px 0px;
+	margin: 15px 0px;
 }
 
 .product{

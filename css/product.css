@@ -22,6 +22,7 @@ body,html{
 	font-family: RSRegular;
 	width: 100%;
 	height: 100%;
+	perspective: 1000px;
 }
 
 body {
@@ -34,6 +35,149 @@ body {
 	background-attachment: fixed;
 }
 
+.button_menu {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	margin-top: -25px;
+	background: #2d3e50;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	cursor: pointer;
+	transition: 0.37s;
+}
+
+.button_menu.go_buttonmenu_right{
+	background: #1abc9c;
+	transition: 0.4s;
+	transform: translateX(258px);
+}
+
+@-webkit-keyframes xoaymai{
+	0%{
+		transform: rotate(0deg);
+	}	
+	100%{
+		transform: rotate(1000000000deg);
+	}
+}
+
+.button_menu i {
+	color: yellow;
+	font-size: 23px;
+	transform-origin: 50% 50%;
+	animation: 4000000s xoaymai forwards;
+}
+
+.menu_left {
+	width: 258px;
+	height: 100%;
+	display: inline-block;
+	background: #1abc9c;
+	padding: 40px 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	margin-top:  -30px;
+	transition: 0.4s;
+	visibility: hidden;
+	transform: translateX(-100%);
+	transform-origin: 0% 50%;
+}
+
+.menu_left.open_menu {
+	visibility: visible;
+	transform: translateX(0%);
+	transition: 0.4s;
+	margin-top:  -30px;
+}
+
+.background_menu{
+	margin: 0px 5px;
+	border-radius: 5px;
+}
+
+.menu_left .yellow {
+	width: 60px;
+	height: 30px;
+	background: yellow;
+	cursor: pointer;
+}
+
+.menu_left .brown {
+	width: 60px;
+	height: 30px;
+	background: brown;
+	cursor: pointer;
+}
+
+.select_background{
+	display: flex;
+}
+
+/*********************************************************/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.select_menu {
+	padding: 0px 5px;
+	margin-top: 45px;
+	height: 518px;
+	overflow-y: scroll;
+	margin-right: 1px;
+}
+
+.select_menu li {
+	padding: 6px 0px;
+	text-align: center;
+	transition: 0.4s;
+}
+
+.select_menu li:hover {
+	background: #2d3e50;
+}
+
+.select_menu li a {
+	text-decoration: none;
+	color: brown;
+	transition: 0.4s;
+}
+
+.select_menu li:hover a {
+	color: yellow;
+}
+
+/*nen den*/
+.nenden{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: #0000004a;
+	margin-top: -30px;
+	z-index: 9;
+	top: 0px;
+	left: 0px;
+	transition: 0.4s;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.nenden.hienra{
+	opacity: 1;
+	visibility: visible;
+}
+
+/*body chinh*/
 .over{
 	width: 80%;
 	height: 90%;
@@ -44,21 +188,30 @@ body {
 	border-radius: 5px;
 	box-shadow: 0px 0px 5px brown;
 	background-image: url(../images/pro_nen.png);
+	transition: 0.4s;
+}
+
+.over.go_right{
+	transition: 0.4s;
+	transform: translateX(8%) rotateY(-10deg) scale(0.95);
 }
 
 .container{
 	width: inherit;
 }
 
-*{
-	margin: 0;
-	padding: 0;
-}
-
 .title {
 	padding: 12px;
 	margin-top: 1px;
 	background: #a52a2a82;
+}
+
+.title.yellow{
+	background: yellow;
+}
+
+.title.brown{
+	background: brown;
 }
 
 .title h2 {
@@ -103,6 +256,7 @@ body {
 }
 
 @media (max-width: 576px){
+	
 	.col-sm-3{
 		margin: 8px 0px;
 	}
@@ -116,10 +270,12 @@ body {
 		margin: 0px;
 	}
 
+	/*********************************************************/
 	*{
 		margin: 0;
 		padding: 0;
 	}
+	/**********************************************************/
 
 	.product .anh {
 		height: 170px;

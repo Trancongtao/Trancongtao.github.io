@@ -62,7 +62,7 @@ body {
 }
 
 .title h2 {
-    margin: 0px;
+	margin: 0px;
 }
 
 .title h2 {
@@ -103,21 +103,26 @@ body {
 }
 
 @media (max-width: 576px){
-	*{
-		margin: 0;
-		padding: 0;
-	}
-
 	.col-sm-3{
-		
-margin: 8px 0px;
+		margin: 8px 0px;
 	}
 
 	.title {
 		height: auto;
 	}
 
-	.title h2 {font-size: 18px;margin: 0px;}
+	.title h2 {
+		font-size: 18px;
+		margin: 0px;
+	}
 
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	.product .anh {
+		height: 170px;
+	}
 
 }

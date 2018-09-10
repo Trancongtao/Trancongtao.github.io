@@ -35,7 +35,7 @@ body {
 }
 
 .over{
-	width: 1024px;
+	width: 80%;
 	height: 600px;
 	overflow-y: auto;
 	overflow-x: hidden;
@@ -96,4 +96,23 @@ body {
 .product .anh img {
 	width: 100%;
 	height: 100%;
+}
+
+@media (max-width: 576px){
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	.col-sm-3{
+		margin: 8px 0px;
+	}
+
+	.title {
+		height: auto;
+	}
+
+	.title h2 {font-size: 18px;margin: 0px;}
+
+
 }

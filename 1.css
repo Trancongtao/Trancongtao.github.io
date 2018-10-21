@@ -45,404 +45,403 @@ body,html{
     margin-left:  -25px;
     margin-top: -25px;
     border-radius: 50%;
-}*/
+    }*/
 
-/*menu*/
-.menu{
-    overflow: hidden;
-}
-
-.menu .navbar-default {
-    height: 80px;
-    background: white;
-    transition: 0.4s;
-    margin: 0px;
-    border: none;
-    perspective: 3000px;
-}
-
-.menu .navbar-default.thunho{
-    height: 60px;
-    background: #2d3e50;
-    transition: 0.4s;
-}
-
-@-webkit-keyframes logo{
-    0%{
-        transform: rotateX(-180deg);
+    /*menu*/
+    .menu{
+        overflow: hidden;
     }
-    100%{
-        transform: rotateX(0deg);
-    }
-}
 
-.menu .navbar-default .navbar-brand {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    background: green;
-    color: yellow;
-    letter-spacing: 2px;
-    transform-origin: 0% 0%;
-    text-transform: uppercase;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    animation: logo 1.2s forwards;
-    transition: 0.4s;
-}
-
-.menu .navbar-default.thunho .navbar-brand{
-    height: 60px;
-    transition: 0.4s;
-}
-
-.menu .navbar-default .navbar-nav li a {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    color: black;
-    text-transform: uppercase;
-    font-family: RSLight;
-    transition: 0.4s;
-    position: relative;
-}
-
-.menu .navbar-default.thunho .navbar-nav li a{
-    color: white;
-    height: 60px;
-    transition: 0.4s;
-}
-
-.menu .navbar-default .navbar-nav li a:hover{
-    color: gray;
-}
-
-.menu .navbar-default.thunho .navbar-nav li a:hover{
-    color: white;
-}
-
-.menu .navbar-default .navbar-nav li a:after {
-    content: "";
-    width: 0%;
-    height: 5px;
-    background: green;
-    border-radius: 5px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    opacity: 0;
-    transition: 0.4s;
-}
-
-.menu .navbar-default.thunho .navbar-nav li a:after{
-    background: yellow;
-}
-
-.menu .navbar-default .navbar-nav li a:hover::after{
-    width: 100%;
-    opacity: 1;
-}
-
-/*banner*/
-
-.banner {
-    width: 100%;
-    height: 100%;
-    background: #e9585f;
-    position: relative;
-    padding: 160px 0px 10px 0px;
-}
-
-.banner:before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 50%;
-    height: 100%;
-    background: #da4b51;
-}
-
-.banner_in a.fancybox{
-
-width: 220px;
-}
-
-.banner_in img {
-    width: 220px;
-    height: 220px;
-    margin: auto;
-    border-radius: 50%;
-    margin-bottom: 50px;
-    cursor: pointer;
-    box-shadow: 0px 0px 10px gray;
-    transition: 0.4s;
-}
-
-.banner_in h2 {
-    font-size: 42px;
-    font-family: RSBold;
-    color: white;
-    letter-spacing: 3px;
-    margin-bottom:  25px;
-    text-shadow: 2px 2px 5px green;
-    transition: 0.4s;
-}
-
-.banner_in h5 {
-    font-size: 25px;
-    color: #ffffffbf;
-    text-shadow: 2px 2px 1px darkred;
-    margin-bottom:  25px;
-    transition: 0.4s;
-}
-
-.banner_in a {
-    width: 160px;
-    height: 40px;
-    font-size: 17px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    color: #eaea1c;
-    letter-spacing: 1px;
-    transition: 0.4s;
-}
-
-.banner_in .icon {
-    margin-top:  20px;
-}
-
-.banner_in i {
-    width: 30px;
-    height: 30px;
-    background: #F5BB50;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0px 0px 0px 4px #f1f164;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.banner_in i:hover {
-    color: white;
-    background: #f9b841;
-    box-shadow: inset 0px 0px 0px 0px #f1f164;
-}
-
-.info_personal {
-    padding: 72px 0px;
-    background: #efefef;
-}
-
-.info_personal img {
-    width: 100%;
-    height: 320px;
-}
-
-.info h2 {
-    font-size: 40px;
-}
-
-.info h6 {
-    font-size: 19px;
-    color: gray;
-    font-family: RSLight;
-    padding-bottom:  30px;
-    position: relative;
-}
-
-.info h6:after {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #80808030;
-}
-
-.info h4 {
-    line-height: 33px;
-    font-size: 16px;
-    color: gray;
-}
-
-.info .tt {
-    width: 110px;
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 15px;
-    color: #000000bd;
-}
-
-/*button scroll top*/
-.button_top {
-    width: 40px;
-    height: 38px;
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: green;
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.4s;
-}
-
-.button_top.hienra{
-    opacity: 1;
-    visibility: visible;
-}
-
-.button_top:hover {
-    background: #1d2b3a;
-}
-
-.button_top i {
-    font-size: 24px;
-    color: #e8e2e2;
-    transition: 0.4s;
-}
-
-.button_top:hover i {
-    color: white;
-}
-
-/*fb_comment*/
-.fb_comment {
-    padding: 50px 0px;
-}
-
-.fb_comment h2 {
-    color: gray;
-    margin-bottom:  25px;
-    font-family: RSLight;
-}
-
-.fb_comment i {
-    font-size: 25px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.fb_comment i:hover {color: green;}
-
-/*pic_ft*/
-.ft_finally .pic_ft {
-    width: 100%;
-    height: 400px;
-    background-image: url(images/pic_ft.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.ft_finally img {
-    background-attachment: fixed;
-}
-
-/*Author*/
-/******************************************************************************************/
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.author {
-    width: 100%;
-    background: #2d3e50;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.author h6 {
-    margin: 0px;
-    color: yellow;
-    font-size: 15px;
-    letter-spacing: 2px;
-    font-family: RSBold;
-}
-
-/*Mobile*/
-@media (max-width: 576px){
-
-    /*Menu*/
     .menu .navbar-default {
+        height: 80px;
+        background: white;
+        transition: 0.4s;
+        margin: 0px;
+        border: none;
+        perspective: 3000px;
+    }
+
+    .menu .navbar-default.thunho{
         height: 60px;
+        background: #2d3e50;
+        transition: 0.4s;
+    }
+
+    @-webkit-keyframes logo{
+        0%{
+            transform: rotateX(-180deg);
+        }
+        100%{
+            transform: rotateX(0deg);
+        }
     }
 
     .menu .navbar-default .navbar-brand {
-        height: 60px;
-        background: none;
-        color: green;
-        font-weight: 700;
-    }
-
-    .menu .navbar-default .navbar-collapse {
-        background: #00000069;
-    }
-
-    .menu .navbar-nav {
-        margin: 0px 0px;
-    }
-
-    .menu .navbar-default .navbar-nav li a:hover {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        background: green;
         color: yellow;
+        letter-spacing: 2px;
+        transform-origin: 0% 0%;
+        text-transform: uppercase;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        animation: logo 1.2s forwards;
+        transition: 0.4s;
+    }
+
+    .menu .navbar-default.thunho .navbar-brand{
+        height: 60px;
+        transition: 0.4s;
     }
 
     .menu .navbar-default .navbar-nav li a {
-        text-align: center;
-        color: white;
-        display: inherit;
-        padding: 0px 0px;
-        height: 60px;
-        line-height: 60px;
-        border-bottom: 1px dotted whitesmoke;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        color: black;
+        text-transform: uppercase;
+        font-family: RSLight;
+        transition: 0.4s;
+        position: relative;
     }
 
-    /*Banner*/
+    .menu .navbar-default.thunho .navbar-nav li a{
+        color: white;
+        height: 60px;
+        transition: 0.4s;
+    }
+
+    .menu .navbar-default .navbar-nav li a:hover{
+        color: gray;
+    }
+
+    .menu .navbar-default.thunho .navbar-nav li a:hover{
+        color: white;
+    }
+
+    .menu .navbar-default .navbar-nav li a:after {
+        content: "";
+        width: 0%;
+        height: 5px;
+        background: green;
+        border-radius: 5px;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        transition: 0.4s;
+    }
+
+    .menu .navbar-default.thunho .navbar-nav li a:after{
+        background: yellow;
+    }
+
+    .menu .navbar-default .navbar-nav li a:hover::after{
+        width: 100%;
+        opacity: 1;
+    }
+
+    /*banner*/
+
     .banner {
-        padding-top: 109px;
+        width: 100%;
+        height: 100%;
+        background: #e9585f;
+        position: relative;
+        padding: 160px 0px 10px 0px;
+    }
+
+    .banner:before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 50%;
+        height: 100%;
+        background: #da4b51;
+    }
+
+    .banner_in a.fancybox{
+        width: 220px;
     }
 
     .banner_in img {
-        width: 180px;
-        height: 180px;
+        width: 220px;
+        height: 220px;
+        margin: auto;
+        border-radius: 50%;
+        margin-bottom: 50px;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px gray;
+        transition: 0.4s;
     }
 
     .banner_in h2 {
-        font-size: 32px;
+        font-size: 42px;
+        font-family: RSBold;
+        color: white;
+        letter-spacing: 3px;
+        margin-bottom:  25px;
+        text-shadow: 2px 2px 5px green;
+        transition: 0.4s;
     }
 
     .banner_in h5 {
-        font-size: 16px;
+        font-size: 25px;
+        color: #ffffffbf;
+        text-shadow: 2px 2px 1px darkred;
+        margin-bottom:  25px;
+        transition: 0.4s;
     }
 
     .banner_in a {
-        margin-bottom:  20px;
+        width: 160px;
+        height: 40px;
+        font-size: 17px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: #eaea1c;
+        letter-spacing: 1px;
+        transition: 0.4s;
     }
-    
-    /*Info*/
+
+    .banner_in .icon {
+        margin-top:  20px;
+    }
+
+    .banner_in i {
+        width: 30px;
+        height: 30px;
+        background: #F5BB50;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 0px 0px 0px 4px #f1f164;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .banner_in i:hover {
+        color: white;
+        background: #f9b841;
+        box-shadow: inset 0px 0px 0px 0px #f1f164;
+    }
+
+    .info_personal {
+        padding: 72px 0px;
+        background: #efefef;
+    }
+
     .info_personal img {
-        margin: auto;
+        width: 100%;
+        height: 320px;
     }
 
-    .info_personal .place {
-        /* padding:  0px 48px; */
+    .info h2 {
+        font-size: 40px;
     }
 
-    .info_personal .name {
-        text-align: center;
+    .info h6 {
+        font-size: 19px;
+        color: gray;
+        font-family: RSLight;
+        padding-bottom:  30px;
+        position: relative;
     }
-}
+
+    .info h6:after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: #80808030;
+    }
+
+    .info h4 {
+        line-height: 33px;
+        font-size: 16px;
+        color: gray;
+    }
+
+    .info .tt {
+        width: 110px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 15px;
+        color: #000000bd;
+    }
+
+    /*button scroll top*/
+    .button_top {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: green;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s;
+    }
+
+    .button_top.hienra{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .button_top:hover {
+        background: #1d2b3a;
+    }
+
+    .button_top i {
+        font-size: 18px;
+        color: #e8e2e2;
+        transition: 0.4s;
+    }
+
+    .button_top:hover i {
+        color: white;
+    }
+
+    /*fb_comment*/
+    .fb_comment {
+        padding: 50px 0px;
+    }
+
+    .fb_comment h2 {
+        color: gray;
+        margin-bottom:  25px;
+        font-family: RSLight;
+    }
+
+    .fb_comment i {
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .fb_comment i:hover {color: green;}
+
+    /*pic_ft*/
+    .ft_finally .pic_ft {
+        width: 100%;
+        height: 400px;
+        background-image: url(images/pic_ft.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .ft_finally img {
+        background-attachment: fixed;
+    }
+
+    /*Author*/
+    /******************************************************************************************/
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .author {
+        width: 100%;
+        background: #2d3e50;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .author h6 {
+        margin: 0px;
+        color: yellow;
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-family: RSBold;
+    }
+
+    /*Mobile*/
+    @media (max-width: 576px){
+
+        /*Menu*/
+        .menu .navbar-default {
+            height: 60px;
+        }
+
+        .menu .navbar-default .navbar-brand {
+            height: 60px;
+            background: none;
+            color: green;
+            font-weight: 700;
+        }
+
+        .menu .navbar-default .navbar-collapse {
+            background: #00000069;
+        }
+
+        .menu .navbar-nav {
+            margin: 0px 0px;
+        }
+
+        .menu .navbar-default .navbar-nav li a:hover {
+            color: yellow;
+        }
+
+        .menu .navbar-default .navbar-nav li a {
+            text-align: center;
+            color: white;
+            display: inherit;
+            padding: 0px 0px;
+            height: 60px;
+            line-height: 60px;
+            border-bottom: 1px dotted whitesmoke;
+        }
+
+        /*Banner*/
+        .banner {
+            padding-top: 109px;
+        }
+
+        .banner_in img {
+            width: 180px;
+            height: 180px;
+        }
+
+        .banner_in h2 {
+            font-size: 32px;
+        }
+
+        .banner_in h5 {
+            font-size: 16px;
+        }
+
+        .banner_in a {
+            margin-bottom:  20px;
+        }
+
+        /*Info*/
+        .info_personal img {
+            margin: auto;
+        }
+
+        .info_personal .place {
+            /* padding:  0px 48px; */
+        }
+
+        .info_personal .name {
+            text-align: center;
+        }
+    }
 

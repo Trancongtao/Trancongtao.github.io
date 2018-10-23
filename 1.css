@@ -24,6 +24,12 @@ body,html{
     height: 100%;
 }
 
+.fb_dialog.fb_dialog_advanced.fb_customer_chat_bubble_animated_no_badge.fb_customer_chat_bubble_pop_in{
+    position: fixed;
+    bottom: 66px!important;
+    right: 5px!important;
+}
+
 /*loading*/
 /*.loading {
     width: 100%;

@@ -190,6 +190,26 @@ body {
 	visibility: visible;
 }
 
+/*nut tro ve trang chu cuoi trang*/
+.backhome {
+    background: brown;
+    position: fixed;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    height: 15px;
+    z-index: 8;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backhome a {
+    color: white;
+}
+
+
 /*body chinh level 1*/
 .over{
 	width: 80%;

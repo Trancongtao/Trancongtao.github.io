@@ -1,0 +1,91 @@
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}
+
+body{
+	background: lightblue;
+	font-family: RSRegular;
+}
+
+.title {
+    background: #f39c12;
+    padding: 15px 10px;
+    margin-bottom:  40px;
+}
+
+.title h2 {
+    margin-top: 0px;
+    font-family: RSBold;
+    font-size: 30px;
+}
+
+.title h4 {
+    font-family: RSlight;
+    color: whitesmoke;
+}
+
+.part h3 {
+    background: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 2px;
+    margin-bottom:  0px;
+    margin-top: 0px;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.part h3:hover i{
+	opacity: 1;
+}
+
+.part h3.changebackground{
+	background: #2980b9;
+}
+
+.part h3.changebackground:hover i{
+	transform: rotate(180deg);
+}
+
+.part i {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.part .content {
+    border: 1px solid #80808052;
+    border-top: 0px;
+    padding: 15px 10px;
+    background: whitesmoke;
+}
+
+.part .content p {
+    color: darkslategray;
+    font-family: RSRegular;
+    letter-spacing: 1px;
+}
+
+*{
+	margin:0;
+	padding: 0;
+}

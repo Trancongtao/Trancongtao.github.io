@@ -1,0 +1,116 @@
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}
+
+body{
+	background: lightblue;
+	font-family: RSRegular;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    background-image: url(images/bg.png);
+    background-position: center;
+}
+
+.container.over {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.header {
+    padding: 0px 0px;
+}
+
+.title {
+    background: #f39c12;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+}
+
+.title h2 {
+    margin-top: 0px;
+    font-family: RSBold;
+    letter-spacing: 1px;
+}
+
+.title p {
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.part h3 {
+    background: #2980b9;
+    padding: 8px 10px;
+    color: white;
+    font-size: 20px;
+    font-family: RSLight;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.part h3.changebackground{
+	background: #130f40;
+}
+
+.part h3 i {
+	transition: 0.4s;
+	transform: translateY(-90px);
+}
+
+.part h3:hover i {
+    transform: translateY(0px);
+}
+
+.part h3.changebackground i{
+	transform: rotate(-180deg);
+}
+
+.part .content_part {
+    padding: 15px 10px;
+    border: 1px solid #80808066;
+    border-top: none;
+    background: #7ed6df52;
+}
+
+.part .content_part p {
+    color: gray;
+    font-family: RSLight;
+    line-height: 21px;
+    margin-bottom:  15px;
+}
+
+.part .pictures .col-sm-3 {
+    padding: 0px 10px;
+}
+
+.part .pictures img {
+    width: 100%;
+    height: 90px;
+}
+
+*{
+	margin:0;
+	padding: 0;
+}

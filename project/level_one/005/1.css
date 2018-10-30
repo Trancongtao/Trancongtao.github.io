@@ -1,0 +1,112 @@
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}
+
+body{
+	background: lightblue;
+	font-family: RSRegular;
+}
+
+.over{
+	margin: 20px auto;
+	border: 1px solid whitesmoke;
+}
+
+.one_product{
+	padding: 0px 10px;
+}
+
+.parent{
+	width: 100%;
+	height: 250px;
+	margin: 20px auto;
+	position: relative;
+	cursor: pointer;
+}
+
+.parent img {
+	width: 100%;
+	height: 100%;
+}
+
+.parent .white {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #f5f5f5c2;
+	opacity: 0;
+	transition: 0.6s;
+}
+
+.parent:hover .white {
+	opacity: 1;
+}
+
+.parent .text {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	margin-top: -25px;
+	overflow: hidden;
+	opacity: 0;
+}
+
+.parent:hover .text {
+	opacity: 1;
+}
+
+.parent .text h3 {
+	margin: 0px 0px 5px 0px;
+	font-family: RSBold;
+	color: #00008b9c;
+	transform: translateY(-27px);
+	transition: 0.4s;
+}
+
+.parent:hover .text h3 {
+	transform: translateY(0px);
+}
+
+.parent .text p {
+	color: #464242;
+	font-family: RSLight;
+	font-style: italic;
+	transform: translateY(27px);
+	transition: 0.4s;
+}
+
+.parent:hover .text p {
+	transform: translateY(0px);
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+
+
+

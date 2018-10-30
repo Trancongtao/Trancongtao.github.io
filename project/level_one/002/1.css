@@ -1,0 +1,122 @@
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}
+
+body{
+	background: lightblue;
+	font-family: RSRegular;
+}
+
+.over{
+	margin: 20px auto;
+	border: 1px solid white;
+}
+
+.one_product{
+	
+margin: 10px 0px;
+	
+padding: 0px 10px;
+}
+
+.parent{
+	width: 100%;
+	height: 370px;
+	position: relative;
+	margin: auto;
+	cursor: pointer;
+	background: whitesmoke;
+}
+
+.parent .layer_one{
+	width: 100%;
+	height: 76%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	transition: 0.4s;
+}
+
+.parent .layer_two{
+	width: 100%;
+	height: 76%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	opacity: 0;
+	transition: 0.4s;
+}
+
+.parent:hover .layer_two {
+	opacity: 1;
+}
+
+.parent .info{
+	
+}
+
+.parent .layer_three{
+	width: 100%;
+	position: absolute;
+	bottom: 30px;
+	left: 0px;
+	color: #444040c9;
+	padding: 0px 5px;
+}
+
+.parent .layer_three h3 {
+	font-size: 18px;
+}
+
+.parent .layer_three h3:first-child {}
+
+.parent .layer_four{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	opacity: 1;
+	transition: 0.4s;
+	color: grey;
+	padding: 0px 5px;
+}
+
+.parent:hover .layer_four {
+	opacity: 0;
+}
+
+.parent .layer_five{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0;
+	transition: 0.4s;
+	color: green;
+	padding: 0px 5px;
+}
+
+.parent:hover .layer_five {
+	opacity: 1;
+}
+
+*{
+	margin:0px;
+	padding: 0px;
+}

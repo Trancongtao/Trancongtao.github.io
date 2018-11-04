@@ -1,0 +1,141 @@
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}
+
+body{
+	background: lightblue;
+	font-family: RSRegular;
+}
+
+.over{
+	overflow: hidden;
+}
+
+nav.navbar.navbar-default {
+    background: transparent;
+    border: none;
+    padding: 10px 0px;
+    transition: 0.4s
+}
+
+.navbar-default.bg-black{
+	background: black!important;
+	padding: 15px 0px!important;
+	transition: 0.4s
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.navbar-default ul.navbar-nav>li>a {
+    color: white;
+    transition: 0.4s;
+}
+
+.navbar-default ul.navbar-nav>li>a:hover {
+    color: whitesmoke;
+}
+
+.header {
+    width: 100%;
+    height: 670px;
+    background-image: url(images/bg-header.jpg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 48px;
+    color: white;
+    font-family: RSBold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.header h4 {
+    color: white;
+    font-size: 20px;
+    font-family: RSLight;
+    margin-bottom:  42px;
+}
+
+.header a {
+    border-radius: 2px;
+    padding: 10px 20px;
+    width: 150px;
+    margin: 0px 5px;
+    transition: 0.4s;
+}
+
+.content_one {
+    padding: 20px 114px;
+}
+
+.content_one h2 {
+    color: #34495e;
+    font-family: RSBold;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.content_one h2:after {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background: #3498db;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    margin-left: -15px;
+}
+
+.content_one p {
+    color: gray;
+    font-family: RSLight;
+}
+
+.content_two {
+    width: 100%;
+    height: 204px;
+    margin-bottom: 30px;
+	opacity: 0;
+}
+
+.content_two.bounceInRight{
+	opacity: 1;
+}
+
+.content_two img {
+    width: 100%;
+    height: 100%;
+}
+
+.pics{
+	padding: 0px 50px;
+}
+
+*{
+	margin:0;
+	padding: 0;
+}

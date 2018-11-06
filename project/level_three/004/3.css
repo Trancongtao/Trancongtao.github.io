@@ -1,0 +1,112 @@
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}
+
+body{
+	font-family: RSRegular;
+	background-image: url(images/bg.png);
+    background-attachment: fixed;
+}
+
+.over{
+    overflow: hidden;
+}
+
+.title {
+    background-color: #c23616;
+    padding: 10px 0px;
+    color: white;
+    margin-bottom: 86px;
+}
+
+.title h2 {
+    margin-top: 10px;
+}
+
+.title h4 {
+    font-size: 21px;
+    font-family: RSLight;
+    font-style: italic;
+}
+
+.select {
+    margin-bottom:  20px;
+    padding-bottom: 10px;
+}
+
+.select a {
+    margin: 0px 5px;
+    border: none;
+    border-radius: 2px;
+    background: #6ab04c;
+    transition: 0.4s;
+}
+
+.select a:hover {
+    background-color: #6ab04cb8;
+}
+
+.select a:first-child {
+    margin-left: 0px;
+}
+
+.select_left{
+
+}
+
+.select_right input{
+    display: inline-block;
+    width: 200px;
+}
+
+.select_right a{    
+    background: transparent;    
+    padding: 2px 15px;    
+    font-family: RSLight;
+}
+
+.select_right a:hover {
+    background: transparent;
+}
+
+.pics ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pics ul li {
+    width: 25%;
+}
+
+.pics ul img {
+    width: 100%;
+}
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+@media (max-width: 576px) {
+    .select_left{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

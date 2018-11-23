@@ -53,7 +53,7 @@ body,html{
     border-radius: 50%;
     }*/
 
-    /*menu*/
+    /*============================== Menu ============================== */
     .menu{
         overflow: hidden;
     }
@@ -150,8 +150,7 @@ body,html{
         opacity: 1;
     }
 
-    /*banner*/
-
+    /*============================== Banner ============================== */
     .banner {
         width: 100%;
         height: 100%;
@@ -170,8 +169,23 @@ body,html{
         background: #da4b51;
     }
 
+    .banner_in{
+        perspective: 500px;
+    }
+
     .banner_in a.fancybox{
         width: 220px;
+    }
+
+    @-webkit-keyframes hinhhienra{
+        0%{
+            opacity: 0;
+            transform: rotateY(720deg);
+        }
+        100%{
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
     }
 
     .banner_in img {
@@ -181,8 +195,20 @@ body,html{
         border-radius: 50%;
         margin-bottom: 50px;
         cursor: pointer;
-        box-shadow: 0px 0px 10px gray;
+        box-shadow: 0px 0px 10px #cc4248;
         transition: 0.4s;
+        border: 6px solid #e9585f;
+    }
+
+    @-webkit-keyframes tenhienra{
+        0%{
+            opacity: 0;
+            transform: scale(0);
+        }
+        100%{
+            opacity: 1;
+            transform: scale(1);
+        }
     }
 
     .banner_in h2 {
@@ -200,7 +226,17 @@ body,html{
         color: #ffffffbf;
         text-shadow: 2px 2px 1px darkred;
         margin-bottom:  25px;
-        transition: 0.4s;
+    }
+
+    @-webkit-keyframes nutxoay{
+        0%{
+            opacity: 0;
+            transform: scale(0.4);
+        }
+        100%{
+            opacity: 1;
+            transform: scale(1);
+        }
     }
 
     .banner_in a {
@@ -211,12 +247,24 @@ body,html{
         justify-content: center;
         align-items: center;
         color: #eaea1c;
-        letter-spacing: 1px;
-        transition: 0.4s;
+        letter-spacing: 1px;        
     }
 
     .banner_in .icon {
         margin-top:  20px;
+        overflow: hidden;
+        padding-bottom: 20px;
+    }
+
+    @-webkit-keyframes dituduoilen{
+        0%{
+            opacity: 0;
+            transform: translateY(200px);
+        }
+        100%{
+            opacity: 1;
+            transform: translateY(0px);
+        }
     }
 
     .banner_in i {
@@ -229,6 +277,7 @@ body,html{
         align-items: center;
         box-shadow: inset 0px 0px 0px 4px #f1f164;
         cursor: pointer;
+        animation: dituduoilen 1s forwards;
         transition: 0.4s;
     }
 
@@ -245,7 +294,10 @@ body,html{
 
     .info_personal img {
         width: 100%;
-        height: 320px;
+        margin-top: 30px;
+        height: 222px;
+        border-radius: 5%;
+        border: 3px solid #da4b51;
     }
 
     .info h2 {
@@ -284,7 +336,7 @@ body,html{
         color: #000000bd;
     }
 
-    /*button scroll top*/
+    /*============================== Button Scroll Top ============================== */
     .button_top {
         width: 40px;
         height: 40px;
@@ -321,7 +373,7 @@ body,html{
         color: white;
     }
 
-    /*fb_comment*/
+    /*============================== Fb_Comment ============================== */
     .fb_comment {
         padding: 50px 0px;
     }
@@ -340,12 +392,11 @@ body,html{
 
     .fb_comment i:hover {color: green;}
 
-    /*pic_ft*/
+    /*============================== Pic_footer ============================== */
     .ft_finally .pic_ft {
         width: 100%;
-        height: 400px;
-        background-image: url(images/pic_ft.jpg);
-        background-size: cover;
+        height: 200px;
+        background-image: url(images/over.png);
         background-position: center;
         background-attachment: fixed;
     }
@@ -354,8 +405,7 @@ body,html{
         background-attachment: fixed;
     }
 
-    /*Author*/
-    /******************************************************************************************/
+    /*============================== Author ============================== */
     *{
         margin: 0;
         padding: 0;
@@ -378,10 +428,11 @@ body,html{
         font-family: RSBold;
     }
 
-    /*Mobile*/
+
+    /*============================== Giao Dien Tren Monile ============================== */
     @media (max-width: 576px){
 
-        /*Menu*/
+        /*============================== Menu ============================== */
         .menu .navbar-default {
             height: 60px;
         }
@@ -415,7 +466,7 @@ body,html{
             border-bottom: 1px dotted whitesmoke;
         }
 
-        /*Banner*/
+        /*============================== Banner ============================== */
         .banner {
             padding-top: 109px;
         }
@@ -437,8 +488,10 @@ body,html{
             margin-bottom:  20px;
         }
 
-        /*Info*/
+        /*============================== Info ============================== */
         .info_personal img {
+            width: 80%;
+            height: 224px;
             margin: auto;
         }
 

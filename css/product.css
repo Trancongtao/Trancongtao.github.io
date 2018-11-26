@@ -38,7 +38,7 @@ body {
 	overflow: hidden;
 }
 
-/*============================== Button hinh banh xe ============================== */
+/*========== Button hinh banh xe ========== */
 .button_menu {
 	width: 40px;
 	height: 40px;
@@ -78,7 +78,7 @@ body {
 	animation: 4000000s xoaymai forwards;
 }
 
-/*============================== Menu ben trai ============================== */
+/*========== Menu ben trai ========== */
 .menu_left {
 	width: 258px;
 	height: 100%;
@@ -171,7 +171,7 @@ body {
 	color: yellow;
 }
 
-/*============================== Nen den toan man hinh ============================== */
+/*========== Nen den toan man hinh ========== */
 .nenden{
 	width: 100%;
 	height: 100%;
@@ -191,7 +191,7 @@ body {
 	visibility: visible;
 }
 
-/*============================== Link tro ve trang chu ============================== */
+/*========== Link tro ve trang chu ========== */
 .backhome {
 	position: fixed;
 	bottom: 30px;
@@ -210,7 +210,7 @@ body {
 }
 
 
-/*============================== Body chinh level ============================== */
+/*========== Body chinh level ========== */
 .over{
 	width: 100%;
 	height: 100%;
@@ -321,19 +321,19 @@ body {
 /*============================== Giao dien cho mobile ============================== */
 @media (max-width: 576px){
 
-	/*============================== Button hinh banh xe ============================== */
+	/*========== Button hinh banh xe ========== */
 	.button_menu.go_buttonmenu_right{
 		transform: translateX(160px);
 	}
 	
-	/*============================== Menu ben trai ============================== */
+	/*========== Menu ben trai ========== */
 	.menu_left{
 		width: 160px;
 		height: 100%;
 		padding-bottom: 0px;
 	}
 
-	/*============================== Body chinh level ============================== */
+	/*========== Body chinh level ========== */
 	.col-sm-3{
 		margin: 8px 0px;
 	}
@@ -366,7 +366,7 @@ body {
 		height: 250px;
 	}
 
-	/*============================== Link tro ve trang chu ============================== */
+	/*========== Link tro ve trang chu ========== */
 	.backhome {
 		position: fixed;
 		top: 91%;

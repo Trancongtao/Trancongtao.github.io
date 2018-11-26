@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$('.button_menu').click(function(event) {
 		$(this).toggleClass('go_buttonmenu_right');
 		$('.menu_left').toggleClass('open_menu');
-		$('.over').toggleClass('go_right');
+		$('.over .content').toggleClass('go_right');
 		$('.nenden').toggleClass('hienra');
 	});
 

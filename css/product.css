@@ -308,9 +308,9 @@ body {
 
 .product .anh img {
 	width: 100%;
-    height: 97%;
-    padding: 4px;
-    border-radius: 1px;
+	height: 97%;
+	padding: 4px;
+	border-radius: 1px;
 }
 
 *{
@@ -350,7 +350,7 @@ body {
 	}
 
 	.over.go_right{
-		transform: translateX(40%);
+		transform: translateX(45%);
 	}
 
 	.title {
@@ -364,6 +364,7 @@ body {
 	
 	.product .anh {
 		height: 250px;
+		margin-bottom: 15px;
 	}
 
 	/*========== Link tro ve trang chu ========== */

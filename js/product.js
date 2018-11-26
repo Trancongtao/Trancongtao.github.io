@@ -3,14 +3,14 @@ $(document).ready(function() {
 	$('.button_menu').click(function(event) {
 		$(this).toggleClass('go_buttonmenu_right');
 		$('.menu_left').toggleClass('open_menu');
-		$('.over .content').toggleClass('go_right');
+		$('.over').toggleClass('go_right');
 		$('.nenden').toggleClass('hienra');
 	});
 
 	$('.nenden').click(function(event) {
 		$('.button_menu').removeClass('go_buttonmenu_right');
 		$('.menu_left').removeClass('open_menu');
-		$('.over .content').removeClass('go_right');
+		$('.over').removeClass('go_right');
 		$(this).removeClass('hienra');
 	});
 

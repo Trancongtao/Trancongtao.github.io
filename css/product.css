@@ -347,8 +347,8 @@ body {
 		background:#27ae60;
 	}
 
-	.over .content.go_right{
-		transform: translateX(50%);
+	.over.go_right{
+		transform: translateX(55%);
 	}
 
 	.title {
@@ -361,7 +361,7 @@ body {
 	}
 	
 	.product .anh {
-		height: 128px;
+		height: 218px;
 	}
 
 	/*============================== Link tro ve trang chu ============================== */

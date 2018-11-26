@@ -10,7 +10,7 @@ $(document).ready(function() {
 	$('.nenden').click(function(event) {
 		$('.button_menu').removeClass('go_buttonmenu_right');
 		$('.menu_left').removeClass('open_menu');
-		$('.over').removeClass('go_right');
+		$('.over .content').removeClass('go_right');
 		$(this).removeClass('hienra');
 	});
 

@@ -519,36 +519,69 @@ body,html{
 
         /*============================== Menu ============================== */
         .menu .navbar-default {
-            height: 60px;
+            height: auto;
+        }
+
+        .menu .navbar-default.thunho{
+            height: auto;
+            padding: 10px 0px;
         }
 
         .menu .navbar-default .navbar-brand {
-            height: 60px;
+            height: auto;
             background: none;
             color: green;
             font-weight: 700;
         }
 
+        .menu .navbar-default.thunho .navbar-brand{
+            height: 0px;
+            margin: 8px 0px 8px 0px;
+            color: yellow;
+        }
+
         .menu .navbar-default .navbar-collapse {
-            background: #00000069;
+            background: #2d3e50;
+        }
+
+        .menu .navbar-default.thunho button.navbar-toggle {
+            margin: 8px 15px 8px 0px;
         }
 
         .menu .navbar-nav {
             margin: 0px 0px;
         }
 
-        .menu .navbar-default .navbar-nav li a:hover {
-            color: yellow;
+        .menu .navbar-default .navbar-nav li {
+            border-bottom: 1px dotted gray;
+            padding: 5px 0px;
+        }
+
+        .menu .navbar-default .navbar-nav li:last-child {
+            border-bottom: none;
         }
 
         .menu .navbar-default .navbar-nav li a {
             text-align: center;
             color: white;
             display: inherit;
-            padding: 0px 0px;
+            height: auto;
+            /*padding: 0px 0px;
             height: 60px;
             line-height: 60px;
-            border-bottom: 1px dotted whitesmoke;
+            border-bottom: 1px dotted whitesmoke;*/
+        }
+
+        .menu .navbar-default.thunho .navbar-nav li a{
+            height: auto;
+        }
+
+        .menu .navbar-default .navbar-nav li a:hover {
+            color: yellow;
+        }
+
+        .menu .navbar-default .navbar-nav li a:after{
+            display: none;
         }
 
         /*============================== Banner ============================== */
@@ -580,6 +613,10 @@ body,html{
             margin: auto;
         }
 
+        .info h6:after{
+            /*left: -20px;*/
+        }
+
         .info_personal .place {
             /* padding:  0px 48px; */
         }
@@ -589,3 +626,85 @@ body,html{
         }
     }
 
+    @media (max-width: 768px) and (min-width: 576px) {
+
+        /*============================== Menu ============================== */
+        .menu .navbar-default {
+            height: auto;
+        }
+
+        .menu .navbar-default.thunho{
+            height: 0px;
+        }
+
+        .menu .navbar-default .navbar-brand{
+            height: auto;
+            border-radius: 0px;
+        }
+
+        .menu .navbar-default.thunho .navbar-brand{
+            height: auto;
+        }
+
+        .menu .navbar-default .navbar-collapse {
+            background: #34495e;
+        }
+
+        .menu .navbar-nav {
+            margin: auto;
+        }
+
+        .menu .navbar-default .navbar-nav li {
+            border-bottom: 1px dotted gray;
+            padding: 5px 0px;
+        }
+
+        .menu .navbar-default.thunho .navbar-nav li a {
+    height: auto;
+}
+
+        .menu .navbar-default .navbar-nav li:last-child {
+            border-bottom: none;
+        }
+
+        .menu .navbar-default .navbar-nav li a {
+            text-align: center;
+            color: white;
+            display: inherit;
+            height: auto;
+            /*padding: 0px 0px;
+            height: 60px;
+            line-height: 60px;
+            border-bottom: 1px dotted whitesmoke;*/
+        }
+
+        .menu .navbar-default .navbar-nav li a:hover {
+            color: yellow;
+        }
+
+        .menu .navbar-default .navbar-nav li a:after{
+            display: none;
+        }
+
+        .info_personal img{
+            width: 100%;
+            height: 360px;
+        }
+
+        .info_personal .name{
+            text-align: center;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    @media (max-width: 992px) and (min-width: 768px) {
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    }

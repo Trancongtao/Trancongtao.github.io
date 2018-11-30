@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+	var docao = $(window).height();
+	$('.banner').css({
+		'height': docao
+	});
+	$(window).resize(function(event) {
+		var docao = $(window).height();
+		$('.banner').css({
+			'height': docao
+		});
+	});
+
+
 	var vt_infopersonal=$('.info_personal').offset().top;
 	vt_infopersonal=vt_infopersonal-100;
 	

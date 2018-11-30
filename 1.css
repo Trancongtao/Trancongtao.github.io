@@ -24,6 +24,11 @@ body,html{
     height: 100%;
 }
 
+::selection{
+    color: white;
+    background: #f1c40f;
+}
+
 .over{
     overflow: hidden;
 }

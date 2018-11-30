@@ -59,7 +59,7 @@ body {
 .button_menu.go_buttonmenu_right{
 	background: #1abc9c;
 	transition: 0.4s;
-	transform: translateX(258px);
+	transform: translateX(200px);
 }
 
 @-webkit-keyframes xoaymai{
@@ -80,7 +80,7 @@ body {
 
 /*========== Menu ben trai ========== */
 .menu_left {
-	width: 258px;
+	width: 200px;
 	height: 100%;
 	display: inline-block;
 	background: #1abc9c;
@@ -191,25 +191,6 @@ body {
 	visibility: visible;
 }
 
-/*========== Link tro ve trang chu ========== */
-.backhome {
-	position: fixed;
-	bottom: 30px;
-	left: 0px;
-	width: 100%;
-	height: 15px;
-	z-index: 8;
-	padding: 13px 0px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.backhome a {
-	color: yellow;
-}
-
-
 /*========== Body chinh level ========== */
 .over{
 	width: 100%;
@@ -243,40 +224,8 @@ body {
 */
 .over.go_right{
 	transition: 0.4s;
-	transform: translateX(15%);
+	transform: translateX(20%);
 	/*transform: translateX(8%) rotateY(-10deg) scale(0.95);*/
-}
-
-.title {
-	background: #27ae60;
-	border-top-left-radius: 100px;
-	border-top-right-radius: 100px;
-	position: relative;
-	width: 100%;
-	bottom: 0px;
-	left: 0px;
-}
-
-.title.yellow{
-	background: yellow;
-}
-
-.title.brown{
-	background: brown;
-}
-
-.title h2 {
-	margin: 0px;
-}
-
-.title h2 {
-	box-sizing: border-box;
-	text-transform: uppercase;
-	color: yellow;
-	font-size: 21px;
-	letter-spacing: 2px;
-	word-spacing: 2px;
-	padding: 7px 0px;
 }
 
 .col-sm-3{
@@ -315,13 +264,45 @@ body {
 	border-radius: 1px;
 }
 
+.title {
+	background: #27ae60;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	position: relative;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+}
+
+.title.yellow{
+	background: yellow;
+}
+
+.title.brown{
+	background: brown;
+}
+
+.title h2 {
+	margin: 0px;
+}
+
+.title h2 {
+	box-sizing: border-box;
+	text-transform: uppercase;
+	color: yellow;
+	font-size: 21px;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	padding: 7px 0px;
+}
+
 *{
 	margin: 0;
 	padding: 0;
 }
 
 /*============================== Giao dien cho mobile ============================== */
-@media (max-width: 768px){
+@media (max-width: 576px){
 
 	/*========== Button hinh banh xe ========== */
 	.button_menu.go_buttonmenu_right{
@@ -355,6 +336,16 @@ body {
 		transform: translateX(40%);
 	}
 
+	.product{
+		height: 260px;
+		margin-bottom: 15px;
+	}
+
+	.product .anh {
+		height: 260px;
+		margin-bottom: 15px;
+	}
+
 	.title {
 		height: auto;
 		position: relative;
@@ -364,42 +355,118 @@ body {
 		font-size: 14px;
 		margin: 0px;
 	}
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 576px ){
+
+	/*========== Button hinh banh xe ========== */
+	.button_menu.go_buttonmenu_right{
+		transform: translateX(160px);
+	}
 	
+	/*========== Menu ben trai ========== */
+	.menu_left{
+		width: 160px;
+		height: 100%;
+		padding-bottom: 0px;
+	}
+
+	/*========== Body chinh level ========== */
+	.col-sm-3{
+		margin: 8px 0px;
+	}
+
+	.over::-webkit-scrollbar{
+		width:8px;
+		border-radius: 50px;
+		background:white;
+	}
+
+	.over::-webkit-scrollbar-thumb{
+		border-radius: 50px;
+		background:#27ae60;
+	}
+
+	.over.go_right{
+		transform: translateX(26%);
+	}
+
+	.product {
+		height: 360px;
+		margin-bottom: 25px;
+	}
+
 	.product .anh {
-		height: 260px;
-		margin-bottom: 15px;
+		height: 360px;
+		margin-bottom: 25px;
 	}
 
-	/*========== Link tro ve trang chu ========== */
-	.backhome {
-		position: fixed;
-		top: 91%;
-		left: 0px;
-		width: 100%;
-		height: 15px;
-		z-index: 8;
-		padding: 13px 0px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+	.title {
+		height: auto;
+		position: relative;
 	}
 
-	.backhome a {
-		color: yellow;
+	.title h2 {
+		font-size: 14px;
+		margin: 0px;
 	}
 
 	*{
 		margin: 0;
 		padding: 0;
 	}
-
 }
 
-@media (max-width: 992px) and(min-width: 768px ){
+@media (max-width: 992px) and (min-width: 768px ){
+
+	/*========== Button hinh banh xe ========== */
+	.button_menu.go_buttonmenu_right{
+		transform: translateX(160px);
+	}
+
+	/*========== Menu ben trai ========== */
+	.menu_left{
+		width: 160px;
+		height: 100%;
+		padding-bottom: 0px;
+	}
+
+	.over.go_right{
+		transform: translateX(30%);
+	}
 
 	*{
 		margin: 0;
 		padding: 0;
 	}
-
 }
+
+@media (max-width: 1200px) and (min-width: 992px ){
+
+	/*========== Button hinh banh xe ========== */
+	.button_menu.go_buttonmenu_right{
+		transform: translateX(160px);
+	}
+
+	/*========== Menu ben trai ========== */
+	.menu_left{
+		width: 160px;
+		height: 100%;
+		padding-bottom: 0px;
+	}
+
+	.over.go_right{
+		transform: translateX(30%);
+	}
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+}
+

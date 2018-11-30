@@ -692,17 +692,35 @@ body,html{
 
         /*============================== Banner ============================== */
         .banner {
-            padding-top: 109px;
+            padding-top: 75px;
+        }
+
+        .banner_in img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .banner_in h2 {
+            font-size: 30px;
+            margin-bottom: 0px;
+        }
+
+        .banner_in h5 {
+            font-size: 18px;
+        }
+
+        .banner_in .icon {
+            margin-top: 5px;
         }
 
         /*============================== Info ============================== */
         .info_personal img{
-         width: 80%;
-         height: 360px;
-         margin: auto;
-     }
+           width: 80%;
+           height: 360px;
+           margin: auto;
+       }
 
-     .info_personal .name{
+       .info_personal .name{
         text-align: center;
     }
 

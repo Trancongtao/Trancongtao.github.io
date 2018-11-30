@@ -160,7 +160,11 @@ body,html{
         height: 100%;
         background: #e9585f;
         position: relative;
-        padding: 160px 0px 54px 0px;
+        padding-top: 109px;
+        /*padding: 160px 0px 54px 0px;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .banner:before {
@@ -660,8 +664,8 @@ body,html{
         }
 
         .menu .navbar-default.thunho .navbar-nav li a {
-    height: auto;
-}
+            height: auto;
+        }
 
         .menu .navbar-default .navbar-nav li:last-child {
             border-bottom: none;
@@ -686,25 +690,42 @@ body,html{
             display: none;
         }
 
+        /*============================== Banner ============================== */
+        .banner {
+            padding-top: 109px;
+        }
+
+        /*============================== Info ============================== */
         .info_personal img{
-            width: 100%;
-            height: 360px;
-        }
+         width: 80%;
+         height: 360px;
+         margin: auto;
+     }
 
-        .info_personal .name{
-            text-align: center;
-        }
-
-        *{
-            margin: 0;
-            padding: 0;
-        }
+     .info_personal .name{
+        text-align: center;
     }
 
-    @media (max-width: 992px) and (min-width: 768px) {
-
-        *{
-            margin: 0;
-            padding: 0;
-        }
+    *{
+        margin: 0;
+        padding: 0;
     }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+
+    /*============================== Info ============================== */
+    .info_personal img{
+        width: 100%;
+        height: 460px;
+    }
+
+    .info_personal .name{
+        text-align: center;
+    }
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+}

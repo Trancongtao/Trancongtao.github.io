@@ -308,8 +308,8 @@ body,html{
 
     .info_personal img {
         width: 100%;
-        margin-top: 30px;
-        height: 222px;
+        margin-top: 84px;
+        height: 308px;
         border-radius: 5%;
         border: 3px solid #da4b51;
     }
@@ -322,321 +322,379 @@ body,html{
         font-size: 19px;
         color: gray;
         font-family: RSLight;
-        padding-bottom:  30px;
+        
         position: relative;
+        margin: 0px;
     }
 
-    .info h6:after {
+    /*.info h6:after {
         content: "";
         position: absolute;
         bottom: 0px;
         left: 0px;
-        width: 100%;
-        height: 2px;
+        width: 44%;
+        height: 1px;
         background: #80808030;
-    }
+        }*/
 
-    .info h4 {
-        line-height: 33px;
-        font-size: 16px;
-        color: gray;
-    }
-
-    .info .tt {
-        width: 110px;
-        display: inline-block;
-        text-transform: uppercase;
-        font-size: 15px;
-        color: #000000bd;
-    }
-
-    .about{
-        padding: 60px 0px 0px 0px;
-        background: #ecf0f1;
-        font-family: sans-serif;
-    }
-
-    .about .title h1 {
-        font-weight: bold;
-        color: #34495e;
-    }
-
-    .about .title p {
-        font-style: italic;
-        margin-bottom: 56px;
-    }
-
-    .about .row.timelife {
-        position: relative;
-    }
-
-    .about .timelife .duongke {
-        position: absolute;
-        width: 6px;
-        height: 95%;
-        background: #16a085;
-        left: 50%;
-        top: 0px;
-        margin-left: -3px;
-    }
-
-    .about .row.mottin {
-        margin-bottom: 46px;
-    }
-
-    .about .info_left h3 {
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-weight: bold;
-        font-size: 19px;
-    }
-
-    .about .info_left h3:nth-child(2) {
-    font-size: 16px;
-    margin-top: 5px;
-    color: #34495e;
-}
-
-    .about .info_left p {
-        color: #7f8c8d;
-        margin-top: 15px;
-    }
-
-    .about .img_left img.img-responsive {
-        border-radius: 50%;
-        width: 163px;
-        height: 163px;
-        border: 5px solid #16a085;
-        background: #1abc9c;
-        padding: 15px;
-    }
-
-    /*============================== Button Scroll Top ============================== */
-    .button_top {
-        width: 40px;
-        height: 40px;
-        position: fixed;
-        bottom: 5px;
-        right: 12px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: green;
-        cursor: pointer;
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.4s;
-    }
-
-    .button_top.hienra{
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .button_top:hover {
-        background: #1d2b3a;
-    }
-
-    .button_top i {
-        font-size: 18px;
-        color: #e8e2e2;
-        transition: 0.4s;
-    }
-
-    .button_top:hover i {
-        color: white;
-    }
-
-    /*============================== Fb_Comment ============================== */
-    .fb_comment {
-        padding: 50px 0px;
-    }
-
-    .fb_comment h2 {
-        color: gray;
-        margin-bottom:  25px;
-        font-family: RSLight;
-    }
-
-    .fb_comment i {
-        font-size: 25px;
-        cursor: pointer;
-        transition: 0.4s;
-    }
-
-    .fb_comment i:hover {color: green;}
-
-    /*============================== Pic_footer ============================== */
-    .ft_finally .pic_ft {
-        width: 100%;
-        height: 200px;
-        background-image: url(images/over.png);
-        background-position: center;
-        background-attachment: fixed;
-    }
-
-    .ft_finally img {
-        background-attachment: fixed;
-    }
-
-    .author {
-        width: 100%;
-        background: #2d3e50;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .author h6 {
-        margin: 0px;
-        color: yellow;
-        font-size: 15px;
-        letter-spacing: 2px;
-        font-family: RSBold;
-    }
-
-    /*============================== Contact ============================== */
-    .contact .header {
-        width: 100%;
-        height: 200px;
-        background-image: url(images/header_contact.png);
-        background-attachment: fixed;
-    }
-
-    .contact .title {
-        background-color: rgba(247, 247, 247, 1);
-        padding: 41px 0px 35px 0px;
-    }
-
-    .contact .title h2 {
-        font-family: RSLight;
-    }
-
-    .contact .title .link {
-        padding-top: 10px;
-    }
-
-    .contact .title i {
-        color: gray;
-    }
-
-    .contact .title .link a {
-        color: gray;
-        letter-spacing: 1px;
-        /* margin: 0px 18px; */
-        padding: 0px 18px;
-        font-family: RSLight;
-    }
-
-    .contact .map {
-        width: 100%;
-        height: 400px;
-    }
-
-    .contact .map iframe {
-        width: 100%;
-        height: 100%;
-    }
-
-    .contact .info{
-        padding: 55px 0px;
-    }
-
-    .contact .info .col-xs-4{
-        padding-right: 0px;
-    }
-
-    .contact .icon {
-        width: 100%;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-right: 0px;
-        margin-right: 0px;
-    }
-
-    .contact .icon i {
-        font-size: 53px;
-        color: green;
-    }
-
-
-    .contact .detail {
-        width: 100%;
-    }
-
-    .contact .detail h3 {
-        margin-top: 0px;
-        font-size: 20px;
-        color: #34495e;
-        font-family: RSBold;
-    }
-
-    .contact .detail h4 {
-        margin-bottom: 0px;
-    }
-
-    *{
-        margin: 0;
-        padding: 0;
-    }
-
-
-    /*============================== Giao Dien Tren Monile ============================== */
-    @media (max-width: 576px){
-
-        /*============================== Menu ============================== */
-        .menu .navbar-default {
-            height: auto;
+        .info .star,
+        .about .star {
+            font-size: 30px;
+            position: relative;
+            display: inline-block;
         }
 
-        .menu .navbar-default.thunho{
-            height: auto;
-            padding: 10px 0px;
+        .info .star i,
+        .about .star i {
+            color: #34495e;
+            height: 50px;
+            width: 50px;
+            margin: 0px 110px;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .menu .navbar-default .navbar-brand {
-            height: auto;
-            background: none;
-            color: green;
-            font-weight: 700;
+        .info .star:before,
+        .about .star:before {
+            content: "";
+            width: 110px;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            background: #34495e;
         }
 
-        .menu .navbar-default.thunho .navbar-brand{
-            height: 0px;
-            margin: 8px 0px 8px 0px;
-            color: yellow;
+        .info .star:after,
+        .about .star:after {
+            content: "";
+            width: 110px;
+            height: 2px;
+            position: absolute;
+            top: 50%;
+            right: 0px;
+            background: #34495e;
         }
 
-        .menu .navbar-default .navbar-collapse {
-            background: #2d3e50;
-        }
-
-        .menu .navbar-default.thunho button.navbar-toggle {
-            margin: 8px 15px 8px 0px;
-        }
-
-        .menu .navbar-nav {
-            margin: 0px 0px;
-        }
-
-        .menu .navbar-default .navbar-nav li {
-            border-bottom: 1px dotted gray;
-            padding: 5px 0px;
-        }
-
-        .menu .navbar-default .navbar-nav li:last-child {
-            border-bottom: none;
-        }
-
-        .menu .navbar-default .navbar-nav li a {
-            text-align: center;
+        .info .place i {
+            font-size: 24px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #16a085;
             color: white;
-            display: inherit;
-            height: auto;
+            border-radius: 4px;
+        }
+
+        .info h4 {
+            line-height: 33px;
+            font-size: 16px;
+            color: gray;
+            display: flex;
+            justify-content: start;
+            /*align-items: center;*/
+        }
+
+        .info .tt {
+            width: 70px;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 15px;
+            color: #000000bd;
+        }
+
+        .about{
+            padding: 60px 0px 0px 0px;
+            background: #ecf0f1;
+            font-family: sans-serif;
+        }
+
+        .about .title h1 {
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        .about .title p {
+            font-style: italic;
+            margin-bottom: 0px;
+        }
+
+        .about .row.timelife {
+            position: relative;
+            margin-top: 50px;
+        }
+
+        .about .timelife .duongke {
+            position: absolute;
+            width: 6px;
+            height: 95%;
+            background: #16a085;
+            left: 50%;
+            top: 0px;
+            margin-left: -3px;
+        }
+
+        .about .row.mottin {
+            margin-bottom: 46px;
+        }
+
+        .about .info_left h3 {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-weight: bold;
+            font-size: 19px;
+        }
+
+        .about .info_left h3:nth-child(2) {
+            font-size: 16px;
+            margin-top: 5px;
+            color: #34495e;
+        }
+
+        .about .info_left p {
+            color: #7f8c8d;
+            margin-top: 15px;
+        }
+
+        .about .img_left img.img-responsive {
+            border-radius: 50%;
+            width: 163px;
+            height: 163px;
+            border: 5px solid #16a085;
+            background: #1abc9c;
+            padding: 15px;
+        }
+
+        /*============================== Button Scroll Top ============================== */
+        .button_top {
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            bottom: 5px;
+            right: 12px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: green;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.4s;
+        }
+
+        .button_top.hienra{
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .button_top:hover {
+            background: #1d2b3a;
+        }
+
+        .button_top i {
+            font-size: 18px;
+            color: #e8e2e2;
+            transition: 0.4s;
+        }
+
+        .button_top:hover i {
+            color: white;
+        }
+
+        /*============================== Fb_Comment ============================== */
+        .fb_comment {
+            padding: 50px 0px;
+        }
+
+        .fb_comment h2 {
+            color: gray;
+            margin-bottom:  25px;
+            font-family: RSLight;
+        }
+
+        .fb_comment i {
+            font-size: 25px;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        .fb_comment i:hover {color: green;}
+
+        /*============================== Pic_footer ============================== */
+        .ft_finally .pic_ft {
+            width: 100%;
+            height: 200px;
+            background-image: url(images/over.png);
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .ft_finally img {
+            background-attachment: fixed;
+        }
+
+        .author {
+            width: 100%;
+            background: #2d3e50;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .author h6 {
+            margin: 0px;
+            color: yellow;
+            font-size: 15px;
+            letter-spacing: 2px;
+            font-family: RSBold;
+        }
+
+        /*============================== Contact ============================== */
+        .contact .header {
+            width: 100%;
+            height: 200px;
+            background-image: url(images/header_contact.png);
+            background-attachment: fixed;
+        }
+
+        .contact .title {
+            background-color: rgba(247, 247, 247, 1);
+            padding: 41px 0px 35px 0px;
+        }
+
+        .contact .title h2 {
+            font-family: RSLight;
+        }
+
+        .contact .title .link {
+            padding-top: 10px;
+        }
+
+        .contact .title i {
+            color: gray;
+        }
+
+        .contact .title .link a {
+            color: gray;
+            letter-spacing: 1px;
+            /* margin: 0px 18px; */
+            padding: 0px 18px;
+            font-family: RSLight;
+        }
+
+        .contact .map {
+            width: 100%;
+            height: 400px;
+        }
+
+        .contact .map iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        .contact .info{
+            padding: 55px 0px;
+        }
+
+        .contact .info .col-xs-4{
+            padding-right: 0px;
+        }
+
+        .contact .icon {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-right: 0px;
+            margin-right: 0px;
+        }
+
+        .contact .icon i {
+            font-size: 53px;
+            color: green;
+        }
+
+
+        .contact .detail {
+            width: 100%;
+        }
+
+        .contact .detail h3 {
+            margin-top: 0px;
+            font-size: 20px;
+            color: #34495e;
+            font-family: RSBold;
+        }
+
+        .contact .detail h4 {
+            margin-bottom: 0px;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /*============================== Giao Dien Tren Monile ============================== */
+        @media (max-width: 576px){
+
+            /*============================== Menu ============================== */
+            .menu .navbar-default {
+                height: auto;
+            }
+
+            .menu .navbar-default.thunho{
+                height: auto;
+                padding: 10px 0px;
+            }
+
+            .menu .navbar-default .navbar-brand {
+                height: auto;
+                background: none;
+                color: green;
+                font-weight: 700;
+            }
+
+            .menu .navbar-default.thunho .navbar-brand{
+                height: 0px;
+                margin: 8px 0px 8px 0px;
+                color: yellow;
+            }
+
+            .menu .navbar-default .navbar-collapse {
+                background: #2d3e50;
+            }
+
+            .menu .navbar-default.thunho button.navbar-toggle {
+                margin: 8px 15px 8px 0px;
+            }
+
+            .menu .navbar-nav {
+                margin: 0px 0px;
+            }
+
+            .menu .navbar-default .navbar-nav li {
+                border-bottom: 1px dotted gray;
+                padding: 5px 0px;
+            }
+
+            .menu .navbar-default .navbar-nav li:last-child {
+                border-bottom: none;
+            }
+
+            .menu .navbar-default .navbar-nav li a {
+                text-align: center;
+                color: white;
+                display: inherit;
+                height: auto;
             /*padding: 0px 0px;
             height: 60px;
             line-height: 60px;
@@ -795,12 +853,12 @@ body,html{
 
         /*============================== Info ============================== */
         .info_personal img{
-           width: 80%;
-           height: 360px;
-           margin: auto;
-       }
+         width: 80%;
+         height: 360px;
+         margin: auto;
+     }
 
-       .info_personal .name{
+     .info_personal .name{
         text-align: center;
     }
 

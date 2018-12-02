@@ -300,9 +300,10 @@ body,html{
         box-shadow: inset 0px 0px 0px 0px #f1f164;
     }
 
+    /*============================== Info ============================== */
     .info_personal {
         padding: 72px 0px;
-        background: #efefef;
+        background: white;
     }
 
     .info_personal img {
@@ -347,6 +348,67 @@ body,html{
         text-transform: uppercase;
         font-size: 15px;
         color: #000000bd;
+    }
+
+    .about{
+        padding: 60px 0px 0px 0px;
+        background: #ecf0f1;
+        font-family: sans-serif;
+    }
+
+    .about .title h1 {
+        font-weight: bold;
+        color: #34495e;
+    }
+
+    .about .title p {
+        font-style: italic;
+        margin-bottom: 56px;
+    }
+
+    .about .row.timelife {
+        position: relative;
+    }
+
+    .about .timelife .duongke {
+        position: absolute;
+        width: 6px;
+        height: 95%;
+        background: #16a085;
+        left: 50%;
+        top: 0px;
+        margin-left: -3px;
+    }
+
+    .about .row.mottin {
+        margin-bottom: 46px;
+    }
+
+    .about .info_left h3 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: bold;
+        font-size: 19px;
+    }
+
+    .about .info_left h3:nth-child(2) {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #34495e;
+}
+
+    .about .info_left p {
+        color: #7f8c8d;
+        margin-top: 15px;
+    }
+
+    .about .img_left img.img-responsive {
+        border-radius: 50%;
+        width: 163px;
+        height: 163px;
+        border: 5px solid #16a085;
+        background: #1abc9c;
+        padding: 15px;
     }
 
     /*============================== Button Scroll Top ============================== */
@@ -633,6 +695,19 @@ body,html{
         .info_personal .name {
             text-align: center;
         }
+
+        .about .row.mottin {
+            margin-bottom: 74px;
+        }
+
+        .about .col-md-6.col-md-pull-1 {
+            padding-left: 30px;
+        }
+
+        .about .img_left img.img-responsive {
+            width: 120px;
+            height: 120px;
+        }
     }
 
     @media (max-width: 768px) and (min-width: 576px) {
@@ -727,6 +802,19 @@ body,html{
 
        .info_personal .name{
         text-align: center;
+    }
+
+    .about .row.mottin {
+        margin-bottom: 74px;
+    }
+
+    .about .col-md-6.col-md-pull-1 {
+        padding-left: 30px;
+    }
+
+    .about .img_left img.img-responsive {
+        width: 120px;
+        height: 120px;
     }
 
     *{

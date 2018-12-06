@@ -501,6 +501,10 @@ body,html{
         font-size: 23px;
     }
 
+    .sanpham div#carousel-id {
+    margin-top: 45px;
+}
+
     .sanpham .carousel-indicators {
         display: none;
     }
@@ -521,7 +525,7 @@ body,html{
         color: white;
         background: transparent;
         position: absolute;
-        top: -35px;
+        top: -70px;
         width: 50px;
         height: 50px;
         left: 48%;
@@ -537,7 +541,7 @@ body,html{
         color: white;
         background: transparent;
         position: absolute;
-        top: -35px;
+        top: -70px;
         width: 50px;
         height: 50px;
         right: 48%;
@@ -864,7 +868,7 @@ body,html{
         }
 
         .sanpham h4 {
-            margin-top: -60px;
+            margin-top: 15px;
         }
 
         .sanpham a.right.carousel-control{
@@ -1016,7 +1020,7 @@ body,html{
     }
 
     .sanpham h4 {
-        margin-top: -60px;
+        margin-top: 15px;
     }
 
     .sanpham a.right.carousel-control{
@@ -1068,7 +1072,7 @@ body,html{
     }
 
     .sanpham h4 {
-        margin-top: -60px;
+        margin-top: 15px;
     }
 
     .sanpham a.right.carousel-control{

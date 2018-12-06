@@ -461,50 +461,96 @@ body,html{
         }
 
         .about .img_left img.img-responsive {
-         border-radius: 50%;
-         width: 120px;
-         height: 120px;
-         border: 5px solid #16a085;
-         background: #1abc9c;
-         padding: 15px;
-         margin: auto;
-     }
+           border-radius: 50%;
+           width: 120px;
+           height: 120px;
+           border: 5px solid #16a085;
+           background: #1abc9c;
+           padding: 15px;
+           margin: auto;
+       }
 
-     /*============================== Button Scroll Top ============================== */
-     .button_top {
-        width: 40px;
-        height: 40px;
-        position: fixed;
-        bottom: 5px;
-        right: 12px;
-        border-radius: 50%;
+       /*============================== Product Design ============================== */
+       .sanpham {
+        padding: 140px 0px;
+        background: #34495e;
+    }
+
+    .sanpham h4:nth-child(2) {
+        color: #f1c40f!important;
+        padding: 0px 22px;
+        font-family: RSThin;
+        font-weight: bold;
+    }
+
+    .sanpham h4:nth-child(1) a {
+        color: #f1c40f;
+        padding: 0px 45px;
+        font-size: 16px;
+        font-family: RSThin;
+        font-style: italic;
+        position: relative;
+    }
+
+    .sanpham h4:nth-child(1) a:after {
+        content: "\f0da";
+        font: normal normal normal 14px/1 FontAwesome;
+        position: absolute;
+        top: 0px;
+        right: 28px;
+        font-size: 23px;
+    }
+
+    .sanpham .carousel-indicators {
+        display: none;
+    }
+
+    .sanpham .motsp {
+        height: 216px;
+    }
+
+    .sanpham .motsp img {
+        height: 100%;
+    }
+
+    .sanpham a.left.carousel-control {
         display: flex;
         justify-content: center;
         align-items: center;
-        background: green;
-        cursor: pointer;
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.4s;
-    }
-
-    .button_top.hienra{
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .button_top:hover {
-        background: #1d2b3a;
-    }
-
-    .button_top i {
-        font-size: 18px;
-        color: #e8e2e2;
-        transition: 0.4s;
-    }
-
-    .button_top:hover i {
+        font-size: 45px;
         color: white;
+        background: transparent;
+        position: absolute;
+        top: -85px;
+        width: 60px;
+        height: 60px;
+        left: 47%;
+        margin-left: -30px;
+        background: #2c3e50;
+    }
+
+    .sanpham a.right.carousel-control {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 45px;
+        color: white;
+        background: transparent;
+        position: absolute;
+        top: -85px;
+        width: 60px;
+        height: 60px;
+        right: 47%;
+        margin-right: -30px;
+        background: #2c3e50;
+    }
+
+    .sanpham .col-md-3:first-child {
+        padding: 0px 10px 0px 35px;
+    }
+
+    .sanpham .col-md-3:last-child{
+        padding: 0px 35px 0px 10px;
     }
 
     /*============================== Fb_Comment ============================== */
@@ -556,7 +602,44 @@ body,html{
         font-family: RSBold;
     }
 
-    /*============================== Contact ============================== */
+    /*============================== Button Scroll Top ============================== */
+    .button_top {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        bottom: 5px;
+        right: 12px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: green;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s;
+    }
+
+    .button_top.hienra{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .button_top:hover {
+        background: #1d2b3a;
+    }
+
+    .button_top i {
+        font-size: 18px;
+        color: #e8e2e2;
+        transition: 0.4s;
+    }
+
+    .button_top:hover i {
+        color: white;
+    }
+
+    /*============================== Contact Page ============================== */
     .contact .header {
         width: 100%;
         height: 200px;
@@ -775,7 +858,7 @@ body,html{
             font-size: 26px;
         }
 
-        /*============================== Contact ============================== */
+        /*============================== Contact Page ============================== */
         .contact .detail {
             padding-bottom: 20px;
             border-bottom: 1px dotted #34495e59;
@@ -882,12 +965,12 @@ body,html{
 
         /*============================== Info ============================== */
         .info_personal img{
-           width: 80%;
-           height: 360px;
-           margin: auto;
-       }
+         width: 80%;
+         height: 360px;
+         margin: auto;
+     }
 
-       .info_personal .name{
+     .info_personal .name{
         text-align: center;
     }
 

@@ -27,7 +27,6 @@ html,body{
 .over{
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
 }
 
 .nenden {
@@ -344,4 +343,98 @@ html,body{
 *{
 	margin:0;
 	padding: 0;
+}
+
+@media (max-width: 576px) {
+	
+	.header h1 {
+		font-size: 23px;
+	}
+
+	.main .cottrai h5 {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.main .cotphai {
+		text-align: center;
+	}
+
+	.content1, .content2, .content3, .content4, .content5, .content6, .content7, .content8, .content9, .content10, .content11 {
+		width: 400px;
+		margin-left: -200px;
+		height: 289px;
+	}
+
+	.content1 p, .content2 p, .content3 p, .content4 p, .content5 p, .content6 p, .content7 p, .content8 p, .content9 p, .content10 p, .content11 p {
+		font-size: 15px;
+		text-align: center;
+		line-height: 25px;
+	}
+
+
+	*{
+		margin:0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+	
+	.header h1 {
+		font-size: 23px;
+	}
+
+	.main .cottrai h5 {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.main .cotphai {
+		text-align: center;
+	}
+
+	.content1, .content2, .content3, .content4, .content5, .content6, .content7, .content8, .content9, .content10, .content11 {
+		width: 500px;
+		margin-left: -250px;
+		height: 289px;
+	}
+
+	.content1 p, .content2 p, .content3 p, .content4 p, .content5 p, .content6 p, .content7 p, .content8 p, .content9 p, .content10 p, .content11 p {
+		font-size: 15px;
+		text-align: center;
+		line-height: 25px;
+	}
+
+	*{
+		margin:0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+	
+	.header h1 {
+		font-size: 23px;
+	}
+
+	.main .cottrai h5 {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.main .cotphai {
+		text-align: center;
+	}
+
+	.content1 p, .content2 p, .content3 p, .content4 p, .content5 p, .content6 p, .content7 p, .content8 p, .content9 p, .content10 p, .content11 p {
+		font-size: 15px;
+		text-align: center;
+		line-height: 25px;
+	}
+
+	*{
+		margin:0;
+		padding: 0;
+	}
 }

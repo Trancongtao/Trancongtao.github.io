@@ -472,7 +472,7 @@ body,html{
 
      /*============================== Product Design ============================== */
      .sanpham {
-        padding: 80px 0px;
+        padding: 56px 0px;
         background: #34495e;
     }
 
@@ -486,7 +486,7 @@ body,html{
     .sanpham h4:nth-child(1) a {
         color: #f1c40f;
         padding: 0px 45px;
-        font-size: 16px;
+        font-size: 14px;
         font-family: RSThin;
         font-style: italic;
         position: relative;
@@ -496,7 +496,7 @@ body,html{
         content: "\f0da";
         font: normal normal normal 14px/1 FontAwesome;
         position: absolute;
-        top: 0px;
+        top: -2px;
         right: 28px;
         font-size: 23px;
     }
@@ -521,32 +521,34 @@ body,html{
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 45px;
+        font-size: 30px;
         color: white;
         background: transparent;
         position: absolute;
         top: -70px;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         left: 48%;
         margin-left: -30px;
         background: #2c3e50;
+        border-radius: 50%;
     }
 
     .sanpham a.right.carousel-control {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 45px;
+        font-size: 30px;
         color: white;
         background: transparent;
         position: absolute;
         top: -70px;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         right: 48%;
         margin-right: -30px;
         background: #2c3e50;
+        border-radius: 50%;
     }
 
     .sanpham .col-md-3:first-child {
@@ -864,7 +866,7 @@ body,html{
 
         /*============================== Product Design ============================== */
         .sanpham {
-            padding-top: 115px;
+            padding-top: 78px;
         }
 
         .sanpham h4 {
@@ -872,12 +874,12 @@ body,html{
         }
 
         .sanpham a.right.carousel-control{
-            right: 44%;
+            right: 47%;
             top: -75px;
         }
 
         .sanpham a.left.carousel-control{
-            left: 44%;
+            left: 47%;
             top: -75px;
         }
 
@@ -1016,7 +1018,7 @@ body,html{
 
     /*============================== Product Design ============================== */
     .sanpham {
-        padding-top: 115px;
+        padding-top: 78px;
     }
 
     .sanpham h4 {
@@ -1024,12 +1026,12 @@ body,html{
     }
 
     .sanpham a.right.carousel-control{
-        right: 44%;
+        right: 47%;
         top: -75px;
     }
 
     .sanpham a.left.carousel-control{
-        left: 44%;
+        left: 47%;
         top: -75px;
     }
 
@@ -1068,7 +1070,7 @@ body,html{
 
     /*============================== Product Design ============================== */
     .sanpham {
-        padding-top: 115px;
+        padding-top: 78px;
     }
 
     .sanpham h4 {
@@ -1076,12 +1078,12 @@ body,html{
     }
 
     .sanpham a.right.carousel-control{
-        right: 44%;
+        right: 48%;
         top: -75px;
     }
 
     .sanpham a.left.carousel-control{
-        left: 44%;
+        left: 48%;
         top: -75px;
     }
 

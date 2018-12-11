@@ -11,6 +11,8 @@ $(document).ready(function() {
 		});
 	});
 
+	new WOW().init();
+
 
 	var vt_infopersonal=$('.info_personal').offset().top;
 	vt_infopersonal=vt_infopersonal-100;

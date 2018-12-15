@@ -19,9 +19,20 @@
 }
 
 body{
-	background: lightblue;
 	font-family: RSRegular;
 }
+
+.over .row {
+    width: 96%;
+    margin: auto;
+}
+
+.over .row img {
+    width: 25%;
+    float: left;
+}
+
+
 
 *{
 	margin:0;

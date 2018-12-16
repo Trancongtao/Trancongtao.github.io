@@ -11,6 +11,11 @@ $(document).ready(function() {
 		});
 	});
 
+	// $('.navbar-default li:first-child a').click(function(event) {
+	// 	event.preventDefault();
+	// 	$('html,body').animate({scrollTop: $('#gioithieu').offset().top}, 1000,"easeInExpo");
+	// });
+
 	new WOW().init();
 
 
@@ -38,6 +43,6 @@ $(document).ready(function() {
 	});
 
 	$('.button_top i').click(function(event) {
-		$('html,body').animate({scrollTop:0}, 600);
+		$('html,body').animate({scrollTop:0}, 2000,"easeOutQuad");
 	});
 });

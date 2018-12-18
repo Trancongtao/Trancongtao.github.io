@@ -937,8 +937,13 @@ body,html{
         }
 
         /*============================== Product Design ============================== */
+        .language_design .col-xs-6.col-md-3 {
+    margin-bottom: 30px;
+}
+
         .sanpham {
             padding-top: 48px;
+            padding-bottom: 0px;
         }
 
         .sanpham h4 {
@@ -954,6 +959,15 @@ body,html{
             left: 47%;
             top: -75px;
         }
+
+        .sanpham .motsp {
+    height: 140px;
+}
+
+        .sanpham .motsp img {
+    height: 50%;
+}
+
 
         /*============================== Pic_ft ============================== */
         .ft_finally .pic_ft{
@@ -1100,8 +1114,13 @@ body,html{
     }
 
     /*============================== Product Design ============================== */
+    .language_design .col-xs-6.col-md-3 {
+    margin-bottom: 30px;
+}
+
     .sanpham {
         padding-top: 48px;
+        padding-bottom: 0px;
     }
 
     .sanpham h4 {
@@ -1117,6 +1136,14 @@ body,html{
         left: 47%;
         top: -75px;
     }
+
+            .sanpham .motsp {
+    height: 140px;
+}
+
+        .sanpham .motsp img {
+    height: 50%;
+}
 
     /*============================== Pic_ft ============================== */
     .ft_finally .pic_ft{
@@ -1163,8 +1190,13 @@ body,html{
     }
 
     /*============================== Product Design ============================== */
+    .language_design .col-xs-6.col-md-3 {
+    margin-bottom: 30px;
+}
+
     .sanpham {
         padding-top: 48px;
+        padding-bottom: 0px;
     }
 
     .sanpham h4 {
@@ -1180,6 +1212,14 @@ body,html{
         left: 48%;
         top: -75px;
     }
+
+            .sanpham .motsp {
+    height: 140px;
+}
+
+        .sanpham .motsp img {
+    height: 50%;
+}
 
     /*============================== Pic_ft ============================== */
     .ft_finally .pic_ft{

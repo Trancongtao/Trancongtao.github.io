@@ -1,0 +1,200 @@
+body{
+	font-family: sans-serif;
+}
+
+.over .container{
+	border: 1px solid #eff1f1;
+	margin: 10px auto;
+	height: 1170px;
+}
+
+.over .container .row{
+	height: 100%;
+}
+/*===== phan khung ben trai =====*/
+.over .col-md-6:first-child {
+	padding-right: 0px;
+	padding-left: 0px;
+	height: 100%;
+}
+
+.content_left {
+	background: #bdc3c72e;
+	padding: 15px 15px 15px 15px;
+	height: 100%;
+}
+
+.content_left img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: white;
+	border: 5px solid #2980b9;
+	margin: auto;
+}
+
+.content_left h2 {
+	font-weight: 600;
+	text-align: center;
+	color: #199bc3;
+	margin-bottom: 30px;
+}
+
+/*===== Tieu de trong khung =====*/
+.content_left .thongtinlienhe h3,
+.content_left .muctieunghenghiep h3,
+.content_left .kynang h3 {
+	text-align: center;
+	border: 3px solid #199bc3;
+	border-radius: 5px;
+	padding: 12px 0px;
+	color: #199bc3;
+	margin-bottom: 20px;
+}
+
+.content_left .thongtinlienhe .content h4,
+.content_left .muctieunghenghiep .content h4 {
+
+}
+
+.content_left .thongtinlienhe .content i {
+	color: #199bc3;
+	width: 30px;
+	height: 30px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content_left .kynang .left h4{
+	font-size: 14px;
+	color: #2c3e50;
+	font-weight: bold;
+	margin-top: 12px;
+}
+
+.content_left .kynang .right .progress{
+	height: 15px;
+	margin-top: 9px;
+	margin-bottom: 18px;
+}
+
+/*===== phan khung ben phai =====*/
+.over .col-md-6:last-child {
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 100%;
+}
+
+.content_right {
+	background: #f3f4f596;
+	padding: 15px 15px 15px 15px;
+	height: 100%;
+}
+
+.content_right .hocvan h3,
+.content_right .kinhnghiemlamviec h3,
+.content_right .hoatdong h3{
+	text-align: center;
+	border: 3px solid #199bc3;
+	border-radius: 5px;
+	padding: 12px 0px;
+	color: white;
+	margin-bottom: 20px;
+	background: #199bc3;
+}
+
+.content_right .hocvan h3{
+	margin-top: 0px;
+}
+
+.content_right .hocvan .content h4.uni,
+.content_right .kinhnghiemlamviec .content h4.compa,
+.content_right .hoatdong .content h4.volun{
+	font-size: 16px;
+	color: #2c3e50;
+	font-weight: bold;
+	display: inline-block;
+	padding-right: 24px;
+	position: relative;
+}
+
+.content_right .hocvan .content h4.uni:after,
+.content_right .kinhnghiemlamviec .content h4.compa:after,
+.content_right .hoatdong .content h4.volun:after {
+	content: "/";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.content_right .hocvan .content h4.year,
+.content_right .kinhnghiemlamviec .content h4.year,
+.content_right .hoatdong .content h4.year {
+	display: inline-block;
+	padding-left: 10px;
+}
+
+.nencam {
+	width: 100%;
+	height: 20px;
+	background: #f39c12;
+}
+
+/*===== Man hinh di dong =====*/
+@media (max-width: 576px) {
+
+	.content_left .thongtinlienhe h3, 
+	.content_left .muctieunghenghiep h3, 
+	.content_left .kynang h3{
+		margin-top: 42px;
+		font-size: 19px;
+		padding: 10px 0px;
+	}
+
+	.content_left .kynang .left h4 {
+		display: none;
+	}
+
+	.content_left .kynang .right .progress {
+		height: 20px;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+
+	.content_left .thongtinlienhe h3, 
+	.content_left .muctieunghenghiep h3, 
+	.content_left .kynang h3{
+		margin-top: 42px;
+		font-size: 19px;
+		padding: 10px 0px;
+	}
+
+	.content_left .kynang .left h4 {
+		display: none;
+	}
+
+	.content_left .kynang .right .progress {
+		height: 20px;
+	}
+}
+
+@media (max-width: 992px) and (min-width: 768px){
+
+	.content_left .thongtinlienhe h3, 
+	.content_left .muctieunghenghiep h3, 
+	.content_left .kynang h3{
+		margin-top: 42px;
+		font-size: 19px;
+		padding: 10px 0px;
+	}
+
+	.content_left .kynang .left h4 {
+		display: none;
+	}
+
+	.content_left .kynang .right .progress {
+		height: 20px;
+	}
+}

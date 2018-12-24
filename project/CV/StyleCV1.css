@@ -1,0 +1,443 @@
+body{
+	font-family: sans-serif;
+}
+
+.over .container.full {
+	border: 1px solid #eff1f1;
+	background: #ecf0f159;
+	padding: 0px 0px;
+	margin: 10px auto;
+}
+
+/*===== Header =====*/
+.header {
+	width: 100%;
+	padding: 40px 0px;
+}
+
+.header .row{
+	display: flex;
+	align-items: center;
+}
+
+.header .content_left h1 {
+	font-size: 59px;
+	font-weight: bold;
+	color: #f39c12;
+}
+
+.header .content_right img {
+	width: 218px;
+	height: 218px;
+	border-radius: 50%;
+}
+
+.info {
+	position: relative;
+	padding-bottom: 76px;
+}
+.info:after {
+	content: "";
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background: #f39c12;
+}
+
+/*===== Dinh dang khoang cach cac phan ben cot trai + ben phai =====*/
+.info .content_left .basic_info,
+.info .content_left .objective,
+.info .content_left .language,
+.info .content_left .skills,
+.info .content_right .experiences,
+.info .content_right .education,
+.info .content_right .references{
+	padding: 5px 0px;
+}
+
+.info .content_right .education{
+	/*margin-top: 25px;*/
+}
+
+/*===== Dinh dang tieu de h2 cac phan ben cot trai + cot phai =====*/
+.info .content_left .basic_info h2,
+.info .content_left .objective h2,
+.info .content_left .language h2,
+.info .content_left .skills h2,
+.info .content_right .experiences h2,
+.info .content_right .education h2,
+.info .content_right .references h2 {
+	font-weight: bold;
+	color: #3498db;
+	padding-bottom: 3px;
+	position: relative;
+}
+
+.info .content_right .experiences h2:before{
+/*	content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 2px;
+    height: 540px;
+    background: gray;
+    margin-top: 75px;*/
+}
+
+.info .content_left .basic_info h2:after,
+.info .content_left .objective h2:after,
+.info .content_left .language h2:after,
+.info .content_right .education h2:after{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 170px;
+	height: 4px;
+	background: #f39c12;
+}
+
+.info .content_left .skills h2:after{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100px;
+	height: 4px;
+	background: #f39c12;
+}
+
+.info .content_right .references h2:after{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 200px;
+	height: 4px;
+	background: #f39c12;
+}
+
+.info .content_right .experiences h2:after{
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 210px;
+	height: 4px;
+	background: #f39c12;
+}
+
+/*===== Dinh dang the p thuoc cot con ben trai =====*/
+.info .content_left .basic_info .left p,
+.info .content_left .language .left p,
+.info .content_left .skills .left p {
+	color: #6f7e80;
+	position: relative;
+}
+
+.info .content_left .basic_info .left p:after,
+.info .content_left .language .left p:after  {
+	content: ":";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	font-weight: bold;
+}
+
+/*===== Dinh dang cot con ben phai =====*/
+.info .content_left .basic_info .col-sm-8,
+.info .content_left .language .col-sm-8{
+	padding-left: 0px;
+}
+
+/*===== Dinh dang the p thuoc cot con ben phai =====*/
+.info .content_left .basic_info .right p,
+.info .content_left .language .right p,
+.info .content_left .skills .right p{
+	font-weight: 600;
+	color: #2c3e50ba;
+}
+
+/*===== Dinh dang phan tu bao boc part =====*/
+.info .content_right .experiences .part,
+.info .content_right .education .part,
+.info .content_right .references .part{
+	position: relative;
+}
+
+.info .content_right .experiences .part.one:before,
+.info .content_right .education .part:before{
+	content: "";
+	width: 2px;
+	height: 115%;
+	background: gray;
+	position: absolute;
+	top: 10px;
+}
+
+.info .content_right .experiences .part.two:before{
+	content: "";
+	width: 2px;
+	height: 100%;
+	background: gray;
+	position: absolute;
+	top: 10px;
+}
+
+.info .content_right .references .part:before {
+	content: "";
+	width: 2px;
+	height: 130%;
+	background: gray;
+	position: absolute;
+	top: 10px;
+}
+
+/*===== Dinh dang ten chuc vu (vd: CEO) o cot ben phai =====*/
+.info .content_right .experiences h3,
+.info .content_right .education h3,
+.info .content_right .references h3 {
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	margin-left: -4px;
+	margin-bottom: 0px;
+	font-size: 19px;
+}
+
+.info .content_right .experiences h3:before,
+.info .content_right .education h3:before,
+.info .content_right .references h3:before {
+	content: "\f111";
+	font: normal normal normal 14px/1 FontAwesome;
+	padding-right: 20px;
+	color: #3498db;
+	z-index: 3;
+}
+
+.info .content_right .experiences h6.company_name,
+.info .content_right .education h6.company_name,
+.info .content_right .references h6.company_name {
+	font-weight: bolder;
+	padding-left: 31px;
+	margin-top: 4px;
+}
+
+.info .content_right .experiences h6.timeword,
+.info .content_right .education h6.timeword,
+.info .content_right .references h6.timeword {
+	padding-left: 31px;
+	color: #5c6e6f;
+}
+
+.info .content_right .experiences .content,
+.info .content_right .education .content,
+.info .content_right .references .content {
+	padding: 10px 0px 0px 31px;
+	color: #1f3638;
+	line-height: 23px;
+}
+
+/*===== Man hinh di dong =====*/
+@media (max-width: 576px) {
+	
+	.header .row{
+		display: inline-block;
+	}
+
+	.header .content_left {
+		text-align: center;
+	}
+
+	.header .content_left h1 {
+		font-size: 30px;
+	}
+
+	.header .content_right {
+		display: flex!important;
+		justify-content: center!important;
+		width: 100%;
+	}
+
+	.info {
+		text-align: center;
+	}
+
+	.info .content_left .basic_info h2, 
+	.info .content_left .objective h2, 
+	.info .content_left .language h2, 
+	.info .content_left .skills h2, 
+	.info .content_right .experiences h2, 
+	.info .content_right .education h2, 
+	.info .content_right .references h2{
+		padding-bottom: 15px;
+		margin-bottom: 25px;
+		font-size: 22px;
+	}
+
+	.info .content_left .basic_info h2:after,
+	.info .content_left .objective h2:after,
+	.info .content_left .language h2:after,
+	.info .content_left .skills h2:after,
+	.info .content_right .experiences h2:after,
+	.info .content_right .education h2:after,
+	.info .content_right .references h2:after {
+		content: "";
+		position: absolute;
+		bottom: 0px;
+		left: 50%;
+		width: 170px;
+		height: 4px;
+		margin-left: -85px;
+		background: #f39c12;
+	}
+
+	.info .content_right .experiences .part, 
+	.info .content_right .education .part, 
+	.info .content_right .references .part{
+		margin-bottom: 62px;
+	}
+
+	.info .content_right .experiences .part:before,
+	.info .content_right .education .part:before{
+		display: none;
+	}
+
+	.info .content_right .experiences h3, 
+	.info .content_right .education h3, 
+	.info .content_right .references h3{
+		display: flex;
+		justify-content: center;
+	}
+
+	.info .content_right .experiences h3:before, 
+	.info .content_right .education h3:before, 
+	.info .content_right .references h3:before{
+		display: none;
+	}
+
+	.info .content_right .experiences h6.company_name, 
+	.info .content_right .education h6.company_name, 
+	.info .content_right .references h6.company_name{
+		padding-left: 0px;
+	}
+
+	.info .content_right .experiences h6.timeword, 
+	.info .content_right .education h6.timeword, 
+	.info .content_right .references h6.timeword{
+		padding-left: 0px;
+	}
+
+	.info .content_right .experiences .content, 
+	.info .content_right .education .content, 
+	.info .content_right .references .content{
+		padding-left: 0px;
+	}
+
+	.info .content_right .references .part:before{
+		display: none;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+
+	.header .row{
+		display: block;
+	}
+
+	.header .content_left {
+		text-align: center;
+	}
+
+	.header .content_left h1 {
+		font-size: 32px;
+	}
+
+	.header .content_right {
+		display: flex!important;
+		justify-content: center!important;
+		width: 100%;
+	}
+
+	.info {
+		text-align: center;
+	}
+
+	.info .content_left .basic_info h2, 
+	.info .content_left .objective h2, 
+	.info .content_left .language h2, 
+	.info .content_left .skills h2, 
+	.info .content_right .experiences h2, 
+	.info .content_right .education h2, 
+	.info .content_right .references h2{
+		padding-bottom: 15px;
+		margin-bottom: 25px;
+		font-size: 22px;
+	}
+
+	.info .content_left .basic_info h2:after,
+	.info .content_left .objective h2:after,
+	.info .content_left .language h2:after,
+	.info .content_left .skills h2:after,
+	.info .content_right .experiences h2:after,
+	.info .content_right .education h2:after,
+	.info .content_right .references h2:after {
+		content: "";
+		position: absolute;
+		bottom: 0px;
+		left: 50%;
+		width: 170px;
+		height: 4px;
+		margin-left: -85px;
+		background: #f39c12;
+	}
+
+	.info .content_right .experiences .part, 
+	.info .content_right .education .part, 
+	.info .content_right .references .part{
+		margin-bottom: 62px;
+	}
+
+	.info .content_right .experiences .part:before,
+	.info .content_right .education .part:before{
+		display: none;
+	}
+
+	.info .content_right .experiences h3, 
+	.info .content_right .education h3, 
+	.info .content_right .references h3{
+		display: flex;
+		justify-content: center;
+	}
+
+	.info .content_right .experiences h3:before, 
+	.info .content_right .education h3:before, 
+	.info .content_right .references h3:before{
+		display: none;
+	}
+
+	.info .content_right .experiences h6.company_name, 
+	.info .content_right .education h6.company_name, 
+	.info .content_right .references h6.company_name{
+		padding-left: 0px;
+	}
+
+	.info .content_right .experiences h6.timeword, 
+	.info .content_right .education h6.timeword, 
+	.info .content_right .references h6.timeword{
+		padding-left: 0px;
+	}
+
+	.info .content_right .experiences .content, 
+	.info .content_right .education .content, 
+	.info .content_right .references .content{
+		padding-left: 0px;
+	}
+
+	.info .content_right .references .part:before{
+		display: none;
+	}
+}
+

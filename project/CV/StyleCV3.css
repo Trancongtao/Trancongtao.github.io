@@ -1,0 +1,248 @@
+body{
+	font-family: sans-serif;
+}
+
+.over .container{
+	border: 1px solid #eff1f1;
+	padding: 0px 0px;
+	margin-top: 10px;
+}
+
+/*===== Phan thong tin dau trang =====*/
+.header_info {
+	padding: 60px 50px;
+	background: #0b7892;
+}
+
+.header_info .info_left img {
+	width: 200px;
+	height: 200px;
+	border: 5px solid #f39c12;
+	margin-left: 37px;
+	margin-bottom: 30px;
+}
+
+.header_info .info_left .contact h4 {
+	color: white;
+}
+
+.header_info .info_left .contact i {
+	width: 30px;
+	height: 30px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding-right: 10px;
+	color: #f39c12;
+}
+
+.header_info .info_right h1 {
+	color: white;
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 41px;
+}
+
+.header_info .info_right h3 {
+	color: #f39c12;
+	font-weight: bold;
+	position: relative;
+	padding-bottom: 60px;
+	margin-bottom: 40px;
+}
+
+.header_info .info_right h3:after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100px;
+	height: 3px;
+	background: #f39c12;
+}
+
+.header_info .info_right h4 {
+	color: white;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.header_info .info_right p {
+	color: white;
+	margin-bottom: 3px;
+}
+
+/*===== Qua trinh lam viec =====*/
+.timework {
+	background: #ecf0f1;
+	padding: 30px 20px;
+}
+
+.timework .row{
+	padding-bottom: 25px;
+}
+
+.timework .row .col-md-8 {
+	padding-top: 11px;
+}
+
+.timework .time_left h1 {
+	color: #f39c12;
+	font-size: 70px;
+	font-weight: 600;
+	position: relative;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.timework .time_left h1:after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	font-size: 60px;
+	width: 100px;
+	height: 3px;
+	margin-left: -50px;
+	background: #f39c12;
+}
+
+.timework .time_left h2 {
+	text-align: center;
+	color: #0b7892;
+	font-weight: 600;
+	font-size: 21px;
+}
+
+.timework .work_right h2 {
+	background: #0b7892;
+	color: white;
+	padding: 10px 10px;
+	font-size: 21px;
+	font-weight: 600;
+}
+
+.timework .work_right h3.uni {
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.timework .work_right h3 {
+	font-size: 16px;
+}
+
+.timework .work_right h3.job {
+	font-weight: bold;
+	font-size: 23px;
+	color: #f39c12;
+}
+
+.timework .work_right h3.des {
+	font-weight: bold;
+}
+
+.nencam {
+	width: 100%;
+	height: 20px;
+	background: #f39c12;
+}
+
+/*===== Man hinh di dong =====*/
+@media (max-width: 576px) {
+
+	.header_info .info_left img {
+		margin: 0px auto 30px auto;
+		display: flex!important;
+		justify-content: center!important;
+	}
+
+	.header_info .info_left .contact h4 {
+		border-bottom: 1px solid #f39c126b;
+		padding-bottom: 5px;
+	}
+
+	.header_info .info_right h1 {
+		text-align: center;
+		font-size: 34px;
+		margin-top: 60px;
+	}
+
+	.header_info .info_right h3 {
+		text-align: center;
+	}
+
+	.header_info .info_right h3:after {
+		left: 50%;
+		margin-left: -50px;
+	}
+
+	.timework .time_left {
+		margin-top: 56px;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+
+	.header_info .info_left img {
+		margin: 0px auto 30px auto;
+		display: flex!important;
+		justify-content: center!important;
+	}
+
+	.header_info .info_left .contact h4 {
+		border-bottom: 1px solid #f39c126b;
+		padding-bottom: 5px;
+	}
+
+	.header_info .info_right h1 {
+		text-align: center;
+		font-size: 34px;
+		margin-top: 60px;
+	}
+
+	.header_info .info_right h3 {
+		text-align: center;
+	}
+
+	.header_info .info_right h3:after {
+		left: 50%;
+		margin-left: -50px;
+	}
+
+	.timework .time_left {
+		margin-top: 56px;
+	}
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+
+	.header_info .info_left img {
+		margin: 0px auto 30px auto;
+		display: flex!important;
+		justify-content: center!important;
+	}
+
+	.header_info .info_left .contact h4 {
+		border-bottom: 1px solid #f39c126b;
+		padding-bottom: 5px;
+	}
+
+	.header_info .info_right h1 {
+		text-align: center;
+		font-size: 34px;
+		margin-top: 60px;
+	}
+
+	.header_info .info_right h3 {
+		text-align: center;
+	}
+
+	.header_info .info_right h3:after {
+		left: 50%;
+		margin-left: -50px;
+	}
+
+	.timework .time_left {
+		margin-top: 56px;
+	}
+}

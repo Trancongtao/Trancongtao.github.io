@@ -31,13 +31,13 @@ html,body{
 }
 
 .nutslide {
-    text-align: center;
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: 0.4s;
-    z-index: 10;
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: 0.4s;
+	z-index: 10;
 }
 
 .nutslide ul li {
@@ -57,8 +57,8 @@ html,body{
 }
 
 .nutslide ul li:hover {
-    background: white;
-    box-shadow: 0 0 0 4px #000000c7 inset, 0 0 0 2px white;
+	background: white;
+	box-shadow: 0 0 0 4px #000000c7 inset, 0 0 0 2px white;
 }
 
 .cacslide{
@@ -80,7 +80,7 @@ html,body{
 .cacslide ul li{
 	list-style: none;
 	position: absolute;
-		opacity: 0;
+	opacity: 0;
 	transition: 0.4s;
 }
 
@@ -230,15 +230,15 @@ html,body{
 }
 
 .motslide .title a {
-    border-radius: 0px;
-    background: transparent;
-    border-width: 1px;
-    border-color: white;
-    margin-top: 40px;
-    padding: 10px 25px;
-    color: white;
-    font-family: sans-serif;
-    opacity: 0;
+	border-radius: 0px;
+	background: transparent;
+	border-width: 1px;
+	border-color: white;
+	margin-top: 40px;
+	padding: 10px 25px;
+	color: white;
+	font-family: sans-serif;
+	opacity: 0;
 }
 
 .cacslide ul li.active .motslide .title a{
@@ -291,4 +291,173 @@ html,body{
 *{
 	margin:0;
 	padding: 0;
+}
+
+@media (max-width: 576px) {
+	
+	.over {
+		width: 100%;
+		height: 50%;
+	}
+
+	.motslide .title {
+		width: 50%;
+	}
+
+	.motslide .xanhduoi1, .motslide .nauduoi1, .motslide .doduoi1 {
+		top: -50px;
+	}
+
+	.motslide .xanhduoi2, .motslide .nauduoi2, .motslide .doduoi2 {
+		top: -40%;
+	}
+
+	.motslide .xanhtren, .motslide .nautren, .motslide .dotren {
+		right: -45%;
+	}
+
+	.nutslide ul li {
+		width: 12px;
+		height: 12px;
+	}
+
+	.motslide .title h1 {
+		font-size: 30px;
+	}
+
+	.motslide .title h3 {
+		font-size: 14px;
+		margin: 11px 0px;
+		padding-bottom: 15px;
+	}
+
+	.motslide .title p {
+		font-size: 13px;
+	}
+
+	.motslide .title a {
+		margin-top: 20px;
+		padding: 8px 15px;
+	}
+
+
+	*{
+		margin:0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+	
+	.over {
+		width: 100%;
+		height: 50%;
+	}
+
+	.motslide .title {
+		top: 25%;
+		width: 30%;
+	}
+
+	.motslide .xanhduoi1, .motslide .nauduoi1, .motslide .doduoi1 {
+		top: -120px;
+	}
+
+	.motslide .xanhduoi2, .motslide .nauduoi2, .motslide .doduoi2 {
+		top: -70%;
+	}
+
+	.motslide .xanhtren, .motslide .nautren, .motslide .dotren {
+		right: -25%;
+	}
+
+	.nutslide ul li {
+		width: 12px;
+		height: 12px;
+	}
+
+	.motslide .title h1 {
+		font-size: 30px;
+	}
+
+	.motslide .title h3 {
+		font-size: 14px;
+		margin: 11px 0px;
+		padding-bottom: 15px;
+	}
+
+	.motslide .title p {
+		font-size: 13px;
+	}
+
+	.motslide .title a {
+		margin-top: 20px;
+		padding: 8px 15px;
+	}
+
+	*{
+		margin:0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+	
+	.over {
+		width: 100%;
+		height: 50%;
+	}
+
+	.motslide .title {
+		top: 25%;
+		width: 25%;
+	}
+
+	.motslide .xanhduoi1, .motslide .nauduoi1, .motslide .doduoi1 {
+		top: -160px;
+	}
+
+	.motslide .xanhduoi2, .motslide .nauduoi2, .motslide .doduoi2 {
+		top: -100%;
+	}
+
+	.motslide .xanhtren, .motslide .nautren, .motslide .dotren {
+		right: -15%;
+	}
+
+	.nutslide ul li {
+		width: 12px;
+		height: 12px;
+	}
+
+	.motslide .title h1 {
+		font-size: 30px;
+	}
+
+	.motslide .title h3 {
+		font-size: 14px;
+		margin: 11px 0px;
+		padding-bottom: 15px;
+	}
+
+	.motslide .title p {
+		font-size: 13px;
+	}
+
+	.motslide .title a {
+		margin-top: 20px;
+		padding: 8px 15px;
+	}
+	*{
+		margin:0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+	
+	*{
+		margin:0;
+		padding: 0;
+	}
 }

@@ -461,17 +461,17 @@ body,html{
         }
 
         .about .img_left img.img-responsive {
-           border-radius: 50%;
-           width: 120px;
-           height: 120px;
-           border: 5px solid #16a085;
-           background: #1abc9c;
-           padding: 15px;
-           margin: auto;
-       }
+         border-radius: 50%;
+         width: 120px;
+         height: 120px;
+         border: 5px solid #16a085;
+         background: #1abc9c;
+         padding: 15px;
+         margin: auto;
+     }
 
-       /*============================== Language Design ============================== */
-       .language_design {
+     /*============================== Language Design ============================== */
+     .language_design {
         padding: 68px 0px;
 
     }
@@ -1024,6 +1024,12 @@ body,html{
             height: 50%;
         }
 
+        /*============================== CV Design ============================== */
+        .cv .motcv {
+            height: 275px;
+            margin-bottom: 25px;
+        }
+
 
         /*============================== Pic_ft ============================== */
         .ft_finally .pic_ft{
@@ -1143,12 +1149,12 @@ body,html{
 
         /*============================== Info ============================== */
         .info_personal img{
-         width: 80%;
-         height: 360px;
-         margin: auto;
-     }
+           width: 80%;
+           height: 360px;
+           margin: auto;
+       }
 
-     .info_personal .name{
+       .info_personal .name{
         text-align: center;
     }
 
@@ -1200,6 +1206,12 @@ body,html{
     .sanpham .motsp img {
         height: 50%;
     }
+
+    /*============================== CV Design ============================== */
+        .cv .motcv {
+            height: 390px;
+            margin-bottom: 25px;
+        }
 
     /*============================== Pic_ft ============================== */
     .ft_finally .pic_ft{
@@ -1276,6 +1288,13 @@ body,html{
     .sanpham .motsp img {
         height: 50%;
     }
+
+    /*============================== CV Design ============================== */
+        .cv .motcv {
+            height: 390px;
+            margin-bottom: 25px;
+        }
+
 
     /*============================== Pic_ft ============================== */
     .ft_finally .pic_ft{

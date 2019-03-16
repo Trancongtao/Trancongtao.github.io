@@ -6,7 +6,7 @@ $(document).ready(function() {
 
 	$(window).resize(function(event) {
 		var docao = $(window).height();
-	$('.header').css({'height': docao});
+		$('.header').css({'height': docao});
 	});
 
 	$('.nutmenu').click(function(event) {
@@ -18,7 +18,6 @@ $(document).ready(function() {
 		$('.menu').removeClass('hienra');
 		$('.nutmenu').removeClass('bienmat');
 	});
-
 
 	$('.header a').click(function(event) {
 		event.preventDefault();

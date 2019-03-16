@@ -16,7 +16,7 @@ $(document).ready(function() {
 	// 	$('html,body').animate({scrollTop: $('#gioithieu').offset().top}, 1000,"easeInExpo");
 	// });
 
-	new WOW().init();
+	// new WOW().init();
 
 
 	var vt_infopersonal=$('.info_personal').offset().top;

@@ -1,0 +1,150 @@
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}
+
+body{
+	font-family: RSRegular;
+	background-image: url(images/bg.png);
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.over {
+	margin: 10px 0px;
+}
+
+.motkhoi {
+	width: 100%;
+	height: 240px;
+	overflow: hidden;
+	cursor: pointer;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.motkhoi img{
+	width: 100%;
+	height: 100%;
+	transform: scale(1.5);
+	transition: 0.4s;
+}
+
+.motkhoi:hover img{
+	transform: scale(1);
+}
+
+.motkhoi .nenxanh {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #16a08540;
+	transition: 0.4s;
+}
+
+.motkhoi .thanhngang1, .motkhoi .thanhngang2 {
+	width: 80%;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: white;
+	margin-left: -40%;
+	transition: 0.4s;
+}
+
+.motkhoi:hover .thanhngang1{
+	transform: rotate(35deg);
+}
+
+.motkhoi:hover .thanhngang2{
+	transform: rotate(-35deg);
+}
+
+.motkhoi h3.chuto {
+	position: absolute;
+	top: 15%;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-family: segoe ui light;
+	transition: 0.4s;
+}
+
+.motkhoi:hover h3.chuto{
+	font-family: segoe ui light;
+	top: 20%;
+	transform: scale(0.8);
+}
+
+.motkhoi h5.chunho {
+	position: absolute;
+	bottom: 13%;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	padding: 0px 50px;
+	font-family: segoe ui light;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+.motkhoi:hover h5.chunho{
+	bottom: 15%;
+	transform: scale(0.9);
+}
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+@media (max-width: 576px) {
+	
+	*{
+		margin:0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+	
+	.motkhoi {
+		height: 332px;
+	}
+
+	*{
+		margin:0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+	
+	.motkhoi {
+		height: 413px;
+	}
+
+	*{
+		margin:0;
+		padding: 0;
+	}
+}

@@ -1,0 +1,440 @@
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+	font-family: RSRegular;
+}
+
+.over{
+	width: 100%;
+	height: 100%;
+}
+
+.nenden {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background: #000000a6;
+	z-index: 1;
+	transition: 0.4s;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.nenden.hiennen{
+	opacity: 1;
+	visibility: visible;
+}
+
+.header {
+	background-color: #a9291c;
+	padding: 30px 0px;
+	color: white;
+	cursor: pointer;
+}
+
+.header h1 {
+	font-family: sans-serif;
+}
+
+.header p {
+	font-family: segoe ui light;
+}
+
+.main {
+	width: 100%;
+	height: 100%;
+	background: #c0392b;
+	padding: 50px 0px;
+}
+
+.main .cottrai h5 {
+	color: white;
+	font-family: segoe ui light;
+	font-size: 21px;
+	line-height: 30px;
+	text-align: right;
+}
+
+.main .cotphai {
+	padding: 20px 0px;
+}
+
+.main .cotphai a {
+	width: 152px;
+	border: none;
+	color: white;
+	letter-spacing: 1px;
+	font-family: segoe ui light;
+	border-radius: 0px;
+	padding: 10px 28px;
+	margin-right: 10px;
+	margin-bottom: 15px;
+	background: #659443;
+	transition: 0.3s;
+}
+
+.main .cotphai a:hover {
+	background: green;
+}
+
+.content1,
+.content2,
+.content3,
+.content4,
+.content5,
+.content6,
+.content7,
+.content8,
+.content9,
+.content10,
+.content11 {
+	position: fixed;
+	width: 600px;
+	height: 260px;
+	top: 50%;
+	left: 50%;
+	margin-left: -300px;
+	margin-top: -130px;
+	background: #961b0e;
+	z-index: 1;
+	color: white;
+	transition: 0.4s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.content1{
+	transform: scale(0.3);
+}
+
+.content1.hienra{
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1);
+}
+
+.content2{
+	transform: translateX(150px);
+}
+
+.content2.hienra{
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0px);
+}
+
+.content3{
+	transform: translateY(150px);
+}
+
+.content3.hienra{
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+}
+
+.content4{
+	transform: translateX(-150px);
+}
+
+.content4.hienra{
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0px);
+}
+
+.content5{
+	transform: translateY(-200px);
+}
+
+.content5.hienra{
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+}
+
+.content6{
+	transform: rotate(720deg) scale(0);
+}
+
+.content6.hienra{
+	opacity: 1;
+	visibility: visible;
+	transform: rotate(0deg) scale(1);
+}
+
+.content7{
+	transform-origin: 0% 100%;
+	transform: rotate(45deg) scale(3);
+}
+
+.content7.hienra{
+	opacity: 1;
+	visibility: visible;
+	transform: rotate(0deg) scale(1);
+}
+
+.content8{
+	top: -100%;
+}
+
+.content8.hienra{
+	opacity: 1;
+	visibility: visible;
+	top: 0%;
+	margin-top: 0px;
+}
+
+.bo{
+	position: fixed;
+	width: 600px;
+	height: 260px;
+	top: 50%;
+	left: 50%;
+	margin-left: -300px;
+	margin-top: -130px;
+	background: #961b0e;
+	z-index: 1;
+	color: white;
+	transition: 0.4s;
+	opacity:1;
+	visibility: hidden;
+	perspective: 800px;
+}
+
+.content9{
+	transform-origin: 50% 50%;
+	transform: rotateY(90deg);
+}
+
+.content9.hienra{
+	opacity: 1;
+	visibility: visible;
+	transform: rotateY(0deg);
+}
+
+.content10{
+	transform-origin: 50% 0%;
+	transform: rotateX(-90deg);
+}
+
+.content10.hienra{
+	opacity: 1;
+	visibility: visible;
+	transform: rotateX(0deg);
+}
+
+.content11{
+	transform: translateZ(-4000px) rotateY(80deg);
+}
+
+.content11.hienra{
+	opacity: 1;
+	visibility: visible;
+	animation: dira 1s forwards;
+}
+
+@-webkit-keyframes dira{
+	0%{
+		transform: translateZ(-4000px) rotateY(80deg);
+	}
+	50%{
+		transform: translateZ(100px) rotateY(80deg);
+	}
+	100%{
+		transform: translateZ(0px) rotateY(0deg);
+	}
+}
+
+.content1 h3,
+.content2 h3,
+.content3 h3,
+.content4 h3,
+.content5 h3,
+.content6 h3,
+.content7 h3,
+.content8 h3,
+.content9 h3,
+.content10 h3,
+.content11 h3 {
+	text-align: center;
+	margin: 0px;
+	padding: 15px;
+	background: #d35400;
+}
+
+.content1 p,
+.content2 p,
+.content3 p,
+.content4 p,
+.content5 p,
+.content6 p,
+.content7 p,
+.content8 p,
+.content9 p,
+.content10 p,
+.content11 p{
+	padding: 15px 36px;
+	font-size: 17px;
+	font-family: segoe ui light;
+}
+
+.content1 a,
+.content2 a,
+.content3 a,
+.content4 a,
+.content5 a,
+.content6 a,
+.content7 a,
+.content8 a,
+.content9 a,
+.content10 a,
+.content11 a {
+	display: inline-block;
+	position: absolute;
+	left: 50%;
+	width: 160px;
+	margin-left: -80px;
+	padding: 10px;
+	border-radius: 3px;
+	font-family: sans-serif;
+	background: rebeccapurple;
+	transition: 0.3s;
+}
+
+.content1 a:hover,
+.content2 a:hover,
+.content3 a:hover,
+.content4 a:hover,
+.content5 a:hover,
+.content6 a:hover,
+.content7 a:hover,
+.content8 a:hover,
+.content9 a:hover,
+.content10 a:hover,
+.content11 a:hover{
+	background:rebeccapurple;
+}
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+@media (max-width: 576px) {
+	
+	.header h1 {
+		font-size: 23px;
+	}
+
+	.main .cottrai h5 {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.main .cotphai {
+		text-align: center;
+	}
+
+	.content1, .content2, .content3, .content4, .content5, .content6, .content7, .content8, .content9, .content10, .content11 {
+		width: 400px;
+		margin-left: -200px;
+		height: 289px;
+	}
+
+	.content1 p, .content2 p, .content3 p, .content4 p, .content5 p, .content6 p, .content7 p, .content8 p, .content9 p, .content10 p, .content11 p {
+		font-size: 15px;
+		text-align: center;
+		line-height: 25px;
+	}
+
+
+	*{
+		margin:0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+	
+	.header h1 {
+		font-size: 23px;
+	}
+
+	.main .cottrai h5 {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.main .cotphai {
+		text-align: center;
+	}
+
+	.content1, .content2, .content3, .content4, .content5, .content6, .content7, .content8, .content9, .content10, .content11 {
+		width: 500px;
+		margin-left: -250px;
+		height: 289px;
+	}
+
+	.content1 p, .content2 p, .content3 p, .content4 p, .content5 p, .content6 p, .content7 p, .content8 p, .content9 p, .content10 p, .content11 p {
+		font-size: 15px;
+		text-align: center;
+		line-height: 25px;
+	}
+
+	*{
+		margin:0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+	
+	.header h1 {
+		font-size: 23px;
+	}
+
+	.main .cottrai h5 {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	.main .cotphai {
+		text-align: center;
+	}
+
+	.content1 p, .content2 p, .content3 p, .content4 p, .content5 p, .content6 p, .content7 p, .content8 p, .content9 p, .content10 p, .content11 p {
+		font-size: 15px;
+		text-align: center;
+		line-height: 25px;
+	}
+
+	*{
+		margin:0;
+		padding: 0;
+	}
+}

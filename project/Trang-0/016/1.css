@@ -1,0 +1,84 @@
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}
+
+body{
+	font-family: RSRegular;
+}
+
+.over .anh {
+    width: 96%;
+    margin: auto;
+}
+
+.over .row img {
+    width: 25%;
+    float: left;
+}
+
+.header {
+    background-color: #c0392b;
+    padding: 60px 40px;
+    font-family: sans-serif;
+    margin-bottom: 80px;
+}
+
+.title h1 {
+    margin-top: 0px;
+    font-weight: 600;
+    color: white;
+}
+
+.title p {
+    color: white;
+    font-family: segoe ui light;
+}
+
+.list ul {
+    padding: 30px 15px;
+}
+
+.list ul li {
+    list-style: none;
+    display: inline;
+    float: right;
+    font-size: 19px;
+    padding: 0px 15px;
+}
+
+.list ul li:first-child {
+    padding: 0px 0px;
+}
+
+.list ul li a {
+    font-family: segoe ui light;
+    font-weight: 600;
+    text-decoration: none;
+    color: #c0392b;
+    transition: 0.4s;
+}
+
+.list ul li a:hover {
+    color: #e74c3c;
+}
+
+*{
+	margin:0;
+	padding: 0;
+}

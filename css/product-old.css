@@ -1,0 +1,475 @@
+@font-face{
+	src:url(../fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(../fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(../fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(../fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}
+
+body,html{
+	font-family: RSRegular;
+	width: 100%;
+	height: 100%;
+	perspective: 1000px;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	/*background-image: url(../images/over_1.png);
+	background-position: top;
+	background-attachment: fixed;*/
+	background-color: #2c3e50;
+}
+
+.over_parent{
+	width: 100%;
+	overflow: hidden;
+}
+
+/*========== Button hinh banh xe ========== */
+.button_menu {
+	width: 40px;
+	height: 40px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	background: #2d3e50;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	cursor: pointer;
+	transition: 0.37s;
+}
+
+.button_menu.go_buttonmenu_right{
+	background: #1abc9c;
+	transition: 0.4s;
+	transform: translateX(200px);
+}
+
+@-webkit-keyframes xoaymai{
+	0%{
+		transform: rotate(0deg);
+	}	
+	100%{
+		transform: rotate(1000000000deg);
+	}
+}
+
+.button_menu i {
+	color: yellow;
+	font-size: 23px;
+	transform-origin: 50% 50%;
+	animation: 4000000s xoaymai forwards;
+}
+
+/*========== Menu ben trai ========== */
+.menu_left {
+	width: 200px;
+	height: 100%;
+	display: inline-block;
+	background: #1abc9c;
+	padding: 40px 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+	transition: 0.4s;
+	visibility: hidden;
+	transform: translateX(-100%);
+	transform-origin: 0% 50%;
+}
+
+.menu_left.open_menu {
+	visibility: visible;
+	transform: translateX(0%);
+	transition: 0.4s;
+}
+
+.background_menu{
+	margin: 0px 5px;
+	border-radius: 5px;
+}
+
+.menu_left .yellow {
+	width: 60px;
+	height: 30px;
+	background: yellow;
+	cursor: pointer;
+}
+
+.menu_left .brown {
+	width: 60px;
+	height: 30px;
+	background: brown;
+	cursor: pointer;
+}
+
+.menu_left .blue {
+	width: 60px;
+	height: 30px;
+	background: blue;
+	cursor: pointer;
+}
+
+.select_background{
+	display: flex;
+	justify-content: center;
+}
+
+.select_menu {
+	padding: 0px 5px;
+	margin-top: 45px;
+	height: 518px;
+	overflow-y: scroll;
+	margin-right: 1px;
+}
+
+.select_menu::-webkit-scrollbar{
+	width:5px;
+	border-radius: 50px;
+	background:transparent;
+}
+
+.select_menu::-webkit-scrollbar-thumb{
+	border-radius: 50px;
+	background:brown;
+}
+
+.select_menu li {
+	padding: 6px 0px;
+	text-align: center;
+	transition: 0.4s;
+}
+
+.select_menu li:hover {
+	background: #2d3e50;
+}
+
+.select_menu li a {
+	text-decoration: none;
+	color: brown;
+	transition: 0.4s;
+}
+
+.select_menu li:hover a {
+	color: yellow;
+}
+
+/*========== Nen den toan man hinh ========== */
+.nenden{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: #0000004a;
+	z-index: 9;
+	top: 0px;
+	left: 0px;
+	transition: 0.4s;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.nenden.hienra{
+	opacity: 1;
+	visibility: visible;
+}
+
+/*========== Body chinh level ========== */
+.over{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+	transition: 0.4s;
+}
+
+/*.over .content{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+
+	width: 80%;
+	height: 80%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background: #f9f9f9;
+	margin: auto;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px brown;
+	background-image: url(../images/pro_nen3.png);
+	transition: 0.4s;
+}
+*/
+
+.over.go_right{
+	transition: 0.4s;
+	transform: translateX(20%);
+	/*transform: translateX(8%) rotateY(-10deg) scale(0.95);*/
+}
+
+.col-sm-3{
+	margin: 15px 0px;
+}
+
+.product{
+	box-shadow: 0px 0px 0px transparent;
+	transform: translateY(0px);
+	transition: 0.4s;
+	box-sizing: border-box;
+	height: 260px;
+	margin-bottom: 30px;
+}
+
+.product:hover {
+	transform: translateY(-10px);
+	box-shadow: 0px 0px 1px 1px #e74c3c;
+
+	transform: scale(1.05);
+}
+
+.product .anh {
+	width: 100%;
+	height: 100%;
+}
+
+.product:hover .anh img{
+	border-radius: 0px;
+}
+
+.product .anh img {
+	width: 100%;
+	height: 100%;
+	padding: 4px;
+	border-radius: 1px;
+}
+
+.title {
+	background: #27ae60;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	position: relative;
+	width: 100%;
+	bottom: 0px;
+	left: 0px;
+}
+
+.title.yellow{
+	background: yellow;
+}
+
+.title.brown{
+	background: brown;
+}
+
+.title h2 {
+	margin: 0px;
+}
+
+.title h2 {
+	box-sizing: border-box;
+	text-transform: uppercase;
+	color: yellow;
+	font-size: 21px;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	padding: 7px 0px;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*============================== Giao dien cho mobile ============================== */
+@media (max-width: 576px){
+
+	/*========== Button hinh banh xe ========== */
+	.button_menu.go_buttonmenu_right{
+		transform: translateX(160px);
+	}
+	
+	/*========== Menu ben trai ========== */
+	.menu_left{
+		width: 160px;
+		height: 100%;
+		padding-bottom: 0px;
+	}
+
+	/*========== Body chinh level ========== */
+	.col-sm-3{
+		margin: 8px 0px;
+	}
+
+	.over::-webkit-scrollbar{
+		width:8px;
+		border-radius: 50px;
+		background:white;
+	}
+
+	.over::-webkit-scrollbar-thumb{
+		border-radius: 50px;
+		background:#27ae60;
+	}
+
+	.over.go_right{
+		transform: translateX(40%);
+	}
+
+	.product{
+		height: 260px;
+		margin-bottom: 15px;
+	}
+
+	.product .anh {
+		height: 260px;
+		margin-bottom: 15px;
+	}
+
+	.title {
+		height: auto;
+		position: relative;
+	}
+
+	.title h2 {
+		font-size: 14px;
+		margin: 0px;
+	}
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 576px ){
+
+	/*========== Button hinh banh xe ========== */
+	.button_menu.go_buttonmenu_right{
+		transform: translateX(160px);
+	}
+	
+	/*========== Menu ben trai ========== */
+	.menu_left{
+		width: 160px;
+		height: 100%;
+		padding-bottom: 0px;
+	}
+
+	/*========== Body chinh level ========== */
+	.col-sm-3{
+		margin: 8px 0px;
+	}
+
+	.over::-webkit-scrollbar{
+		width:8px;
+		border-radius: 50px;
+		background:white;
+	}
+
+	.over::-webkit-scrollbar-thumb{
+		border-radius: 50px;
+		background:#27ae60;
+	}
+
+	.over.go_right{
+		transform: translateX(26%);
+	}
+
+	.product {
+		height: 360px;
+		margin-bottom: 25px;
+	}
+
+	.product .anh {
+		height: 360px;
+		margin-bottom: 25px;
+	}
+
+	.title {
+		height: auto;
+		position: relative;
+	}
+
+	.title h2 {
+		font-size: 14px;
+		margin: 0px;
+	}
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 992px) and (min-width: 768px ){
+
+	/*========== Button hinh banh xe ========== */
+	.button_menu.go_buttonmenu_right{
+		transform: translateX(160px);
+	}
+
+	/*========== Menu ben trai ========== */
+	.menu_left{
+		width: 160px;
+		height: 100%;
+		padding-bottom: 0px;
+	}
+
+	.over.go_right{
+		transform: translateX(30%);
+	}
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 992px ){
+
+	/*========== Button hinh banh xe ========== */
+	.button_menu.go_buttonmenu_right{
+		transform: translateX(160px);
+	}
+
+	/*========== Menu ben trai ========== */
+	.menu_left{
+		width: 160px;
+		height: 100%;
+		padding-bottom: 0px;
+	}
+
+	.over.go_right{
+		transform: translateX(30%);
+	}
+
+	*{
+		margin: 0;
+		padding: 0;
+	}
+}
+

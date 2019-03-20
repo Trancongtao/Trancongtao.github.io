@@ -5,6 +5,7 @@
 
 	:root{
 		--font-chu1: segoe ui;
+		--font-chu2: segoe ui light;
 	}
 
 	*{
@@ -58,6 +59,7 @@
 		font-weight: 600;
 		padding: 10px 0px;
 		display: inline-block;
+		font-family: var(--font-chu2);
 	}
 
 	.col-left .menu-bar i.fa-bars {

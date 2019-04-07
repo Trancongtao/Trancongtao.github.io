@@ -516,7 +516,7 @@ body,html{
     .sanpham h4.title {
         margin-bottom: 46px;
         color: #f1c40f;
-        font-family: RSThin;
+        font-family: segoe ui;
         font-size: 24px;
     }
 
@@ -627,9 +627,11 @@ body,html{
     .cv .title h4 {
         margin-bottom: 46px;
         color: #2c3e50;
-        font-family: sans-serif;
+        font-family: segoe ui;
+        font-weight: 700;
         font-size: 24px;
         position: relative;
+        padding-top: 15px;
         padding-bottom: 15px;
     }
 
@@ -641,8 +643,19 @@ body,html{
         position: absolute;
         bottom: 0px;
         left: 50%;
-        margin-left: -100px;
+        /* margin-left: -100px; */
     }
+
+.cv .title h4:before {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background: #c0392b;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    margin-left: -200px;
+}
 
     .cv .motcv img {
         width: 100%;

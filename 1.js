@@ -42,7 +42,7 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.button_top i').click(function(event) {
+	$('.button_top').click(function(event) {
 		$('html,body').animate({scrollTop:0}, 2000,"easeOutQuad");
 	});
 });

@@ -239,6 +239,7 @@ body,html{
         color: #ffffffbf;
         text-shadow: 2px 2px 1px darkred;
         margin-bottom:  25px;
+        font-family: segoe ui light;
     }
 
     @-webkit-keyframes nutxoay{
@@ -316,6 +317,7 @@ body,html{
 
     .info h2 {
         font-size: 40px;
+        font-family: segoe ui;
     }
 
     .info h6 {
@@ -660,7 +662,7 @@ body,html{
     .fb_comment h2 {
         color: gray;
         margin-bottom:  25px;
-        font-family: RSLight;
+        font-family: segoe ui light;
     }
 
     .fb_comment i {
@@ -727,7 +729,7 @@ body,html{
         color: yellow;
         font-size: 15px;
         letter-spacing: 2px;
-        font-family: RSLight;
+        font-family: segoe ui light;
     }
 
     /*============================== Button Scroll Top ============================== */

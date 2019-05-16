@@ -1,0 +1,101 @@
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+.header {
+    height: 36px;
+    background: #34495e;
+    width: 100%;
+}
+
+.motphantu {
+    position: relative;
+
+    float: right;
+}
+
+
+
+.motphantu .tamgiac {
+    color: wheat;
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+/*.motphantu:first-child .tamgiac{
+	margin-right: 0px; 
+}*/
+
+.motphantu .tamgiactrang{
+	color: white;
+}
+
+.motphantu .tamgiac i {
+    font-size: 16px;
+}
+
+.motphantu .danhsach {
+    position: absolute;
+    top: 36px;
+    right: 18px;
+    width: 150px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.motphantu .hienra{
+	opacity: 1;
+	visibility: visible;
+}
+
+.motphantu .danhsach:after {
+    content: "";
+    position: absolute;
+    top: -19px;
+    right: 0px;
+    width: 0px;
+    height: 0px;
+    border: 10px solid #80808000;
+    border-bottom-color: white;
+}
+
+.danhsach ul li {
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 5px;
+}
+
+.danhsach ul li:hover {
+    background: #ecf0f1;
+}
+
+*{
+	margin:0;
+	padding: 0;
+}

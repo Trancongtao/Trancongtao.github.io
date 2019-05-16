@@ -1,0 +1,463 @@
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}
+
+html,body{
+	font-family: RSRegular;
+	width: 100%;
+	height: 100%;
+}
+
+.over{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.nutslide {
+	text-align: center;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: 0.4s;
+	z-index: 10;
+}
+
+.nutslide ul li {
+	display: inline-block;
+	background: gray;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	margin: 0px 2px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.nutslide ul li.active{
+	background: transparent;
+	box-shadow: 0 0 0 4px #2525278c inset, 0 0 0 2px white;
+}
+
+.nutslide ul li:hover {
+	background: white;
+	box-shadow: 0 0 0 4px #000000c7 inset, 0 0 0 2px white;
+}
+
+.cacslide{
+	position: absolute;
+}
+
+.cacslide,
+.cacslide ul,
+.cacslide ul li{
+	width: 100%;
+	height: 100%;
+}
+
+.cacslide ul{
+	position: relative;
+	margin:0px;
+}
+
+.cacslide ul li{
+	list-style: none;
+	position: absolute;
+	opacity: 0;
+	transition: 0.4s;
+}
+
+.cacslide ul li.active{
+	opacity: 1;
+}
+
+.motslide {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.motslide .xanhduoi1,
+.motslide .xanhduoi2,
+.motslide .xanhtren,
+.motslide .nauduoi1,
+.motslide .nauduoi2,
+.motslide .nautren,
+.motslide .doduoi1,
+.motslide .doduoi2,
+.motslide .dotren,
+.motslide .title{
+	position: absolute;
+	top: 0px;
+	z-index: 1;
+	opacity: 0;
+}
+
+.motslide .xanhduoi1,
+.motslide .nauduoi1,
+.motslide .doduoi1 {
+	opacity: 0;
+	top: -80%;
+}
+
+.cacslide ul li.active .motslide .xanhduoi1,
+.cacslide ul li.active .motslide .nauduoi1,
+.cacslide ul li.active .motslide .doduoi1{
+	animation: divaotutrai 1s forwards;
+
+}
+
+@-webkit-keyframes divaotutrai{
+	from{opacity: 0;transform: translateX(-100%) translateY(100%);}
+	to{opacity: 0.8;transform: translateX(0%) translateY(0%);}
+}
+
+.motslide .xanhduoi2,
+.motslide .nauduoi2,
+.motslide .doduoi2 {
+	opacity: 0;
+	top: -53%;
+}
+
+.cacslide ul li.active .motslide .xanhduoi2,
+.cacslide ul li.active .motslide .nauduoi2,
+.cacslide ul li.active .motslide .doduoi2{
+	animation: divaotutrai 1s forwards;
+	animation-delay: 0.3s;
+}
+
+.motslide .xanhtren,
+.motslide .nautren,
+.motslide .dotren {
+	opacity: 0;
+	right: 0px;
+}
+
+.cacslide ul li.active .motslide .xanhtren,
+.cacslide ul li.active .motslide .nautren,
+.cacslide ul li.active .motslide .dotren{
+	animation: divaotuphai 1s forwards;
+	animation-delay: 0.1s;
+}
+
+@-webkit-keyframes divaotuphai{
+	from{opacity: 0;transform: translateX(100%) translateY(-100%);}
+	to{opacity: 0.6;transform: translateX(0%) translateY(0%);}
+}
+
+.motslide .title {
+	width: 30%;
+	opacity: 1;
+	left: 4%;
+	top: 12%;
+	color: white;
+	/*overflow: hidden;*/
+}
+
+@-webkit-keyframes cdsangphai{
+	from{opacity: 0;transform: translateX(-100%);}
+	to{opacity: 1;transform: translateX(0%);}
+}
+
+.motslide .title h1 {
+	font-family: segoe ui light;
+	font-size: 58px;
+	opacity: 0;
+}
+
+.cacslide ul li.active .motslide .title h1{
+	animation: cdsangphai 1s forwards;
+	animation-delay: 0.8s;
+}
+
+.motslide .title h3 {
+	font-family: sans-serif;
+	font-weight: 600;
+	margin: 23px 0px;
+	position: relative;
+	padding-bottom: 28px;
+	opacity: 0;
+}
+
+.motslide .title h3:after {
+	content: "";
+	width: 100px;
+	height: 2px;
+	background: white;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0;
+}
+
+.cacslide ul li.active .motslide .title h3{
+	animation: cdsangphai 1s forwards;
+	animation-delay: 0.9s;
+}
+
+.cacslide ul li.active .motslide .title h3:after{
+	animation: cdsangphai 1s forwards;
+	animation-delay: 1.1s;
+}
+
+.motslide .title p {
+	font-family: segoe ui light;
+	font-size: 17px;
+	opacity: 0;
+}
+
+.cacslide ul li.active .motslide .title p{
+	animation: cdsangphai 1s forwards;
+	animation-delay: 1.3s;
+}
+
+.motslide .title a {
+	border-radius: 0px;
+	background: transparent;
+	border-width: 1px;
+	border-color: white;
+	margin-top: 40px;
+	padding: 10px 25px;
+	color: white;
+	font-family: sans-serif;
+	opacity: 0;
+}
+
+.cacslide ul li.active .motslide .title a{
+	animation: cdsangphai 1s forwards;
+	animation-delay: 1.4s;
+}
+
+.motslide .anhslide01 {
+	width: 100%;
+	height: 100%;
+	background-image: url(images/001.jpg);
+	background-size: cover;
+}
+
+.motslide .anhslide02 {
+	width: 100%;
+	height: 100%;
+	background-image: url(images/002.jpg);
+	background-size: cover;
+}
+
+.motslide .anhslide03 {
+	width: 100%;
+	height: 100%;
+	background-image: url(images/003.jpg);
+	background-size: cover;
+}
+
+.motslide .anhslide04 {
+	width: 100%;
+	height: 100%;
+	background-image: url(images/004.jpg);
+	background-size: cover;
+}
+
+.motslide .anhslide05 {
+	width: 100%;
+	height: 100%;
+	background-image: url(images/005.jpg);
+	background-size: cover;
+}
+
+.motslide .anhslide06 {
+	width: 100%;
+	height: 100%;
+	background-image: url(images/006.jpg);
+	background-size: cover;
+}
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+@media (max-width: 576px) {
+	
+	.over {
+		width: 100%;
+		height: 50%;
+	}
+
+	.motslide .title {
+		width: 50%;
+	}
+
+	.motslide .xanhduoi1, .motslide .nauduoi1, .motslide .doduoi1 {
+		top: -50px;
+	}
+
+	.motslide .xanhduoi2, .motslide .nauduoi2, .motslide .doduoi2 {
+		top: -40%;
+	}
+
+	.motslide .xanhtren, .motslide .nautren, .motslide .dotren {
+		right: -45%;
+	}
+
+	.nutslide ul li {
+		width: 12px;
+		height: 12px;
+	}
+
+	.motslide .title h1 {
+		font-size: 30px;
+	}
+
+	.motslide .title h3 {
+		font-size: 14px;
+		margin: 11px 0px;
+		padding-bottom: 15px;
+	}
+
+	.motslide .title p {
+		font-size: 13px;
+	}
+
+	.motslide .title a {
+		margin-top: 20px;
+		padding: 8px 15px;
+	}
+
+
+	*{
+		margin:0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+	
+	.over {
+		width: 100%;
+		height: 50%;
+	}
+
+	.motslide .title {
+		top: 25%;
+		width: 30%;
+	}
+
+	.motslide .xanhduoi1, .motslide .nauduoi1, .motslide .doduoi1 {
+		top: -120px;
+	}
+
+	.motslide .xanhduoi2, .motslide .nauduoi2, .motslide .doduoi2 {
+		top: -70%;
+	}
+
+	.motslide .xanhtren, .motslide .nautren, .motslide .dotren {
+		right: -25%;
+	}
+
+	.nutslide ul li {
+		width: 12px;
+		height: 12px;
+	}
+
+	.motslide .title h1 {
+		font-size: 30px;
+	}
+
+	.motslide .title h3 {
+		font-size: 14px;
+		margin: 11px 0px;
+		padding-bottom: 15px;
+	}
+
+	.motslide .title p {
+		font-size: 13px;
+	}
+
+	.motslide .title a {
+		margin-top: 20px;
+		padding: 8px 15px;
+	}
+
+	*{
+		margin:0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+	
+	.over {
+		width: 100%;
+		height: 50%;
+	}
+
+	.motslide .title {
+		top: 25%;
+		width: 25%;
+	}
+
+	.motslide .xanhduoi1, .motslide .nauduoi1, .motslide .doduoi1 {
+		top: -160px;
+	}
+
+	.motslide .xanhduoi2, .motslide .nauduoi2, .motslide .doduoi2 {
+		top: -100%;
+	}
+
+	.motslide .xanhtren, .motslide .nautren, .motslide .dotren {
+		right: -15%;
+	}
+
+	.nutslide ul li {
+		width: 12px;
+		height: 12px;
+	}
+
+	.motslide .title h1 {
+		font-size: 30px;
+	}
+
+	.motslide .title h3 {
+		font-size: 14px;
+		margin: 11px 0px;
+		padding-bottom: 15px;
+	}
+
+	.motslide .title p {
+		font-size: 13px;
+	}
+
+	.motslide .title a {
+		margin-top: 20px;
+		padding: 8px 15px;
+	}
+	*{
+		margin:0;
+		padding: 0;
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+	
+	*{
+		margin:0;
+		padding: 0;
+	}
+}

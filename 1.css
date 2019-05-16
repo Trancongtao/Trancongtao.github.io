@@ -1,42 +1,43 @@
-@font-face{
-    src:url(fonts/RobotoSlab-Bold.ttf);
+@font-face {
+    src: url(fonts/RobotoSlab-Bold.ttf);
     font-family: RSBold;
 }
 
-@font-face{
-    src:url(fonts/RobotoSlab-Light.ttf);
+@font-face {
+    src: url(fonts/RobotoSlab-Light.ttf);
     font-family: RSLight;
 }
 
-@font-face{
-    src:url(fonts/RobotoSlab-Regular.ttf);
+@font-face {
+    src: url(fonts/RobotoSlab-Regular.ttf);
     font-family: RSRegular;
 }
 
-@font-face{
-    src:url(fonts/RobotoSlab-Thin.ttf);
+@font-face {
+    src: url(fonts/RobotoSlab-Thin.ttf);
     font-family: RSThin;
 }
 
-body,html{
+body,
+html {
     font-family: RSRegular;
     width: 100%;
     height: 100%;
 }
 
-::selection{
+::selection {
     color: white;
     background: #f1c40f;
 }
 
-.over{
+.over {
     overflow: hidden;
 }
 
-.fb_dialog.fb_dialog_advanced.fb_customer_chat_bubble_animated_no_badge.fb_customer_chat_bubble_pop_in{
+.fb_dialog.fb_dialog_advanced.fb_customer_chat_bubble_animated_no_badge.fb_customer_chat_bubble_pop_in {
     position: fixed;
-    bottom: 66px!important;
-    right: 5px!important;
+    bottom: 66px !important;
+    right: 5px !important;
 }
 
 /*============================== loading ==============================*/
@@ -48,9 +49,9 @@ body,html{
     left: 0px;
     background: #2b5a2b;
     z-index: 10000;
-}
+    }*/
 
-.loading .khoiload {
+/*.loading .khoiload {
     width: 80px;
     height: 80px;
     background: #1abc9c;
@@ -62,274 +63,294 @@ body,html{
     border-radius: 50%;
     }*/
 
-    /*============================== Menu ============================== */
-    .menu{
-        overflow: hidden;
+/*============================== Menu ============================== */
+.menu {
+    overflow: hidden;
+}
+
+.menu .navbar-default {
+    height: 80px;
+    background: white;
+    transition: 0.4s;
+    margin: 0px;
+    border: none;
+    perspective: 3000px;
+}
+
+.menu .navbar-default.thunho {
+    height: 60px;
+    background: #2d3e50;
+    transition: 0.4s;
+}
+
+.menu .navbar-default .navbar-brand {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background: green;
+    color: yellow;
+    letter-spacing: 2px;
+    transform-origin: 0% 0%;
+    text-transform: uppercase;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    animation: logo 1.2s forwards;
+    transition: 0.4s;
+}
+
+@-webkit-keyframes logo {
+    0% {
+        transform: rotateX(-180deg);
     }
 
-    .menu .navbar-default {
-        height: 80px;
-        background: white;
-        transition: 0.4s;
-        margin: 0px;
-        border: none;
-        perspective: 3000px;
+    100% {
+        transform: rotateX(0deg);
     }
+}
 
-    .menu .navbar-default.thunho{
-        height: 60px;
-        background: #2d3e50;
-        transition: 0.4s;
-    }
+.menu .navbar-default.thunho .navbar-brand {
+    height: 60px;
+    transition: 0.4s;
+}
 
-    .menu .navbar-default .navbar-brand {
-        height: 80px;
-        display: flex;
-        align-items: center;
-        background: green;
-        color: yellow;
-        letter-spacing: 2px;
-        transform-origin: 0% 0%;
-        text-transform: uppercase;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        animation: logo 1.2s forwards;
-        transition: 0.4s;
-    }
+.menu .navbar-default .navbar-nav li a {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+    font-family: RSLight;
+    transition: 0.4s;
+    position: relative;
+}
 
-    @-webkit-keyframes logo{
-        0%{
-            transform: rotateX(-180deg);
-        }
-        100%{
-            transform: rotateX(0deg);
-        }
-    }
+.menu .navbar-default.thunho .navbar-nav li a {
+    color: white;
+    height: 60px;
+    transition: 0.4s;
+}
 
-    .menu .navbar-default.thunho .navbar-brand{
-        height: 60px;
-        transition: 0.4s;
-    }
+.menu .navbar-default .navbar-nav li a:hover {
+    color: gray;
+}
 
-    .menu .navbar-default .navbar-nav li a {
-        height: 80px;
-        display: flex;
-        align-items: center;
-        font-size: 18px;
-        color: black;
-        text-transform: uppercase;
-        font-family: RSLight;
-        transition: 0.4s;
-        position: relative;
-    }
+.menu .navbar-default.thunho .navbar-nav li a:hover {
+    color: white;
+}
 
-    .menu .navbar-default.thunho .navbar-nav li a{
-        color: white;
-        height: 60px;
-        transition: 0.4s;
-    }
+.menu .navbar-default .navbar-nav li a:after {
+    content: "";
+    width: 0%;
+    height: 5px;
+    background: green;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: 0.4s;
+}
 
-    .menu .navbar-default .navbar-nav li a:hover{
-        color: gray;
-    }
+.menu .navbar-default.thunho .navbar-nav li a:after {
+    background: yellow;
+}
 
-    .menu .navbar-default.thunho .navbar-nav li a:hover{
-        color: white;
-    }
+.menu .navbar-default .navbar-nav li a:hover::after {
+    width: 100%;
+    opacity: 1;
+}
 
-    .menu .navbar-default .navbar-nav li a:after {
-        content: "";
-        width: 0%;
-        height: 5px;
-        background: green;
-        border-radius: 5px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
+/*============================== Hoc Tap ============================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner_hoctap {
+    width: 100%;
+    height: 300px;
+    background-image: url(images/Banner_hoctap.png);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*============================== Banner ============================== */
+.banner {
+    width: 100%;
+    height: 100%;
+    background: #e9585f;
+    position: relative;
+    padding-top: 109px;
+    /*padding: 160px 0px 54px 0px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background: #da4b51;
+}
+
+.banner_in {
+    perspective: 500px;
+}
+
+.banner_in a.fancybox {
+    width: 220px;
+}
+
+@-webkit-keyframes hinhhienra {
+    0% {
         opacity: 0;
-        transition: 0.4s;
+        transform: rotateY(720deg);
     }
 
-    .menu .navbar-default.thunho .navbar-nav li a:after{
-        background: yellow;
-    }
-
-    .menu .navbar-default .navbar-nav li a:hover::after{
-        width: 100%;
+    100% {
         opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+
+.banner_in img {
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 10px #cc4248;
+    transition: 0.4s;
+    border: 6px solid #e9585f;
+}
+
+@-webkit-keyframes tenhienra {
+    0% {
+        opacity: 0;
+        transform: scale(0);
     }
 
-    /*============================== Banner ============================== */
-    .banner {
-        width: 100%;
-        height: 100%;
-        background: #e9585f;
-        position: relative;
-        padding-top: 109px;
-        /*padding: 160px 0px 54px 0px;*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.banner_in h2 {
+    font-size: 42px;
+    font-family: RSBold;
+    color: white;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px green;
+    transition: 0.4s;
+}
+
+.banner_in h5 {
+    font-size: 25px;
+    color: #ffffffbf;
+    text-shadow: 2px 2px 1px darkred;
+    margin-bottom: 25px;
+    font-family: segoe ui light;
+}
+
+@-webkit-keyframes nutxoay {
+    0% {
+        opacity: 0;
+        transform: scale(0.4);
     }
 
-    .banner:before {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 50%;
-        height: 100%;
-        background: #da4b51;
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.banner_in a {
+    width: 160px;
+    height: 40px;
+    font-size: 17px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #eaea1c;
+    letter-spacing: 1px;
+}
+
+.banner_in .icon {
+    margin-top: 20px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+@-webkit-keyframes dituduoilen {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
     }
 
-    .banner_in{
-        perspective: 500px;
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
     }
+}
 
-    .banner_in a.fancybox{
-        width: 220px;
-    }
+.banner_in i {
+    width: 30px;
+    height: 30px;
+    background: #F5BB50;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 0px 4px #f1f164;
+    cursor: pointer;
+    animation: dituduoilen 1s forwards;
+    transition: 0.4s;
+}
 
-    @-webkit-keyframes hinhhienra{
-        0%{
-            opacity: 0;
-            transform: rotateY(720deg);
-        }
-        100%{
-            opacity: 1;
-            transform: rotateY(0deg);
-        }
-    }
+.banner_in i:hover {
+    color: white;
+    background: #f9b841;
+    box-shadow: inset 0px 0px 0px 0px #f1f164;
+}
 
-    .banner_in img {
-        width: 220px;
-        height: 220px;
-        margin: auto;
-        border-radius: 50%;
-        margin-bottom: 50px;
-        cursor: pointer;
-        box-shadow: 0px 0px 10px 10px #cc4248;
-        transition: 0.4s;
-        border: 6px solid #e9585f;
-    }
+/*============================== Info ============================== */
+.info_personal {
+    padding: 72px 0px;
+    background: white;
+}
 
-    @-webkit-keyframes tenhienra{
-        0%{
-            opacity: 0;
-            transform: scale(0);
-        }
-        100%{
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
+.info_personal img {
+    width: 100%;
+    margin-top: 84px;
+    height: 308px;
+    border-radius: 5%;
+    border: 3px solid #da4b51;
+}
 
-    .banner_in h2 {
-        font-size: 42px;
-        font-family: RSBold;
-        color: white;
-        letter-spacing: 3px;
-        margin-bottom:  25px;
-        text-shadow: 2px 2px 5px green;
-        transition: 0.4s;
-    }
+.info h2 {
+    font-size: 40px;
+    font-family: segoe ui;
+}
 
-    .banner_in h5 {
-        font-size: 25px;
-        color: #ffffffbf;
-        text-shadow: 2px 2px 1px darkred;
-        margin-bottom:  25px;
-        font-family: segoe ui light;
-    }
+.info h6 {
+    font-size: 19px;
+    color: gray;
+    font-family: RSLight;
 
-    @-webkit-keyframes nutxoay{
-        0%{
-            opacity: 0;
-            transform: scale(0.4);
-        }
-        100%{
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
+    position: relative;
+    margin: 0px;
+}
 
-    .banner_in a {
-        width: 160px;
-        height: 40px;
-        font-size: 17px;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        color: #eaea1c;
-        letter-spacing: 1px;        
-    }
-
-    .banner_in .icon {
-        margin-top:  20px;
-        overflow: hidden;
-        padding-bottom: 20px;
-    }
-
-    @-webkit-keyframes dituduoilen{
-        0%{
-            opacity: 0;
-            transform: translateY(200px);
-        }
-        100%{
-            opacity: 1;
-            transform: translateY(0px);
-        }
-    }
-
-    .banner_in i {
-        width: 30px;
-        height: 30px;
-        background: #F5BB50;
-        border-radius: 50%;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        box-shadow: inset 0px 0px 0px 4px #f1f164;
-        cursor: pointer;
-        animation: dituduoilen 1s forwards;
-        transition: 0.4s;
-    }
-
-    .banner_in i:hover {
-        color: white;
-        background: #f9b841;
-        box-shadow: inset 0px 0px 0px 0px #f1f164;
-    }
-
-    /*============================== Info ============================== */
-    .info_personal {
-        padding: 72px 0px;
-        background: white;
-    }
-
-    .info_personal img {
-        width: 100%;
-        margin-top: 84px;
-        height: 308px;
-        border-radius: 5%;
-        border: 3px solid #da4b51;
-    }
-
-    .info h2 {
-        font-size: 40px;
-        font-family: segoe ui;
-    }
-
-    .info h6 {
-        font-size: 19px;
-        color: gray;
-        font-family: RSLight;
-        
-        position: relative;
-        margin: 0px;
-    }
-
-    /*.info h6:after {
+/*.info h6:after {
         content: "";
         position: absolute;
         bottom: 0px;
@@ -339,312 +360,332 @@ body,html{
         background: #80808030;
         }*/
 
-        .info .star,
-        .about .star {
-            font-size: 30px;
-            position: relative;
-            display: inline-block;
-        }
+.info .star,
+.about .star {
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+}
 
-        .info .star i,
-        .about .star i {
-            color: #34495e;
-            height: 50px;
-            width: 50px;
-            margin: 0px 110px;
-            font-size: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.info .star i,
+.about .star i {
+    color: #34495e;
+    height: 50px;
+    width: 50px;
+    margin: 0px 110px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .info .star:before,
-        .about .star:before {
-            content: "";
-            width: 110px;
-            height: 2px;
-            position: absolute;
-            top: 50%;
-            left: 0px;
-            background: #34495e;
-        }
+.info .star:before,
+.about .star:before {
+    content: "";
+    width: 110px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    background: #34495e;
+}
 
-        .info .star:after,
-        .about .star:after {
-            content: "";
-            width: 110px;
-            height: 2px;
-            position: absolute;
-            top: 50%;
-            right: 0px;
-            background: #34495e;
-        }
+.info .star:after,
+.about .star:after {
+    content: "";
+    width: 110px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    background: #34495e;
+}
 
-        .info .place i {
-            font-size: 24px;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #16a085;
-            color: white;
-            border-radius: 4px;
-        }
+.info .place i {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #16a085;
+    color: white;
+    border-radius: 4px;
+}
 
-        .info h4 {
-            line-height: 33px;
-            font-size: 16px;
-            color: gray;
-            display: flex;
-            justify-content: start;
-            /*align-items: center;*/
-        }
+.info h4 {
+    line-height: 33px;
+    font-size: 16px;
+    color: gray;
+    display: flex;
+    justify-content: start;
+    /*align-items: center;*/
+}
 
-        .info .tt {
-            width: 70px;
-            display: inline-block;
-            text-transform: uppercase;
-            font-size: 15px;
-            color: #000000bd;
-        }
+.info .tt {
+    width: 70px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000000bd;
+}
 
-        .about{
-            padding: 60px 0px 0px 0px;
-            background: #ecf0f1;
-            font-family: sans-serif;
-        }
+.about {
+    padding: 60px 0px 0px 0px;
+    background: #ecf0f1;
+    font-family: sans-serif;
+}
 
-        .about .title h1 {
-            font-weight: bold;
-            color: #34495e;
-        }
+.about .title h1 {
+    font-weight: bold;
+    color: #34495e;
+}
 
-        .about .title p {
-            font-style: italic;
-            margin-bottom: 0px;
-        }
+.about .title p {
+    font-style: italic;
+    margin-bottom: 0px;
+}
 
-        .about .row.timelife {
-            position: relative;
-            margin-top: 50px;
-        }
+.about .row.timelife {
+    position: relative;
+    margin-top: 50px;
+}
 
-        .about .timelife .duongke {
-            position: absolute;
-            width: 4px;
-            height: 88%;
-            background: #16a085;
-            left: 50%;
-            top: 0px;
-            margin-left: -3px;
-        }
+.about .timelife .duongke {
+    position: absolute;
+    width: 4px;
+    height: 88%;
+    background: #16a085;
+    left: 50%;
+    top: 0px;
+    margin-left: -3px;
+}
 
-        .about .row.mottin {
-            margin-bottom: 46px;
-        }
+.about .row.mottin {
+    margin-bottom: 46px;
+}
 
-        .about .info_left h3 {
-            margin-top: 0px;
-            margin-bottom: 0px;
-            font-weight: bold;
-            font-size: 19px;
-        }
+.about .info_left h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 19px;
+}
 
-        .about .info_left h3:nth-child(2) {
-            font-size: 16px;
-            margin-top: 5px;
-            color: #34495e;
-        }
+.about .info_left h3:nth-child(2) {
+    font-size: 16px;
+    margin-top: 5px;
+    color: #34495e;
+}
 
-        .about .info_left p {
-            color: #7f8c8d;
-            margin-top: 15px;
-        }
+.about .info_left p {
+    color: #7f8c8d;
+    margin-top: 15px;
+}
 
-        .about .img_left img.img-responsive {
-         border-radius: 50%;
-         width: 120px;
-         height: 120px;
-         border: 5px solid #16a085;
-         background: #1abc9c;
-         padding: 15px;
-         margin: auto;
-     }
+.about .img_left img.img-responsive {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 5px solid #16a085;
+    background: #1abc9c;
+    padding: 15px;
+    margin: auto;
+}
 
-     /*============================== Language Design ============================== */
-     .language_design {
-        padding: 68px 0px;
+/*============================== Language Design ============================== */
+.language_design {
+    padding: 68px 0px;
 
-    }
+}
 
-    .language_design img {
-        width: 148px;
-        height: 158px;
-        margin: auto;
-        background: #ecf0f1;
-        padding: 24px;
-        border: 4px solid #bdc3c7;
-        cursor: pointer;
-        transition: 0.3s;
-    }
+.language_design img {
+    width: 148px;
+    height: 158px;
+    margin: auto;
+    background: #ecf0f1;
+    padding: 24px;
+    border: 4px solid #bdc3c7;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-    .language_design img:hover {
-        box-shadow: 0px 0px 4px #bdc3c7;
-    }
+.language_design img:hover {
+    box-shadow: 0px 0px 4px #bdc3c7;
+}
 
-    .language_design .language {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.language_design .language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .language_design .language h5 {
+.language_design .language h5 {
 
-        font-size: 25px;
-        font-family: sans-serif;
-        font-weight: 900;
-        color: #95a5a6;
-    }
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: #95a5a6;
+}
 
-    /*============================== Product Design ============================== */
-    .sanpham {
-        padding: 46px 0px;
-        background: #34495e;
-    }
+/*============================== Product Design ============================== */
+.sanpham {
+    padding: 46px 0px;
+    background: #34495e;
+}
 
-    .sanpham h4.title {
-        margin-bottom: 46px;
-        color: #f1c40f;
-        font-family: segoe ui;
-        font-size: 24px;
-    }
+.sanpham h4.title {
+    margin-bottom: 16px;
+    color: #f1c40f;
+    font-family: segoe ui;
+    font-size: 24px;
+}
 
-    .sanpham h4:nth-child(2) {
-        color: #f1c40f!important;
-        padding: 0px 22px;
-        font-family: RSThin;
-        font-weight: bold;
-    }
+.sanpham h4.title:before {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background: #e5c40f;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    margin-left: -200px;
+}
 
-    .sanpham h4:nth-child(1) a {
-        color: #f1c40f;
-        padding: 0px 45px;
-        font-size: 14px;
-        font-family: RSThin;
-        font-style: italic;
-        position: relative;
-    }
+.sanpham h4.title:after {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background: #f1c40f;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+}
 
-    .sanpham h4:nth-child(1) a:after {
-        content: "\f0da";
-        font: normal normal normal 14px/1 FontAwesome;
-        position: absolute;
-        top: -2px;
-        right: 28px;
-        font-size: 23px;
-    }
+.sanpham h4:nth-child(2) {
+    color: #f1c40f !important;
+    padding: 0px 22px;
+    font-family: RSThin;
+    font-weight: bold;
+}
 
-    .sanpham div#carousel-id {
-        margin-top: 45px;
-    }
+.sanpham h4:nth-child(1) a {
+    color: #f1c40f;
+    padding: 0px 45px;
+    font-size: 14px;
+    font-family: RSThin;
+    position: relative;
+}
 
-    .sanpham .carousel-indicators {
-        display: none;
-    }
+.sanpham h4:nth-child(1) a:after {
+    content: "\f0da";
+    font: normal normal normal 14px/1 FontAwesome;
+    position: absolute;
+    top: -2px;
+    right: 28px;
+    font-size: 23px;
+}
 
-    .sanpham .motsp {
-        height: 216px;
-    }
+.sanpham div#carousel-id {
+    margin-top: 116px;
+}
 
-    .sanpham .motsp img {
-        height: 100%;
-    }
+.sanpham .carousel-indicators {
+    display: none;
+}
 
-    .sanpham a.left.carousel-control {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        color: white;
-        background: transparent;
-        position: absolute;
-        top: -70px;
-        width: 40px;
-        height: 40px;
-        left: 48%;
-        margin-left: -30px;
-        background: #2c3e50;
-        border-radius: 50%;
-    }
+.sanpham .motsp {
+    height: 216px;
+}
 
-    .sanpham a.right.carousel-control {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-        color: white;
-        background: transparent;
-        position: absolute;
-        top: -70px;
-        width: 40px;
-        height: 40px;
-        right: 48%;
-        margin-right: -30px;
-        background: #2c3e50;
-        border-radius: 50%;
-    }
+.sanpham .motsp img {
+    height: 100%;
+}
 
-    .sanpham .col-md-3:first-child {
-        padding: 0px 10px 0px 35px;
-    }
+.sanpham a.left.carousel-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    position: absolute;
+    top: -70px;
+    width: 40px;
+    height: 40px;
+    left: 48%;
+    margin-left: -30px;
+    background: #2c3e50;
+    border-radius: 50%;
+}
 
-    .sanpham .col-md-3:last-child{
-        padding: 0px 35px 0px 10px;
-    }
+.sanpham a.right.carousel-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    position: absolute;
+    top: -70px;
+    width: 40px;
+    height: 40px;
+    right: 48%;
+    margin-right: -30px;
+    background: #2c3e50;
+    border-radius: 50%;
+}
 
-    /*============================== CV Design ============================== */
-    .cv {
-        width: 100%;
-        height: auto;
-        padding: 70px 0px;
-        background-color: #FAFAFA;
-    }
+.sanpham .col-md-3:first-child {
+    padding: 0px 10px 0px 35px;
+}
 
-    .cv .motcv {
-        background: #34495e;
-        color: white;
-        font-family: segoe ui light;
-        text-align: center;
-        padding-bottom: 30px;
-        width: 100%;
-        height: 333px;
-        cursor: pointer;
-        border: 1px solid #bdc3c7;
-        transition: 0.4s;
-    }
+.sanpham .col-md-3:last-child {
+    padding: 0px 35px 0px 10px;
+}
 
-    .cv .title h4 {
-        margin-bottom: 46px;
-        color: #2c3e50;
-        font-family: segoe ui;
-        font-weight: 700;
-        font-size: 24px;
-        position: relative;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
+/*============================== CV Design ============================== */
+.cv {
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+    background-color: #FAFAFA;
+}
 
-    .cv .title h4:after {
-        content: "";
-        width: 200px;
-        height: 2px;
-        background: #c0392b;
-        position: absolute;
-        bottom: 0px;
-        left: 50%;
-        /* margin-left: -100px; */
-    }
+.cv .motcv {
+    background: #34495e;
+    color: white;
+    font-family: segoe ui light;
+    text-align: center;
+    padding-bottom: 30px;
+    width: 100%;
+    height: 333px;
+    cursor: pointer;
+    border: 1px solid #bdc3c7;
+    transition: 0.4s;
+}
+
+.cv .title h4 {
+    margin-bottom: 46px;
+    color: #2c3e50;
+    font-family: segoe ui;
+    font-weight: 700;
+    font-size: 24px;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.cv .title h4:after {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background: #c0392b;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    /* margin-left: -100px; */
+}
 
 .cv .title h4:before {
     content: "";
@@ -657,514 +698,323 @@ body,html{
     margin-left: -200px;
 }
 
-    .cv .motcv img {
-        width: 100%;
-        height: 100%;
+.cv .motcv img {
+    width: 100%;
+    height: 100%;
+}
+
+.cv .motcv p {
+    margin: 5px;
+    color: white;
+}
+
+/*============================== Fb_Comment ============================== */
+.fb_comment {
+    padding: 50px 0px;
+}
+
+.fb_comment h2 {
+    color: gray;
+    margin-bottom: 25px;
+    font-family: segoe ui light;
+}
+
+.fb_comment i {
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.fb_comment i:hover {
+    color: green;
+}
+
+/*============================== Pic_footer ============================== */
+.ft_finally .pic_ft {
+    width: 100%;
+    height: 360px;
+    background-image: url(images/pic_ft2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ft_finally .pic_ft .container-fluid {}
+
+.ft_finally .pic_ft i {
+    width: 68px;
+    height: 68px;
+    padding: 10px 10px;
+    color: #2ecc71;
+    font-size: 28px;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0px 12px;
+    transition: 0.4s;
+}
+
+.ft_finally .pic_ft i:hover {
+    color: white;
+    border-color: #27ae60;
+    background: #27ae60;
+}
+
+.ft_finally img {
+    background-attachment: fixed;
+}
+
+.author {
+    width: 100%;
+    background: #2d3e50;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.author h6 {
+    margin: 0px;
+    color: yellow;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: segoe ui light;
+}
+
+/*============================== Button Scroll Top ============================== */
+.button_top {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 5px;
+    right: 12px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: green;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.button_top.hienra {
+    opacity: 1;
+    visibility: visible;
+}
+
+.button_top:hover {
+    background: #1d2b3a;
+}
+
+.button_top i {
+    font-size: 18px;
+    color: #e8e2e2;
+    transition: 0.4s;
+}
+
+.button_top:hover i {
+    color: white;
+}
+
+/*============================== Contact Page ============================== */
+.contact .header {
+    width: 100%;
+    height: 200px;
+    background-image: url(images/header_contact.png);
+    background-attachment: fixed;
+}
+
+.contact .title {
+    background-color: rgba(247, 247, 247, 1);
+    padding: 41px 0px 35px 0px;
+}
+
+.contact .title h2 {
+    font-family: RSLight;
+}
+
+.contact .title .link {
+    padding-top: 10px;
+}
+
+.contact .title i {
+    color: gray;
+}
+
+.contact .title .link a {
+    color: gray;
+    letter-spacing: 1px;
+    /* margin: 0px 18px; */
+    padding: 0px 18px;
+    font-family: RSLight;
+}
+
+.contact .map {
+    width: 100%;
+    height: 400px;
+}
+
+.contact .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contact .info {
+    padding: 55px 0px;
+}
+
+.contact .info .col-xs-4 {
+    padding-right: 0px;
+}
+
+.contact .icon {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.contact .icon i {
+    font-size: 53px;
+    color: green;
+}
+
+
+.contact .detail {
+    width: 100%;
+}
+
+.contact .detail h3 {
+    margin-top: 0px;
+    font-size: 20px;
+    color: #34495e;
+    font-family: RSBold;
+}
+
+.contact .detail h4 {
+    margin-bottom: 0px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*============================== Giao Dien Tren Monile ============================== */
+@media (max-width: 576px) {
+
+    /*============================== Menu ============================== */
+    .menu .navbar-default {
+        height: auto;
     }
 
-    .cv .motcv p {
-        margin: 5px;
-        color: white;
+    .menu .navbar-default.thunho {
+        height: auto;
+        padding: 10px 0px;
     }
 
-    /*============================== Fb_Comment ============================== */
-    .fb_comment {
-        padding: 50px 0px;
-    }
-
-    .fb_comment h2 {
-        color: gray;
-        margin-bottom:  25px;
-        font-family: segoe ui light;
-    }
-
-    .fb_comment i {
-        font-size: 25px;
-        cursor: pointer;
-        transition: 0.4s;
-    }
-
-    .fb_comment i:hover {color: green;}
-
-    /*============================== Pic_footer ============================== */
-    .ft_finally .pic_ft {
-        width: 100%;
-        height: 360px;
-        background-image: url(images/pic_ft2.jpg);
-        background-position: center;
-        background-attachment: fixed;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .ft_finally .pic_ft .container-fluid{
-
-    }
-
-    .ft_finally .pic_ft i {
-        width: 68px;
-        height: 68px;
-        padding: 10px 10px;
-        color: #2ecc71;
-        font-size: 28px;
-        border: 3px solid white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        cursor: pointer;
-        margin: 0px 12px;
-        transition: 0.4s;
-    }
-
-    .ft_finally .pic_ft i:hover{
-        color: white;
-        border-color: #27ae60; 
-        background: #27ae60;
-    }
-
-    .ft_finally img {
-        background-attachment: fixed;
-    }
-
-    .author {
-        width: 100%;
-        background: #2d3e50;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .author h6 {
-        margin: 0px;
-        color: yellow;
-        font-size: 15px;
-        letter-spacing: 2px;
-        font-family: segoe ui light;
-    }
-
-    /*============================== Button Scroll Top ============================== */
-    .button_top {
-        width: 40px;
-        height: 40px;
-        position: fixed;
-        bottom: 5px;
-        right: 12px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: green;
-        cursor: pointer;
-        opacity: 0;
-        visibility: hidden;
-        transition: 0.4s;
-    }
-
-    .button_top.hienra{
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .button_top:hover {
-        background: #1d2b3a;
-    }
-
-    .button_top i {
-        font-size: 18px;
-        color: #e8e2e2;
-        transition: 0.4s;
-    }
-
-    .button_top:hover i {
-        color: white;
-    }
-
-    /*============================== Contact Page ============================== */
-    .contact .header {
-        width: 100%;
-        height: 200px;
-        background-image: url(images/header_contact.png);
-        background-attachment: fixed;
-    }
-
-    .contact .title {
-        background-color: rgba(247, 247, 247, 1);
-        padding: 41px 0px 35px 0px;
-    }
-
-    .contact .title h2 {
-        font-family: RSLight;
-    }
-
-    .contact .title .link {
-        padding-top: 10px;
-    }
-
-    .contact .title i {
-        color: gray;
-    }
-
-    .contact .title .link a {
-        color: gray;
-        letter-spacing: 1px;
-        /* margin: 0px 18px; */
-        padding: 0px 18px;
-        font-family: RSLight;
-    }
-
-    .contact .map {
-        width: 100%;
-        height: 400px;
-    }
-
-    .contact .map iframe {
-        width: 100%;
-        height: 100%;
-    }
-
-    .contact .info{
-        padding: 55px 0px;
-    }
-
-    .contact .info .col-xs-4{
-        padding-right: 0px;
-    }
-
-    .contact .icon {
-        width: 100%;
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-right: 0px;
-        margin-right: 0px;
-    }
-
-    .contact .icon i {
-        font-size: 53px;
+    .menu .navbar-default .navbar-brand {
+        height: auto;
+        background: none;
         color: green;
+        font-weight: 700;
     }
 
-
-    .contact .detail {
-        width: 100%;
+    .menu .navbar-default.thunho .navbar-brand {
+        height: 0px;
+        margin: 8px 0px 8px 0px;
+        color: yellow;
     }
 
-    .contact .detail h3 {
-        margin-top: 0px;
-        font-size: 20px;
-        color: #34495e;
-        font-family: RSBold;
+    .menu .navbar-default .navbar-collapse {
+        background: #2d3e50;
     }
 
-    .contact .detail h4 {
-        margin-bottom: 0px;
-        font-size: 14px;
+    .menu .navbar-default.thunho button.navbar-toggle {
+        margin: 8px 15px 8px 0px;
+    }
+
+    .menu .navbar-nav {
+        margin: 0px 0px;
+    }
+
+    .menu .navbar-default .navbar-nav li {
+        border-bottom: 1px dotted gray;
+        padding: 5px 0px;
+    }
+
+    .menu .navbar-default .navbar-nav li:last-child {
+        border-bottom: none;
+    }
+
+    .menu .navbar-default .navbar-nav li a {
         text-align: center;
-    }
-
-
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-
-    /*============================== Giao Dien Tren Monile ============================== */
-    @media (max-width: 576px){
-
-        /*============================== Menu ============================== */
-        .menu .navbar-default {
-            height: auto;
-        }
-
-        .menu .navbar-default.thunho{
-            height: auto;
-            padding: 10px 0px;
-        }
-
-        .menu .navbar-default .navbar-brand {
-            height: auto;
-            background: none;
-            color: green;
-            font-weight: 700;
-        }
-
-        .menu .navbar-default.thunho .navbar-brand{
-            height: 0px;
-            margin: 8px 0px 8px 0px;
-            color: yellow;
-        }
-
-        .menu .navbar-default .navbar-collapse {
-            background: #2d3e50;
-        }
-
-        .menu .navbar-default.thunho button.navbar-toggle {
-            margin: 8px 15px 8px 0px;
-        }
-
-        .menu .navbar-nav {
-            margin: 0px 0px;
-        }
-
-        .menu .navbar-default .navbar-nav li {
-            border-bottom: 1px dotted gray;
-            padding: 5px 0px;
-        }
-
-        .menu .navbar-default .navbar-nav li:last-child {
-            border-bottom: none;
-        }
-
-        .menu .navbar-default .navbar-nav li a {
-            text-align: center;
-            color: white;
-            display: inherit;
-            height: auto;
-            /*padding: 0px 0px;
+        color: white;
+        display: inherit;
+        height: auto;
+        /*padding: 0px 0px;
             height: 60px;
             line-height: 60px;
             border-bottom: 1px dotted whitesmoke;*/
-        }
-
-        .menu .navbar-default.thunho .navbar-nav li a{
-            height: auto;
-        }
-
-        .menu .navbar-default .navbar-nav li a:hover {
-            color: yellow;
-        }
-
-        .menu .navbar-default .navbar-nav li a:after{
-            display: none;
-        }
-
-        /*============================== Banner ============================== */
-        .banner {
-            padding-top: 109px;
-        }
-
-        .banner_in img {
-            width: 180px;
-            height: 180px;
-        }
-
-        .banner_in h2 {
-            font-size: 32px;
-        }
-
-        .banner_in h5 {
-            font-size: 16px;
-        }
-
-        .banner_in a {
-            margin-bottom:  20px;
-        }
-
-        /*============================== Info ============================== */
-        .info_personal img {
-            width: 80%;
-            height: 224px;
-            margin: auto;
-        }
-
-        .info h6:after{
-            /*left: -20px;*/
-        }
-
-        .info_personal .place {
-            /* padding:  0px 48px; */
-        }
-
-        .info_personal .name {
-            text-align: center;
-        }
-
-        .about .row.mottin {
-            margin-bottom: 74px;
-        }
-
-        .about .col-md-6.col-md-pull-1 {
-            /*padding-left: 30px;*/
-        }
-
-        .about .img_left img.img-responsive {
-            width: 120px;
-            height: 120px;
-        }
-
-        .about .title h1{
-            font-size: 26px;
-        }
-
-        /*============================== Product Design ============================== */
-        .language_design .col-xs-6.col-md-3 {
-            margin-bottom: 30px;
-        }
-
-        .sanpham {
-            padding-top: 48px;
-            padding-bottom: 0px;
-        }
-
-        .sanpham h4 {
-            margin-top: 15px;
-        }
-
-        .sanpham a.right.carousel-control{
-            right: 47%;
-            top: -75px;
-        }
-
-        .sanpham a.left.carousel-control{
-            left: 47%;
-            top: -75px;
-        }
-
-        .sanpham .motsp {
-            height: 140px;
-        }
-
-        .sanpham .motsp img {
-            height: 50%;
-        }
-
-        /*============================== CV Design ============================== */
-        .cv .motcv {
-            height: 275px;
-            margin-bottom: 25px;
-        }
-
-
-        /*============================== Pic_ft ============================== */
-        .ft_finally .pic_ft{
-            height: 196px;
-        }
-
-        .ft_finally .pic_ft i {
-            width: 56px;
-            height: 56px;
-            font-size: 22px;
-        }
-
-        /*============================== Contact Page ============================== */
-        .contact .detail {
-            padding-bottom: 20px;
-            border-bottom: 1px dotted #34495e59;
-        }
-
-        .contact .detail h3{
-            text-align: center;
-        }
-
-        .contact .detail h4{
-            display: block;
-            text-align: center;
-        }
-
-
-        *{
-            margin: 0;
-            padding: 0;
-        }
     }
 
-    @media (max-width: 768px) and (min-width: 576px) {
+    .menu .navbar-default.thunho .navbar-nav li a {
+        height: auto;
+    }
 
-        /*============================== Menu ============================== */
-        .menu .navbar-default {
-            height: auto;
-        }
+    .menu .navbar-default .navbar-nav li a:hover {
+        color: yellow;
+    }
 
-        .menu .navbar-default.thunho{
-            height: 0px;
-        }
+    .menu .navbar-default .navbar-nav li a:after {
+        display: none;
+    }
 
-        .menu .navbar-default .navbar-brand{
-            height: auto;
-            border-radius: 0px;
-        }
+    /*============================== Banner ============================== */
+    .banner {
+        padding-top: 109px;
+    }
 
-        .menu .navbar-default.thunho .navbar-brand{
-            height: auto;
-        }
+    .banner_in img {
+        width: 180px;
+        height: 180px;
+    }
 
-        .menu .navbar-default .navbar-collapse {
-            background: #34495e;
-        }
+    .banner_in h2 {
+        font-size: 32px;
+    }
 
-        .menu .navbar-nav {
-            margin: auto;
-        }
+    .banner_in h5 {
+        font-size: 16px;
+    }
 
-        .menu .navbar-default .navbar-nav li {
-            border-bottom: 1px dotted gray;
-            padding: 5px 0px;
-        }
+    .banner_in a {
+        margin-bottom: 20px;
+    }
 
-        .menu .navbar-default.thunho .navbar-nav li a {
-            height: auto;
-        }
+    /*============================== Info ============================== */
+    .info_personal img {
+        width: 80%;
+        height: 224px;
+        margin: auto;
+    }
 
-        .menu .navbar-default .navbar-nav li:last-child {
-            border-bottom: none;
-        }
+    .info h6:after {
+        /*left: -20px;*/
+    }
 
-        .menu .navbar-default .navbar-nav li a {
-            text-align: center;
-            color: white;
-            display: inherit;
-            height: auto;
-            /*padding: 0px 0px;
-            height: 60px;
-            line-height: 60px;
-            border-bottom: 1px dotted whitesmoke;*/
-        }
+    .info_personal .place {
+        /* padding:  0px 48px; */
+    }
 
-        .menu .navbar-default .navbar-nav li a:hover {
-            color: yellow;
-        }
-
-        .menu .navbar-default .navbar-nav li a:after{
-            display: none;
-        }
-
-        /*============================== Banner ============================== */
-        .banner {
-            padding-top: 75px;
-        }
-
-        .banner_in img {
-            width: 150px;
-            height: 150px;
-        }
-
-        .banner_in h2 {
-            font-size: 30px;
-            margin-bottom: 0px;
-        }
-
-        .banner_in h5 {
-            font-size: 18px;
-        }
-
-        .banner_in .icon {
-            margin-top: 5px;
-        }
-
-        /*============================== Info ============================== */
-        .info_personal img{
-           width: 80%;
-           height: 360px;
-           margin: auto;
-       }
-
-       .info_personal .name{
+    .info_personal .name {
         text-align: center;
     }
 
@@ -1181,7 +1031,190 @@ body,html{
         height: 120px;
     }
 
-    .about .title h1{
+    .about .title h1 {
+        font-size: 26px;
+    }
+
+    /*============================== Product Design ============================== */
+    .language_design .col-xs-6.col-md-3 {
+        margin-bottom: 30px;
+    }
+
+    .sanpham {
+        padding-top: 48px;
+        padding-bottom: 0px;
+    }
+
+    .sanpham h4 {
+        margin-top: 15px;
+    }
+
+    .sanpham a.right.carousel-control {
+        right: 47%;
+        top: -75px;
+    }
+
+    .sanpham a.left.carousel-control {
+        left: 47%;
+        top: -75px;
+    }
+
+    .sanpham .motsp {
+        height: 140px;
+    }
+
+    .sanpham .motsp img {
+        height: 50%;
+    }
+
+    /*============================== CV Design ============================== */
+    .cv .motcv {
+        height: 275px;
+        margin-bottom: 25px;
+    }
+
+
+    /*============================== Pic_ft ============================== */
+    .ft_finally .pic_ft {
+        height: 196px;
+    }
+
+    .ft_finally .pic_ft i {
+        width: 56px;
+        height: 56px;
+        font-size: 22px;
+    }
+
+    /*============================== Contact Page ============================== */
+    .contact .detail {
+        padding-bottom: 20px;
+        border-bottom: 1px dotted #34495e59;
+    }
+
+    .contact .detail h3 {
+        text-align: center;
+    }
+
+    .contact .detail h4 {
+        display: block;
+        text-align: center;
+    }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+
+    /*============================== Menu ============================== */
+    .menu .navbar-default {
+        height: auto;
+    }
+
+    .menu .navbar-default.thunho {
+        height: 0px;
+    }
+
+    .menu .navbar-default .navbar-brand {
+        height: auto;
+        border-radius: 0px;
+    }
+
+    .menu .navbar-default.thunho .navbar-brand {
+        height: auto;
+    }
+
+    .menu .navbar-default .navbar-collapse {
+        background: #34495e;
+    }
+
+    .menu .navbar-nav {
+        margin: auto;
+    }
+
+    .menu .navbar-default .navbar-nav li {
+        border-bottom: 1px dotted gray;
+        padding: 5px 0px;
+    }
+
+    .menu .navbar-default.thunho .navbar-nav li a {
+        height: auto;
+    }
+
+    .menu .navbar-default .navbar-nav li:last-child {
+        border-bottom: none;
+    }
+
+    .menu .navbar-default .navbar-nav li a {
+        text-align: center;
+        color: white;
+        display: inherit;
+        height: auto;
+        /*padding: 0px 0px;
+            height: 60px;
+            line-height: 60px;
+            border-bottom: 1px dotted whitesmoke;*/
+    }
+
+    .menu .navbar-default .navbar-nav li a:hover {
+        color: yellow;
+    }
+
+    .menu .navbar-default .navbar-nav li a:after {
+        display: none;
+    }
+
+    /*============================== Banner ============================== */
+    .banner {
+        padding-top: 75px;
+    }
+
+    .banner_in img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .banner_in h2 {
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    .banner_in h5 {
+        font-size: 18px;
+    }
+
+    .banner_in .icon {
+        margin-top: 5px;
+    }
+
+    /*============================== Info ============================== */
+    .info_personal img {
+        width: 80%;
+        height: 360px;
+        margin: auto;
+    }
+
+    .info_personal .name {
+        text-align: center;
+    }
+
+    .about .row.mottin {
+        margin-bottom: 74px;
+    }
+
+    .about .col-md-6.col-md-pull-1 {
+        /*padding-left: 30px;*/
+    }
+
+    .about .img_left img.img-responsive {
+        width: 120px;
+        height: 120px;
+    }
+
+    .about .title h1 {
         font-size: 32px;
     }
 
@@ -1199,12 +1232,12 @@ body,html{
         margin-top: 15px;
     }
 
-    .sanpham a.right.carousel-control{
+    .sanpham a.right.carousel-control {
         right: 47%;
         top: -75px;
     }
 
-    .sanpham a.left.carousel-control{
+    .sanpham a.left.carousel-control {
         left: 47%;
         top: -75px;
     }
@@ -1224,7 +1257,7 @@ body,html{
     }
 
     /*============================== Pic_ft ============================== */
-    .ft_finally .pic_ft{
+    .ft_finally .pic_ft {
         height: 210px;
     }
 
@@ -1240,16 +1273,16 @@ body,html{
         border-bottom: 1px dotted #34495e59;
     }
 
-    .contact .detail h3{
+    .contact .detail h3 {
         text-align: center;
     }
 
-    .contact .detail h4{
+    .contact .detail h4 {
         display: block;
         text-align: center;
     }
 
-    *{
+    * {
         margin: 0;
         padding: 0;
     }
@@ -1258,12 +1291,12 @@ body,html{
 @media (max-width: 992px) and (min-width: 768px) {
 
     /*============================== Info ============================== */
-    .info_personal img{
+    .info_personal img {
         width: 100%;
         height: 460px;
     }
 
-    .info_personal .name{
+    .info_personal .name {
         text-align: center;
     }
 
@@ -1281,12 +1314,12 @@ body,html{
         margin-top: 15px;
     }
 
-    .sanpham a.right.carousel-control{
+    .sanpham a.right.carousel-control {
         right: 48%;
         top: -75px;
     }
 
-    .sanpham a.left.carousel-control{
+    .sanpham a.left.carousel-control {
         left: 48%;
         top: -75px;
     }
@@ -1305,9 +1338,8 @@ body,html{
         margin-bottom: 25px;
     }
 
-
     /*============================== Pic_ft ============================== */
-    .ft_finally .pic_ft{
+    .ft_finally .pic_ft {
         height: 246px;
     }
 
@@ -1316,22 +1348,23 @@ body,html{
         height: 56px;
         font-size: 22px;
     }
+
     /*============================== Contact ============================== */
     .contact .detail {
         padding-bottom: 20px;
         border-bottom: 1px dotted #34495e59;
     }
 
-    .contact .detail h3{
+    .contact .detail h3 {
         text-align: center;
     }
 
-    .contact .detail h4{
+    .contact .detail h4 {
         display: block;
         text-align: center;
     }
 
-    *{
+    * {
         margin: 0;
         padding: 0;
     }

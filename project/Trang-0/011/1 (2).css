@@ -1,0 +1,115 @@
+@font-face{
+	src:url(fonts/RobotoSlab-Bold.ttf);
+	font-family: RSBold;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Light.ttf);
+	font-family: RSLight;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Regular.ttf);
+	font-family: RSRegular;
+}
+
+@font-face{
+	src:url(fonts/RobotoSlab-Thin.ttf);
+	font-family: RSThin;
+}
+
+body{
+	font-family: sans-serif;
+	background-image: url(images/bg.png);
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.header {
+	width: 100%;
+	padding: 60px 0px;
+	background-image: url(images/header.png);
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.header h1 {
+	font-weight: 600;
+	color: #2c3e50;
+}
+
+.header p {
+	color: #2c3e50;
+}
+
+.content {
+	padding: 40px 0px 0px 0px;
+}
+
+.content .part{
+	background: #ecf0f1;
+}
+
+.content .part h3 {
+	background: #2ecc71;
+	padding: 10px 10px;
+	color: white;
+	margin: 0px 0px;
+	cursor: pointer;
+	overflow: hidden;
+	transition: 0.4s;
+}
+
+.content .part h3 i {
+	transition: 0.4s;
+	transform: rotate(0deg);
+	color: white;
+}
+
+.content .part h3.doimau i{
+	transition: 0.4s;
+	transform: rotate(180deg);
+	color: #c0392b;
+}
+
+.content .part h3:hover{
+	color: #c0392b;
+}
+
+.content .part h3:hover i {
+	color: #c0392b;
+}
+
+.content .part h3.doimau{
+	color: #c0392b;
+}
+
+.content .part p {
+	background: #ecf0f1;
+	padding: 10px 10px;
+	font-style: italic;
+	line-height: 26px;
+	margin: 0px 0px;
+}
+
+.content .part .pictures img {
+	width: 100%!important;
+	height: 99px;
+}
+
+.content .part .col-xs-3 {
+	padding: 0px 3px;
+}
+
+.content .part .col-xs-3:first-child {
+	padding-left: 15px;
+}
+
+.content .part .col-xs-3:last-child {
+	padding-right: 15px;
+}
+
+*{
+	margin:0;
+	padding: 0;
+}

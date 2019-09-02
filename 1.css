@@ -315,7 +315,7 @@ html {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0px 0px 0px 4px #a7d300;
+    box-shadow: inset 0px 0px 0px 3px #f1f164;
     cursor: pointer;
     animation: dituduoilen 1s forwards;
     transition: 0.4s;

@@ -92,8 +92,8 @@ html {
     letter-spacing: 2px;
     transform-origin: 0% 0%;
     text-transform: uppercase;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    /*border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;*/
     animation: logo 1.2s forwards;
     transition: 0.4s;
 }
@@ -117,7 +117,7 @@ html {
     height: 80px;
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 15px;
     color: black;
     text-transform: uppercase;
     font-family: RSLight;
@@ -413,7 +413,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #16a085;
+    background: #008000;
     color: white;
     border-radius: 4px;
 }

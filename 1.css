@@ -273,15 +273,19 @@ html {
     }
 }
 
-.banner_in a {
+.banner_in a.hire {
     width: 160px;
     height: 40px;
     font-size: 17px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    color: #eaea1c;
-    letter-spacing: 1px;
+    color: white;
+    font-family: segoe ui;
+    border: none;
+    border-radius: 0px;
+    transition: 0.4s;
+    background: #2c3e50;
 }
 
 .banner_in .icon {
@@ -305,19 +309,20 @@ html {
 .banner_in i {
     width: 30px;
     height: 30px;
-    background: #F5BB50;
+    color: white;
+    background: #008000;
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0px 0px 0px 4px #f1f164;
+    box-shadow: inset 0px 0px 0px 4px #a7d300;
     cursor: pointer;
     animation: dituduoilen 1s forwards;
     transition: 0.4s;
 }
 
 .banner_in i:hover {
-    color: white;
+    color: #2c3e50;
     background: #f9b841;
     box-shadow: inset 0px 0px 0px 0px #f1f164;
 }

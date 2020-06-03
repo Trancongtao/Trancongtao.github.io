@@ -1,0 +1,16 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+.wrapper .col-md-6 {
+    margin-bottom: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

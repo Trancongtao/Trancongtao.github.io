@@ -18,6 +18,11 @@
     font-family: RSThin;
 }
 
+@font-face {
+    src: url(fonts/Pattaya-Regular.ttf);
+    font-family: Pattaya;
+}
+
 body,
 html {
     font-family: RSRegular;
@@ -339,7 +344,7 @@ html {
 }
 
 .info_personal img {
-    width: 100%;
+    width: 96%;
     margin-top: 84px;
     height: 308px;
     border-radius: 5%;
@@ -723,6 +728,42 @@ html {
 .cv .motcv p {
     margin: 5px;
     color: white;
+}
+
+/*============================== Giải Trí ============================== */
+.video .title5 {
+    text-align: center;
+    background-color: #2d4256;
+    padding: 15px 0px;
+    color: white;
+    font-family: Pattaya;
+}
+
+.video .title5 h2 {
+    font-size: 42px;
+}
+
+.video a{
+    text-decoration: none;
+}
+
+.video h3 {
+    font-size: 32px;
+    font-family: Pattaya;
+    color: green;
+    width: 100%;
+    height: 178px;
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightblue;
+    transition: 0.4s;
+}
+
+.video h3:hover{
+    background-color: #518798;
+    color: yellow;
 }
 
 /*============================== Fb_Comment ============================== */
